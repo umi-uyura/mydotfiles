@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# myupdate
+
+echo "check-update in WSL . . ."
+
+# asdf update

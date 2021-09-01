@@ -1,0 +1,6 @@
+# .wslconfig
+#
+# Configure global options with .wslconfig
+# https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig
+
+[wsl2]

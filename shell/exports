@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+## -*- mode: sh-mode; coding: utf-8 -*-
+
+#
+# Paths
+#
+
+# export PATH=/usr/local/bin:$PATH
+
+# dotfiles
+export PATH=$HOME/dotfiles/bin:$PATH
+
+#
+# Emacs
+#
+
+# export EMACS_HOME=$HOME/.emacs.d
+# export PATH=$EMACS_HOME/bin:$PATH
