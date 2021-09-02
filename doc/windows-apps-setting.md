@@ -1,6 +1,33 @@
 Windows application settings
 ============================
 
+Windows Terminal
+----------------
+
+### スタートアップ
+
+* 既定のプロファイル: `コマンドプロンプト`
+
+### 操作
+
+* コピー時のテキスト形式: `プレーンテキストのみ`
+* URLを自動的に検出して、クリックできるようにする: `OFF`
+
+### プロファイル
+
+* 順番変更　※JSONファイルを編集
+  * Ubuntu (WSL)
+  * コマンドプロンプト
+  * Azure Cloud Shell
+  * PowerShell　※非表示にする
+
+
+#### Ubuntu (WSL)
+
+* 全般
+  * 開始ディレクトリ: `\\wsl$<distro name>\home\<user>`
+
+
 Google日本語入力
 ---------------
 
