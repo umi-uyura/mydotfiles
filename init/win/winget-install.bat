@@ -4,6 +4,8 @@ winget install -s winget -e --id Google.JapaneseIME --force
 winget install -s winget -e --id QL-Win.QuickLook
 winget install -s winget -e --id Microsoft.EdgeWebView2Runtime
 winget install -s winget -e --id gerardog.gsudo
+winget install -s winget -e --id Levitsky.FontBase
+winget install -s winget -e --id File-New-Project.EarTrumpet
 
 winget install -s winget -e --id Adobe.AdobeAcrobatReaderDC
 winget install -s winget -e --id Automattic.Simplenote
@@ -12,7 +14,6 @@ winget install -s winget -e --id JGraph.Draw
 winget install -s winget -e --id XMind.XMind2020
 winget install -s winget -e --id Greenshot.Greenshot
 @REM or https://app.prntscr.com/en/index.html
-winget install -s winget -e --id Levitsky.FontBase
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
 winget install -s winget -e --id GitHub.cli
