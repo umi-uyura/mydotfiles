@@ -100,6 +100,10 @@ Visual Studio Code
 
 * Window: Restore Windows: `none`
 
+### Text Editor
+
+* Font Family: `'JetBrains Mono', 'IBM Plex Sans JP', Consolas, 'Courier New', monospace`
+
 ### Features
 
 #### Terminal
