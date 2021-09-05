@@ -173,3 +173,16 @@ Simplenote
 
 * View
   * Note Display: `Condensed`
+
+
+Tweeten
+-------
+
+### Advanced
+
+* Custom CSS
+  * ```
+    body {
+      font-family: 'IBM Plex Sans JP'
+    }
+    ```
