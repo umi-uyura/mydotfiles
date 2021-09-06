@@ -96,13 +96,17 @@ Google Chrome
 Visual Studio Code
 ------------------
 
+### Text Editor
+
+* Bracket Pair Colorization: `ON`
+
+#### Font
+
+* Font Family: `'JetBrains Mono', 'IBM Plex Sans JP', Consolas, 'Courier New', monospace`
+
 ### Window
 
 * Window: Restore Windows: `none`
-
-### Text Editor
-
-* Font Family: `'JetBrains Mono', 'IBM Plex Sans JP', Consolas, 'Courier New', monospace`
 
 ### Features
 
@@ -135,7 +139,6 @@ Visual Studio Code
 | 名前 | WSL | 備考 |
 | - | - | - |
 | [Awesome Emacs Keymap](https://marketplace.visualstudio.com/items?itemName=tuttieee.emacs-mcx) | - | |
-| [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) | - | |
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | ○ | |
 | [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) | ○ | |
 | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) | ○ | |
