@@ -139,6 +139,7 @@ Visual Studio Code
 | 名前 | WSL | 備考 |
 | - | - | - |
 | [Awesome Emacs Keymap](https://marketplace.visualstudio.com/items?itemName=tuttieee.emacs-mcx) | - | |
+| [Bracket Lens](https://marketplace.visualstudio.com/items?itemName=wraith13.bracket-lens) | ? | |
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | ○ | |
 | [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) | ○ | |
 | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) | ○ | |
