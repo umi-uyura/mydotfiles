@@ -24,6 +24,7 @@ winget install -s winget -e --id dbeaver.dbeaver
 winget install -s winget -e --id DBBrowserForSQLite.DBBrowserForSQLite
 winget install -s winget -e --id Postman.Postman
 
+winget install -s winget -e --id Asana.Asana
 winget install -s winget -e --id MehediHassan.Tweeten
 winget install -s winget -e --id SlackTechnologies.Slack
 @REM winget install -s winget -e --id LINE.LINE // Hash mismatch
