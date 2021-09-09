@@ -91,6 +91,8 @@ Google Chrome
 * Formats
   * Remove `HTML`, `MediaWiki`
   * Change the order: `markdown`, `Plain Text`
+  * Change format
+    * markdown: `[%text%](%url%)`
 
 
 Visual Studio Code
