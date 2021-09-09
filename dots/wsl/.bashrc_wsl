@@ -14,5 +14,9 @@ fi
 # asdf
 # https://asdf-vm.com/
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# Official install
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
+
+# Install from Homebrew 
+. /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
