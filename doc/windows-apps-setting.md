@@ -40,6 +40,22 @@ Google日本語入力
       * 入力キー: `Muhenkan` -> `IMEを無効化`
 
 
+PowerToys
+---------
+
+### PowerToys Run
+
+* Search & result
+  * 起動時に前のクエリをクリアする: `ON`
+* Plugins
+  * `OFF`
+    * フォルダー
+    * Windows Search
+    * URIハンドラー
+    * Window Walker
+    * Visual Studio Codeワークスペース
+
+
 Google Chrome
 -------------
 
