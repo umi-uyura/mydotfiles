@@ -79,3 +79,13 @@ Microsoft IME
   * 変換キー: `IMEオン`
   * Ctrl + Space: `なし`
   * Shift + Space: `別幅スペース`
+
+
+フォント
+-------
+
+### 追加フォント
+
+* [JetBrains Mono](https://www.jetbrains.com/ja-jp/lp/mono/)
+* [IBM Plex Sans JP](https://www.ibm.com/plex/)
+* [PlemolJP)](https://github.com/yuru7/PlemolJP)
