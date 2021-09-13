@@ -15,14 +15,42 @@ Windows Terminal
 
 ### プロファイル
 
-* 順番変更　※JSONファイルを編集
-  * Ubuntu (WSL)
-  * コマンドプロンプト
-  * Azure Cloud Shell
-  * PowerShell　※非表示にする
+#### 共通設定 ※settings.jsonを直接編集
 
+```json
+{
+  "profiles": 
+  {
+    "defaults": 
+    {
+      "bellStyle": "window",  // ベル通知スタイル: フラッシュウィンドウ
+      "font":                 // フォント設定
+      {
+        "face": "PlemolJP35 Console HS",
+        "size": 11
+      }
+    },
+    "list":   // プロファイルの順序変更
+    [
+      {
+        "name": "Ubuntu",
+      },
+      { // コマンドプロンプト
+        "name": "\u30b3\u30de\u30f3\u30c9 \u30d7\u30ed\u30f3\u30d7\u30c8"
+      },
+      {
+        "name": "Azure Cloud Shell",
+      },
+      {
+        "hidden": true,   // 非表示
+        "name": "Windows PowerShell"
+      }
+    ]
+  }
+}
+```
 
-#### Ubuntu (WSL)
+#### Ubuntu
 
 * 全般
   * 開始ディレクトリ: `\\wsl$<distro name>\home\<user>`
