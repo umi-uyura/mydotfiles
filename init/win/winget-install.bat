@@ -32,3 +32,5 @@ winget install -s winget -e --id SlackTechnologies.Slack
 
 winget install -s winget -e --id Amazon.Kindle
 winget install -s winget -e --id YACReader.YACReader
+
+winget install -s winget -e --id Qalculate.Qalculate
