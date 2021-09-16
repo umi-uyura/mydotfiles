@@ -30,6 +30,10 @@ winget install -s winget -e --id MehediHassan.Tweeten
 winget install -s winget -e --id SlackTechnologies.Slack
 @REM winget install -s winget -e --id LINE.LINE // Hash mismatch
 
+
+winget install -s winget -e --id VideoLAN.VLC
+winget install -s winget -e --id Daum.PotPlayer
+
 winget install -s winget -e --id Amazon.Kindle
 winget install -s winget -e --id YACReader.YACReader
 
