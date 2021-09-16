@@ -37,4 +37,4 @@ winget install -s winget -e --id Daum.PotPlayer
 winget install -s winget -e --id Amazon.Kindle
 winget install -s winget -e --id YACReader.YACReader
 
-winget install -s winget -e --id Qalculate.Qalculate
+winget install -s winget -e --id SpeedCrunch.SpeedCrunch
