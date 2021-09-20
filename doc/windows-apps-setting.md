@@ -193,6 +193,7 @@ Visual Studio Code
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | ○ | |
 | [Gitmoji](https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode) | ○ | |
 | [Hex Editor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor) | ○ | |
+| [Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring) | ○ | |
 | [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) | ○ | |
 | [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) | ○ | |
 | [Kotlin Language](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | - | |
