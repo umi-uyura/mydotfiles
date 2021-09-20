@@ -31,8 +31,6 @@ pause
 
 echo.
 echo ### In wsl world ...
-echo.
-
 
 echo.
 echo ### Checking for apt package updates ...
