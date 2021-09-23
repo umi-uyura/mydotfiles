@@ -1,4 +1,7 @@
 @echo off
+setlocal
+
+set TARGET_WSL_DISTRO=Ubuntu
 
 echo.
 echo ### Checking for winget updates ...
@@ -36,11 +39,17 @@ echo.
 echo ### Checking for apt package updates ...
 echo.
 
-wsl -d Ubuntu sudo apt update
-wsl -d Ubuntu apt list --upgradable
+wsl -d %TARGET_WSL_DISTRO% sudo apt update
+wsl -d %TARGET_WSL_DISTRO% apt list --upgradable
 
 echo.
 echo ### Checking for Homebrew updates ...
 echo.
 
-wsl -d Ubuntu source $HOME/.profile; brew outdated
+wsl -d %TARGET_WSL_DISTRO% source $HOME/.profile; brew outdated
+
+echo.
+echo ### Updating asdf plugins ...
+echo.
+
+wsl -d %TARGET_WSL_DISTRO% source $HOME/.profile; asdf plugin update --all
