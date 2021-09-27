@@ -89,3 +89,14 @@ Microsoft IME
 * [JetBrains Mono](https://www.jetbrains.com/ja-jp/lp/mono/)
 * [IBM Plex Sans JP](https://www.ibm.com/plex/)
 * [PlemolJP)](https://github.com/yuru7/PlemolJP)
+
+
+エクスプローラー
+--------------
+
+### フォルダーと検索オプションの変更（フォルダーオプション）
+
+* 全般
+  * プライバシー
+    * 最近使ったファイルをクイックアクセスに表示する: `OFF`
+    * よく使うフォルダーをクイックアクセスに表示する: `OFF`
