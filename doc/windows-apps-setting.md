@@ -207,6 +207,7 @@ Visual Studio Code
 | [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | ○ | |
 | [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) | ○ | |
 | [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | - | |
+| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | ○ | - |
 | [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) | - | |
 | [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) | - | |
 | [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit) | - | |
