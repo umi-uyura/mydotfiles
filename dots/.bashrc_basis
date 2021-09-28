@@ -22,6 +22,9 @@ if [ "$(uname)" == 'Linux' ]; then
   # Homebrew(Linuxbrew)
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+  # fnm
+  eval "$(fnm env)"
+
   if [[ "$(uname -r)" == *microsoft* ]]; then
     # WSL
     echo ... Load settings for WSL
