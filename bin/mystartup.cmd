@@ -8,6 +8,9 @@ IF "%MYSTARTUP_INIT%"=="OK" (
 ECHO ... Running startup script
 SET MYSTARTUP_INIT=OK
 
+@REM Register doskey macros
+doskey /macrofile=%USERPROFILE%\dotfiles\shell\doskey-alias.macros
+
 @REM Setup fnm
 FOR /f "tokens=*" %%z IN ('fnm env --use-on-cd') DO CALL %%z
 
