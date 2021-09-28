@@ -188,6 +188,7 @@ Visual Studio Code
 | [Bracket Lens](https://marketplace.visualstudio.com/items?itemName=wraith13.bracket-lens) | ? | |
 | [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) | ○ | |
 | [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) | ○ | |
+| [:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense) | ○ | - |
 | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) | ○ | |
 | [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) | ○ | |
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | ○ | |
