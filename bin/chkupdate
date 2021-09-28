@@ -1,0 +1,23 @@
+#!/bin/sh
+# myupdate
+
+echo "... Check update in WSL"
+
+echo
+echo "### Checking for apt package updates ..."
+echo
+
+sudo apt update
+apt list --upgradable
+
+echo
+echo "### Checking for Homebrew updates ..."
+echo
+
+brew outdated
+
+echo
+echo "### Updating asdf plugins ..."
+echo
+
+asdf plugin update --all
