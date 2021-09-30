@@ -1,2 +1,5 @@
 ~=cd %USERPROFILE%
 ~w=cd %USERPROFILE%\workspace
+ls=dir $1
+ll=dir $1
+which=where $1
