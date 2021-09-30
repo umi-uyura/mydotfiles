@@ -21,3 +21,9 @@ echo "### Updating asdf plugins ..."
 echo
 
 asdf plugin update --all
+
+echo
+echo "### Checking node.js packages ..."
+echo
+
+ncu -g
