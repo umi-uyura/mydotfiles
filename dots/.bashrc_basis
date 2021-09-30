@@ -18,12 +18,7 @@ unset file;
 if [ "$(uname)" == 'Linux' ]; then
   # Linux
   echo ... Load settings for Linux
-
-  # Homebrew(Linuxbrew)
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-  # fnm
-  eval "$(fnm env)"
+  . $HOME/dotfiles/dots/linux/.bashrc_linux
 
   if [[ "$(uname -r)" == *microsoft* ]]; then
     # WSL
