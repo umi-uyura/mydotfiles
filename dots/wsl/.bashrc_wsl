@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # .bashrc_wsl: .bashrc for WSL
 
+# PATH
+export PATH="$(wslpath $(wslvar LOCALAPPDATA))/Programs/Microsoft VS Code/bin":$PATH
+
 # Use ssh key added in Windows
 # Require npiperelay.exe installed by Chocolatey
 
