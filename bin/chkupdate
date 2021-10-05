@@ -1,7 +1,4 @@
 #!/bin/sh
-# myupdate
-
-echo "... Check update in WSL"
 
 echo
 echo "### Checking for apt package updates ..."

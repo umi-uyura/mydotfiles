@@ -1,8 +1,6 @@
 @echo off
 setlocal
 
-set TARGET_WSL_DISTRO=Ubuntu
-
 echo.
 echo ### Checking for winget updates ...
 echo.
@@ -32,9 +30,13 @@ echo.
 
 pause
 
+for /f "usebackq delims=" %%A in (`wsl -l ^| rg -E "UTF-16" "既定"`) do set WSL_DISTRO_DEFAULT=%%A
+set TARGET_WSL_DISTRO=%WSL_DISTRO_DEFAULT:(既定)=%
+
 echo.
 echo ----------------------------------------------------------
 echo In wsl world ...
+echo Target Distribution: %TARGET_WSL_DISTRO%
 echo ----------------------------------------------------------
 
 wsl -d %TARGET_WSL_DISTRO% bash -ic "chkupdate"
