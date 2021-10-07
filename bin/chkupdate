@@ -20,7 +20,13 @@ echo
 asdf plugin update --all
 
 echo
-echo "### Checking node.js packages ..."
+echo "### Checking Node.js package updates ..."
 echo
 
 ncu -g
+
+echo
+echo "### Checking Python package updates ..."
+echo
+
+pip list --outdated
