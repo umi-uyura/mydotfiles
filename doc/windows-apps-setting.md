@@ -219,6 +219,7 @@ Visual Studio Code
 | [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) | ○ | |
 | [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | - | |
 | [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | ○ | - |
+| [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) | ○ | - |
 | [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) | - | |
 | [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) | - | |
 | [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit) | - | |
