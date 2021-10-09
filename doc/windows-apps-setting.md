@@ -71,6 +71,16 @@ Google日本語入力
 PowerToys
 ---------
 
+### File Explorer add-ons
+
+* プレビューペイン
+  * SVG(.svg)プレビューを有効化する: `OFF`
+  * Markdown(.md)プレビューを有効化する: `OFF`
+  * PDF(.pdf)プレビューを有効化する: `OFF`
+* アイコンのプレビュー
+  * SVG(.svg)サムネイルを有効化する: `OFF`
+  * PDF(.pdf)サムネイルを有効化する: `OFF`
+
 ### PowerToys Run
 
 * Search & result
