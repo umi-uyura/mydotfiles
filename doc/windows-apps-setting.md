@@ -249,3 +249,10 @@ Tweeten
       font-family: 'IBM Plex Sans JP'
     }
     ```
+
+QuickLook
+---------
+
+### Plugins
+
+* [adyanth/QuickLook.Plugin.FolderViewer](https://github.com/adyanth/QuickLook.Plugin.FolderViewer)
