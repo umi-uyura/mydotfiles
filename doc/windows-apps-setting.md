@@ -132,6 +132,7 @@ Google Chrome
 | [Lighthouse](https://developers.google.com/web/tools/lighthouse/) | - | - | Web品質チェック（パフォーマンス、PWA、アクセシビリティ、ベストプラクティス、SEO） |
 | [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp) | - | o | |
 | [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) | - | o | |
+| [Tracking Token Stripper](https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob) | - | o | URLに含まれるトラッキングコードを除去 |
 | [VisBug](https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc) | - | - | Webデザインデバッグ |
 | [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) | - | o | |
 
