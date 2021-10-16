@@ -5,6 +5,7 @@ winget install -s winget -e --id QL-Win.QuickLook
 winget install -s winget -e --id Microsoft.EdgeWebView2Runtime
 winget install -s winget -e --id gerardog.gsudo
 winget install -s winget -e --id Levitsky.FontBase
+winget install -s winget -e --id 7zip.7zip
 @REM winget install -s winget -e --id File-New-Project.EarTrumpet
 
 winget install -s winget -e --id Adobe.AdobeAcrobatReaderDC
