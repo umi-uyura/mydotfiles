@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo_warn() {
+  echo "\e[33m$1\e[m"
+}
+
 echo
 echo "### Checking for apt package updates ..."
 echo
@@ -11,22 +15,38 @@ echo
 echo "### Checking for Homebrew updates ..."
 echo
 
-brew outdated
+if hash brew 2> /dev/null; then
+  brew outdated
+else
+  echo_warn "Homebrew could not be found, skipped check."
+fi
 
 echo
 echo "### Updating asdf plugins ..."
 echo
 
-asdf plugin update --all
+if hash asdf 2> /dev/null; then
+  asdf plugin update --all
+else
+  echo_warn "asdf could not be found, skipped check."
+fi
 
 echo
 echo "### Checking Node.js package updates ..."
 echo
 
-ncu -g
+if hash ncu 2> /dev/null; then
+  ncu -g
+else
+  echo_warn "node-check-updates(ncu) could not be found, skipped check."
+fi
 
 echo
 echo "### Checking Python package updates ..."
 echo
 
-pip list --outdated
+if hash pip 2> /dev/null; then
+  pip list --outdated
+else
+  echo_warn "pip could not be found, skipped check."
+fi

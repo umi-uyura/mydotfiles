@@ -1,42 +1,68 @@
-@echo off
-setlocal
+@ECHO OFF
+SETLOCAL
 
-echo.
-echo ### Checking for winget updates ...
-echo.
+ECHO.
+ECHO ### Checking for winget updates ...
+ECHO.
 
-winget upgrade
+WHERE winget >nul 2>nul
+IF %ERRORLEVEL% EQU 0 (
+    winget upgrade
+) ELSE (
+    ECHO winget command not found, skipped check.
+)
 
-echo.
-echo ### Checking for Chocolatey updates ...
-echo.
+ECHO.
+ECHO ### Checking for Chocolatey updates ...
+ECHO.
 
-choco outdated --ignore-pinned
+WHERE choco >nul 2>nul
+IF %ERRORLEVEL% EQU 0 (
+    choco outdated --ignore-pinned
+) ELSE (
+    ECHO choco command not found, skipped check.
+)
 
-echo.
-echo ### Checking for Node package updates ...
-echo.
+ECHO.
+ECHO ### Checking for Node package updates ...
+ECHO.
 
-@rem ncu -g
+WHERE ncu >nul 2>nul
+IF %ERRORLEVEL% EQU 0 (
+    ncu -g
+) ELSE (
+    ECHO ncu command not found, skipped check.
+)
 
-echo.
-echo ----------------------------------------------------------
-echo If you want to update WSL, press any key to continue.
-echo To use sudo, you need to enter the administrator password.
-echo.
-echo If you don't need it, press Ctrl + C to quit.
-echo ----------------------------------------------------------
-echo.
+ECHO.
+ECHO ----------------------------------------------------------
+ECHO If you want to update WSL, press any key to continue.
+ECHO To use sudo, you need to enter the administrator password.
+ECHO.
+ECHO If you don't need it, press Ctrl + C to quit.
+ECHO ----------------------------------------------------------
+ECHO.
 
-pause
+PAUSE
 
-for /f "usebackq delims=" %%A in (`wsl -l ^| rg -E "UTF-16" "既定"`) do set WSL_DISTRO_DEFAULT=%%A
-set TARGET_WSL_DISTRO=%WSL_DISTRO_DEFAULT:(既定)=%
+WHERE wsl >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    ECHO wsl command not found, stop check.
+    EXIT
+)
 
-echo.
-echo ----------------------------------------------------------
-echo In wsl world ...
-echo Target Distribution: %TARGET_WSL_DISTRO%
-echo ----------------------------------------------------------
+WHERE rg >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    ECHO rg command not found, stop check.
+    EXIT
+)
+
+FOR /f "usebackq delims=" %%A IN (`wsl -l ^| rg -E "UTF-16" "既定"`) DO SET WSL_DISTRO_DEFAULT=%%A
+SET TARGET_WSL_DISTRO=%WSL_DISTRO_DEFAULT:(既定)=%
+
+ECHO.
+ECHO ----------------------------------------------------------
+ECHO In wsl world ... Target Distribution: %TARGET_WSL_DISTRO%
+ECHO ----------------------------------------------------------
 
 wsl -d %TARGET_WSL_DISTRO% bash -ic "chkupdate"
