@@ -9,7 +9,7 @@ WHERE winget >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
     winget upgrade
 ) ELSE (
-    ECHO winget command not found, skipped check.
+    CALL:ECHO_WARN "winget command not found, skipped check."
 )
 
 ECHO.
@@ -20,7 +20,7 @@ WHERE choco >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
     choco outdated --ignore-pinned
 ) ELSE (
-    ECHO choco command not found, skipped check.
+    CALL:ECHO_WARN "choco command not found, skipped check."
 )
 
 ECHO.
@@ -31,7 +31,7 @@ WHERE ncu >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
     ncu -g
 ) ELSE (
-    ECHO ncu command not found, skipped check.
+    CALL:ECHO_WARN "npm-check-updates(ncu) command not found, skipped check."
 )
 
 ECHO.
@@ -47,13 +47,13 @@ PAUSE
 
 WHERE wsl >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
-    ECHO wsl command not found, stop check.
+    ECHO:ECHO_WARN "wsl command not found, stop check."
     EXIT
 )
 
 WHERE rg >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
-    ECHO rg command not found, stop check.
+    ECHO:ECHO_WARN "ripgrep(rg) command not found, stop check."
     EXIT
 )
 
@@ -66,3 +66,9 @@ ECHO In wsl world ... Target Distribution: %TARGET_WSL_DISTRO%
 ECHO ----------------------------------------------------------
 
 wsl -d %TARGET_WSL_DISTRO% bash -ic "chkupdate"
+
+EXIT
+
+:ECHO_WARN
+ECHO [33m%~1[0m
+EXIT /b
