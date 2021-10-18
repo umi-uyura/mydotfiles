@@ -13,16 +13,3 @@ if [ $? -ne 0   ]; then
   rm -f $SSH_AUTH_SOCK
   ( setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork EXEC:"/mnt/c/ProgramData/chocolatey/bin/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork & ) >/dev/null 2>&1
 fi
-
-# asdf
-# https://asdf-vm.com/
-
-# Official install
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
-
-# Install from Homebrew 
-# . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
-# . /home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash
-. $(brew --prefix asdf)/libexec/asdf.sh
-. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
