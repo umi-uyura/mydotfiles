@@ -38,7 +38,7 @@ echo
 if hash ncu 2> /dev/null; then
   ncu -g
 else
-  echo_warn "node-check-updates(ncu) could not be found, skipped check."
+  echo_warn "npm-check-updates(ncu) could not be found, skipped check."
 fi
 
 echo
