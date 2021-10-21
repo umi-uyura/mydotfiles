@@ -67,7 +67,7 @@ ECHO ----------------------------------------------------------
 
 wsl -d %TARGET_WSL_DISTRO% bash -ic "chkupdate"
 
-EXIT
+EXIT /b
 
 :ECHO_WARN
 ECHO [33m%~1[0m
