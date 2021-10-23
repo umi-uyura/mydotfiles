@@ -2,30 +2,43 @@
 # .bashrc_linux: .bashrc for Linux
 
 # Homebrew(Linuxbrew)
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+else
+  echo "Homebrew(Linuxbrew) is not setup"
+fi
 
 # direnv
-eval "$(direnv hook bash)"
-show_virtual_env() {
-  if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
-    echo "($(basename $VIRTUAL_ENV))"
-  fi
-}
-export -f show_virtual_env
-PS1='$(show_virtual_env)'$PS1
+if hash direnv 2> /dev/null; then
+  eval "$(direnv hook bash)"
+  show_virtual_env() {
+    if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
+      echo "($(basename $VIRTUAL_ENV))"
+    fi
+  }
+  export -f show_virtual_env
+  PS1='$(show_virtual_env)'$PS1
+else
+  echo "direnv is not setup"
+fi
 
 # asdf
 # https://asdf-vm.com/
-
-# Official install
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
-
-# Install from Homebrew 
-# . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
-# . /home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash
-. $(brew --prefix asdf)/libexec/asdf.sh
-. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+if hash asdf 2> /dev/null; then
+  # Official install
+  # . $HOME/.asdf/asdf.sh
+  # . $HOME/.asdf/completions/asdf.bash
+  
+  # Install from Homebrew 
+  . $(brew --prefix asdf)/libexec/asdf.sh
+  . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+else
+  echo "asdf is not setup"
+fi
 
 # fnm
-eval "$(fnm env)"
+if hash fnm 2> /dev/null; then
+  eval "$(fnm env)"
+else
+  echo "fnm is not setup"
+fi
