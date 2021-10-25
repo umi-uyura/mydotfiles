@@ -233,6 +233,48 @@ Visual Studio Code
 | [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) | ○ | |
 
 
+QuickLook
+---------
+
+### Plugins
+
+* [adyanth/QuickLook.Plugin.FolderViewer](https://github.com/adyanth/QuickLook.Plugin.FolderViewer)
+
+
+Flow Launcher
+-------------
+
+### General
+
+* Hide Flow Launcher on startup: `ON`
+* Last Query Style: `Empty last Query`
+
+### Plugin
+
+#### Browser Bookmarks
+
+* Enable: `OFF`
+
+#### Program
+
+* Enable Program Description: `OFF`
+
+#### Shell
+
+* Replace Win + R: `OFF`
+* Always run as administrator: `OFF`
+
+#### URL
+
+* Enable: `OFF`
+
+### Theme
+
+* Theme: `Darker`
+* Query Box Font: `PlemolJP HS`
+* Result Item FOnt: `PlemolJP HS`
+
+
 Simplenote
 ----------
 
@@ -251,10 +293,3 @@ Tweeten
       font-family: 'IBM Plex Sans JP'
     }
     ```
-
-QuickLook
----------
-
-### Plugins
-
-* [adyanth/QuickLook.Plugin.FolderViewer](https://github.com/adyanth/QuickLook.Plugin.FolderViewer)
