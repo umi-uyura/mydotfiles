@@ -10,9 +10,12 @@ Windows settings
 | `GIT_SSH` | `C:\Windows\System32\OpenSSH\ssh.exe` | Git for Windowsで利用するSSH |
 | `WSLENV` | `USERPROFILE/pu` | WindowsとWSLで共有する環境変数 |
 
-### `PATH` 追加
+### PATH 追加
 
-* `%DOTFILES_ROOT%\bin`
+| PATH | 備考 |
+|------|-----|
+| `%DOTFILES_ROOT%\bin` | dotfiles |
+| `C:\Program Files\MongoDB\Tools\100\bin` | MongoDB Database Tools |
 
 
 システム
