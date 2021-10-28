@@ -24,6 +24,7 @@ winget install -s winget -e --id TeraTermProject.teraterm
 winget install -s winget -e --id JetBrains.IntelliJIDEA.Community
 winget install -s winget -e --id dbeaver.dbeaver
 winget install -s winget -e --id DBBrowserForSQLite.DBBrowserForSQLite
+winget install -s winget -e --id MongoDB.DatabaseTools
 winget install -s winget -e --id Postman.Postman
 winget install -s winget -e --id Ookla.Speedtest
 
