@@ -268,6 +268,10 @@ Flow Launcher
 
 * Enable: `OFF`
 
+#### Web Searches
+
+* Enable: `OFF`
+
 ### Theme
 
 * Theme: `Darker`
