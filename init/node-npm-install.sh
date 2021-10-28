@@ -1,5 +1,7 @@
 #!/bin/sh
 
+npm install -g yarn
+
 # Web Develop
 npm install -g http-server
 npm install -g json-server
