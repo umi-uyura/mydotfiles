@@ -15,7 +15,7 @@ winget install -s winget -e --id Automattic.Simplenote
 winget install -s winget -e --id Typora.Typora
 winget install -s winget -e --id JGraph.Draw
 winget install -s winget -e --id XMind.XMind2020
-winget install -s winget -e --id Flameshot.Flameshot
+winget install -s winget -e --id Greenshot.Greenshot
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
 winget install -s winget -e --id GitHub.cli
