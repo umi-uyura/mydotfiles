@@ -29,7 +29,7 @@ ECHO.
 
 WHERE ncu >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
-    ncu -g
+    CALL ncu -g
 ) ELSE (
     CALL:ECHO_WARN "npm-check-updates(ncu) command not found, skipped check."
 )
