@@ -249,7 +249,7 @@ Flow Launcher
 * Hide Flow Launcher on startup: `ON`
 * Last Query Style: `Empty last Query`
 
-### Plugin
+### Plugin (Pre-install)
 
 #### Browser Bookmarks
 
@@ -272,11 +272,19 @@ Flow Launcher
 
 * Enable: `OFF`
 
+### Plugin (Third party)
+
+| Plugin | Install command |
+|--------|-----------------|
+| [Flow.Launcher.Plugin.Color](https://github.com/Flow-Launcher/Flow.Launcher.Plugin.Color) | `pm install color`
+
 ### Theme
 
 * Theme: `Darker`
 * Query Box Font: `PlemolJP HS`
 * Result Item FOnt: `PlemolJP HS`
+
+
 
 
 Simplenote
