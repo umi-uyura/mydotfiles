@@ -1,0 +1,8 @@
+@vue/cli
+@vue/cli-service-global
+@vue/devtools
+eslint
+eslint-plugin-vue
+http-server
+npm-check-updates
+yarn
