@@ -116,7 +116,7 @@ Google Chrome
 
 ### Chrome Extensions
 
-| 名前 | 固定 | 有効 | 備考 |
+| 名前 | 固定 | 常時有効 | 備考 |
 | - | - | - | - |
 | [英辞郎 on the WEB 拡張機能](https://chrome.google.com/webstore/detail/%E8%8B%B1%E8%BE%9E%E9%83%8E-on-the-web-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD/oonalfdoahlmjaoloddjenihohbfodme) | o | o | |
 | [Mate Translate](https://chrome.google.com/webstore/detail/mate-translate-%E2%80%93-translat/ihmgiclibbndffejedjimfjmfoabpcke) | o | o | |
@@ -127,6 +127,7 @@ Google Chrome
 | [Todoist for Chrome](https://chrome.google.com/webstore/detail/todoist-for-chrome/jldhpllghnbhlbpcmnajkpdmadaolakh) | o | o | |
 | [AutoHideDownloadsBar](https://chrome.google.com/webstore/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel) | - | o | |
 | [AutoPagerize](https://chrome.google.com/webstore/detail/autopagerize/igiofjhpmpihnifddepnpngfjhkfenbp) | - | o | |
+| [Auto Refresh Plus](https://autorefresh.io/) | - | - | |
 | [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd) | - | - | アクセシビリティチェックツール |
 | [Keepa - Amazon Price Tracker](https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo) | - | o | |
 | [Lighthouse](https://developers.google.com/web/tools/lighthouse/) | - | - | Web品質チェック（パフォーマンス、PWA、アクセシビリティ、ベストプラクティス、SEO） |
