@@ -156,6 +156,7 @@ Visual Studio Code
 ### Text Editor
 
 * Bracket Pair Colorization: `ON`
+* Guides: Bracket Pairs: `true`
 
 #### Font
 
