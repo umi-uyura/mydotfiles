@@ -151,6 +151,15 @@ Google Chrome
     * markdown: `[%text%](%url%)`
 
 
+Microsoft Edge
+--------------
+
+### 外観
+
+* ツールバーのカスタマイズ
+  * タブ操作メニューを表示: `OFF`
+
+
 Visual Studio Code
 ------------------
 
