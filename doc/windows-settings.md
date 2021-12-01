@@ -12,9 +12,12 @@ Windows settings
 
 ### PATH 追加
 
+#### User Variables
+
 | PATH | 備考 |
 |------|-----|
 | `%DOTFILES_ROOT%\bin` | dotfiles |
+| `C:\Program Files\7-Zip` | 7-Zip |
 | `C:\Program Files\MongoDB\Tools\100\bin` | MongoDB Database Tools |
 
 
