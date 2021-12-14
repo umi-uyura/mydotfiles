@@ -219,6 +219,7 @@ Visual Studio Code
 | [Insert Date String](https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring) | ○ | |
 | [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) | ○ | |
 | [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) | ○ | |
+| [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) | ○ | Pythonと一緒にインストールされる |
 | [Kotlin Language](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | - | |
 | [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji) | ○ | |
 | [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) | ○ | |
@@ -230,6 +231,7 @@ Visual Studio Code
 | [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) | ○ | |
 | [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) | ○ | |
 | [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | - | |
+| [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) | ○ | Pythonと一緒にインストールされる |
 | [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | ○ | - |
 | [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) | ○ | - |
 | [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) | - | |
@@ -239,6 +241,7 @@ Visual Studio Code
 | [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) | - | |
 | [Time Converter](https://marketplace.visualstudio.com/items?itemName=HaaLeo.timing) | - | |
 | [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) | ○ | |
+| [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | ○ | - |
 | [vscode-jq](https://marketplace.visualstudio.com/items?itemName=dandric.vscode-jq) | ○ | |
 | [VSNotes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes) | ○ | |
 | [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) | ○ | |
@@ -260,7 +263,7 @@ Flow Launcher
 * Hide Flow Launcher on startup: `ON`
 * Last Query Style: `Empty last Query`
 
-### Plugin (Pre-install)
+### Plugins (Pre-install)
 
 #### Browser Bookmarks
 
@@ -283,7 +286,7 @@ Flow Launcher
 
 * Enable: `OFF`
 
-### Plugin (Third party)
+### Plugins (Third party)
 
 | Plugin | Install command |
 |--------|-----------------|
@@ -291,11 +294,10 @@ Flow Launcher
 
 ### Theme
 
+* Window Width Size: `700`
 * Theme: `Darker`
-* Query Box Font: `PlemolJP HS`
-* Result Item FOnt: `PlemolJP HS`
-
-
+* Query Box Font: `PlemolJP HS`, `Regular`
+* Result Item FOnt: `PlemolJP HS`, `Regular`
 
 
 Simplenote
