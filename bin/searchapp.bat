@@ -6,10 +6,10 @@ echo.
 echo ### Searching from winget ...
 echo.
 
-winget search %1
+winget search %1 | sort
 
 echo.
 echo ### Searching from Chocolatey ...
 echo.
 
-choco search %1
+choco search %1 | sort
