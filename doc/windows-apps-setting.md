@@ -174,6 +174,7 @@ Visual Studio Code
 
 ### Window
 
+* Window: New Window Dimensions: `maximized`
 * Window: Restore Windows: `none`
 
 ### Features
