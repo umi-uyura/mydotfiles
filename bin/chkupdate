@@ -16,6 +16,7 @@ echo "### Checking for Homebrew updates ..."
 echo
 
 if hash brew 2> /dev/null; then
+  brew update
   brew outdated
 else
   echo_warn "Homebrew could not be found, skipped check."
