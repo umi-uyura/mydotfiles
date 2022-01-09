@@ -20,6 +20,7 @@ winget install -s winget -e --id Greenshot.Greenshot
 winget install -s winget -e --id JohnMacFarlane.Pandoc
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
+winget install -s winget -e --id Microsoft.dotnetRuntime.6-x64
 winget install -s winget -e --id GitHub.cli
 winget install -s winget -e --id OlegDanilov.RapidEnvironmentEditor
 winget install -s winget -e --id TeraTermProject.teraterm
@@ -38,6 +39,7 @@ winget install -s winget -e --id SlackTechnologies.Slack
 
 winget install -s winget -e --id VideoLAN.VLC
 winget install -s winget -e --id Daum.PotPlayer
+winget install -s winget -e --id NickeManarin.ScreenToGif
 
 winget install -s winget -e --id Amazon.Kindle
 winget install -s winget -e --id YACReader.YACReader
