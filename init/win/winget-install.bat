@@ -35,7 +35,7 @@ winget install -s winget -e --id Graphviz.Graphviz
 winget install -s winget -e --id Asana.Asana
 winget install -s winget -e --id MehediHassan.Tweeten
 winget install -s winget -e --id SlackTechnologies.Slack
-@REM winget install -s winget -e --id LINE.LINE // Hash mismatch
+winget install -s winget -e --id LINE.LINE
 
 
 winget install -s winget -e --id VideoLAN.VLC
