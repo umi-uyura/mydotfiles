@@ -2,7 +2,9 @@
 # apt-install.sh
 
 packages=(
-  unzip
+  # graphviz
+  # unar
+  # unzip
 )
 
 echo "Install following packages ..."
