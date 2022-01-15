@@ -130,6 +130,7 @@ Google Chrome
 | [Auto Refresh Plus](https://autorefresh.io/) | - | - | |
 | [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd) | - | - | アクセシビリティチェックツール |
 | [Keepa - Amazon Price Tracker](https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo) | - | o | |
+| [Modern for Wikipedia](https://www.modernwiki.app/) | - | ○ | |
 | [Lighthouse](https://developers.google.com/web/tools/lighthouse/) | - | - | Web品質チェック（パフォーマンス、PWA、アクセシビリティ、ベストプラクティス、SEO） |
 | [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp) | - | o | |
 | [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) | - | o | |
