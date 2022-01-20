@@ -3,6 +3,7 @@
 
 packages=(
   # graphviz
+  # ipcalc
   # unar
   # unzip
 )
