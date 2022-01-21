@@ -17,6 +17,7 @@ winget install -s winget -e --id Typora.Typora
 winget install -s winget -e --id JGraph.Draw
 winget install -s winget -e --id XMind.XMind2020
 winget install -s winget -e --id Greenshot.Greenshot
+winget install -s winget -e --id NickeManarin.ScreenToGif
 winget install -s winget -e --id JohnMacFarlane.Pandoc
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
@@ -37,10 +38,12 @@ winget install -s winget -e --id MehediHassan.Tweeten
 winget install -s winget -e --id SlackTechnologies.Slack
 winget install -s winget -e --id LINE.LINE
 
+winget install -s winget -e --id DuongDieuPhap.ImageGlass
+winget install -s winget -e --id Icons8.Lunacy
+winget install -s winget -e --id Nikkho.FileOptimizer
 
 winget install -s winget -e --id VideoLAN.VLC
 winget install -s winget -e --id Daum.PotPlayer
-winget install -s winget -e --id NickeManarin.ScreenToGif
 
 winget install -s winget -e --id Amazon.Kindle
 winget install -s winget -e --id YACReader.YACReader
