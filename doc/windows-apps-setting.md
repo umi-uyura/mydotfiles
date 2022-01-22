@@ -292,7 +292,9 @@ Flow Launcher
 
 | Plugin | Install command |
 |--------|-----------------|
-| [Flow.Launcher.Plugin.Color](https://github.com/Flow-Launcher/Flow.Launcher.Plugin.Color) | `pm install color`
+| [Color](https://github.com/Flow-Launcher/Flow.Launcher.Plugin.Color) | `pm install color` |
+| [Desktop Cleanup](https://github.com/umi-uyura/Flow.Launcher.Plugin.DesktopCleanup) | `pm install desktop cleanup` |
+| [Number Converter](https://github.com/liberize/Flow.Launcher.Plugin.NumberConverter) | `pm install number` |
 
 ### Theme
 
