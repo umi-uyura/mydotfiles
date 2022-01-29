@@ -23,6 +23,7 @@ winget install -s winget -e --id JohnMacFarlane.Pandoc
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
 winget install -s winget -e --id Microsoft.dotnetRuntime.6-x64
+winget install -s winget -e --id Python.Python.3
 winget install -s winget -e --id GitHub.cli
 winget install -s winget -e --id OlegDanilov.RapidEnvironmentEditor
 winget install -s winget -e --id TeraTermProject.teraterm
