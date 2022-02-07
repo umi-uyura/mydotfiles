@@ -20,6 +20,7 @@ winget install -s winget -e --id XMind.XMind2020
 winget install -s winget -e --id Greenshot.Greenshot
 winget install -s winget -e --id NickeManarin.ScreenToGif
 winget install -s winget -e --id JohnMacFarlane.Pandoc
+winget install -s winget -e --id DeepL.DeepL
 
 winget install -s winget -e --id Microsoft.OpenJDK.11
 winget install -s winget -e --id Microsoft.dotnetRuntime.6-x64
