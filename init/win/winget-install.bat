@@ -9,6 +9,7 @@ winget install -s winget -e --id Lexikos.AutoHotkey
 winget install -s winget -e --id 7zip.7zip
 winget install -s winget -e --id GnuWin32.Zip
 winget install -s winget -e --id Flow-Launcher.Flow-Launcher
+winget install -s winget -e --id FastCopy.FastCopy
 winget install -s winget -e --id File-New-Project.EarTrumpet
 
 winget install -s winget -e --id Adobe.AdobeAcrobatReaderDC
