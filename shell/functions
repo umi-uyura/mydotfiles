@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
 ## -*- mode: sh-mode; coding: utf-8 -*-
+
+# MYSTARTUP_DEBUG=false
+
+mystartup_debug_echo() {
+    if $MYSTARTUP_DEBUG; then
+        echo "startup ... $1"
+    fi
+}

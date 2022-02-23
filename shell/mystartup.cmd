@@ -1,11 +1,13 @@
 @ECHO OFF
 @REM Command prompt startup script
 
+SET MYSTARTUP_DEBUG=OFF
+
 IF "%MYSTARTUP_INIT%"=="OK" (
     EXIT /b
 )
 
-ECHO ... Running startup script
+CALL:MYSTARTUP_DEBUG_ECHO "... Running startup script"
 SET MYSTARTUP_INIT=OK
 
 @REM Register doskey macros
@@ -20,4 +22,10 @@ IF %ERRORLEVEL% EQU 0 (
 @REM Startup completion
 SET MYSTARTUP_COMPLETE=OK
 
-ECHO ... Complete startup script
+CALL:MYSTARTUP_DEBUG_ECHO "... Complete startup script"
+
+
+:MYSTARTUP_DEBUG_ECHO
+IF "%MYSTARTUP_DEBUG%"=="ON" (
+    ECHO %~1
+)

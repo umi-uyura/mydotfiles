@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # .bashrc_basis: Entry point to my .bashrc
 
+# Enable mystartup_debug_echo function
+MYSTARTUP_DEBUG=false
 
 #
 # Shell configurations
@@ -17,19 +19,19 @@ unset file;
 
 if [ "$(uname)" == 'Linux' ]; then
   # Linux
-  echo ... Load settings for Linux
+  mystartup_debug_echo "... Load settings for Linux"
   . $HOME/dotfiles/dots/linux/.bashrc_linux
 
   if [[ "$(uname -r)" == *microsoft* ]]; then
     # WSL
-    echo ... Load settings for WSL
+    mystartup_debug_echo "... Load settings for WSL"
     . $HOME/dotfiles/dots/wsl/.bashrc_wsl
   fi
 elif [ "$(uname)" == 'Darwin' ]; then
   # macOS
-  echo ... Load settings for macOS
+  mystartup_debug_echo "... Load settings for macOS"
 else
-  echo ... Settings not found for unkown OS
+  mystartup_debug_echo "... Settings not found for unkown OS"
 fi
 
 #
