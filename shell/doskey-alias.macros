@@ -2,5 +2,5 @@
 ~w=cd %USERPROFILE%\workspace
 ls=dir $1
 ll=dir $1
-which=where $1
 rm=del $1
+which=where $1
