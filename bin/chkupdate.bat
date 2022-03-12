@@ -56,16 +56,22 @@ ECHO.
 
 PAUSE
 
+FOR /f "usebackq delims=" %%A IN (`chcp`) DO SET CODEPAGE=%%A
+IF NOT "%CODEPAGE:~-5%"=="65001" (
+    CALL:ECHO_WARN "Unicode UTF-8 support for the system locale is not enabled."
+    EXIT /b
+)
+
 WHERE wsl >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
-    ECHO:ECHO_WARN "wsl command not found, stop check."
-    EXIT
+    CALL:ECHO_WARN "wsl command not found, stop check."
+    EXIT /b
 )
 
 WHERE rg >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
-    ECHO:ECHO_WARN "ripgrep(rg) command not found, stop check."
-    EXIT
+    CALL:ECHO_WARN "ripgrep(rg) command not found, stop check."
+    EXIT /b
 )
 
 FOR /f "usebackq delims=" %%A IN (`wsl -l ^| rg -E "UTF-16" "既定"`) DO SET WSL_DISTRO_DEFAULT=%%A
