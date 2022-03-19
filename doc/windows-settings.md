@@ -19,7 +19,7 @@ Windows settings
 | `%DOTFILES_ROOT%\bin` | dotfiles |
 | `C:\Program Files\7-Zip` | 7-Zip |
 | `C:\Program Files (x86)\GnuWin32\bin` | GnuWin32: Zip |
-| `%LOCALAPPDATA%\Programs\FastCopy` | FastCopy |
+| `%LOCALAPPDATA%\FastCopy` | FastCopy |
 | `C:\Program Files\Graphviz\bin` | Graphviz |
 | `C:\Program Files\MongoDB\Tools\100\bin` | MongoDB Database Tools |
 
