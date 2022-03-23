@@ -1,5 +1,8 @@
 @ECHO OFF
 
+@REM Enable Long Paths
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
+
 @REM Register startup script
 REG ADD "HKCU\SOFTWARE\Microsoft\Command Processor" /v "AutoRun" /t REG_SZ /d "%%USERPROFILE%%\\dotfiles\\shell\\mystartup.cmd" /f
 
