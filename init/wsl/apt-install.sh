@@ -4,6 +4,8 @@
 packages=(
   # graphviz
   # ipcalc
+  # language-pack-ja
+  # socat
   # unar
   # unzip
 )
