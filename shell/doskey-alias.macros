@@ -1,7 +1,9 @@
 ~=cd %USERPROFILE%
 ~w=cd %USERPROFILE%\workspace
-fastrm=fastcopy /cmd=delete /auto_close $1
+
 ls=dir $1
 ll=dir $1
 rm=del $1
 which=where $1
+
+fastrm=fastcopy /cmd=delete /auto_close $1
