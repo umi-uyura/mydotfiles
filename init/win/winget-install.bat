@@ -16,6 +16,7 @@ winget install -s winget -e --id Adobe.AdobeAcrobatReaderDC
 winget install -s winget -e --id Automattic.Simplenote
 winget install -s winget -e --id Typora.Typora
 winget install -s winget -e --id MarkText.MarkText
+winget install -s winget -e --id LibreOffice.LibreOffice
 winget install -s winget -e --id JGraph.Draw
 winget install -s winget -e --id XMind.XMind2020
 winget install -s winget -e --id Greenshot.Greenshot
