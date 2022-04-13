@@ -1,6 +1,7 @@
 ~=cd %USERPROFILE%
 ~w=cd %USERPROFILE%\workspace
 
+wslsh=wsl bash -ic "$*"
 ls=dir $1
 ll=dir $1
 rm=del $1
