@@ -1,4 +1,4 @@
-@echo off
+@ECHO OFF
 
 winget install -s winget -e --id Microsoft.WindowsTerminal
 winget install -s winget -e --id Git.Git
