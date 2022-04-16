@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew install gcc
+brew install gh
 brew install direnv
 brew install ripgrep
 brew install jq
