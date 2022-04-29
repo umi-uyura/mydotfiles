@@ -7,4 +7,8 @@ ll=dir $1
 rm=del $1
 which=where $1
 
+incog="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito $1
+incogp="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito http://$1
+incogs="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito https://$1
+incogl="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito http://localhost:$1
 fastrm=fastcopy /cmd=delete /auto_close $1
