@@ -296,6 +296,26 @@ Flow Launcher
 | [Color](https://github.com/Flow-Launcher/Flow.Launcher.Plugin.Color) | `pm install color` |
 | [Desktop Cleanup](https://github.com/umi-uyura/Flow.Launcher.Plugin.DesktopCleanup) | `pm install desktop cleanup` |
 | [Number Converter](https://github.com/liberize/Flow.Launcher.Plugin.NumberConverter) | `pm install number` |
+| [WebApp Launcher](https://github.com/gissehel/BarLauncher-WebApp) | `pm install WebApp launcher` |
+
+#### WebApp Launcher settings
+
+```
+wap import <setting.wap.txt>
+```
+
+setting.wap.txt
+
+```
+# launcher: chrome.exe
+# argumentsPattern: --app="{0}" --profile-directory="Default"
+# launcher[incog]: chrome.exe
+# argumentsPattern[incog]: --incognito "{0}"
+http://localhost:3000 (local) [incog]
+http://localhost:4000 (local) [incog]
+http://localhost:8000 (local) [incog]
+http://localhost:8080 (local) [incog]
+```
 
 ### Theme
 
