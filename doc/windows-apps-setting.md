@@ -241,6 +241,7 @@ Visual Studio Code
 | [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit) | - | |
 | [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) | - | |
 | [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) | - | |
+| [sqlfluff](https://marketplace.visualstudio.com/items?itemName=dorzey.vscode-sqlfluff) | ○ | [sqlfluff](https://www.sqlfluff.com/) must be installed |
 | [Time Converter](https://marketplace.visualstudio.com/items?itemName=HaaLeo.timing) | - | |
 | [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) | ○ | |
 | [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | ○ | - |
