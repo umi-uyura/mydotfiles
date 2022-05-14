@@ -1,4 +1,2 @@
-// go install github.com/isacikgoz/tldr@latest
-github.com/isacikgoz/tldr/cmd/tldr
 // go install github.com/cheat/cheat/cmd/cheat@latest
 github.com/cheat/cheat/cmd/cheat
