@@ -1,6 +1,5 @@
-yarn
 eslint
 eslint-plugin-vue
-npm-check-updates
 http-server
-surge
+npm-check-updates
+yarn
