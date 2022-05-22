@@ -2,15 +2,37 @@
 # apt-install.sh
 
 packages=(
-  # graphviz
-  # ipcalc
-  # language-pack-ja
-  # socat
-  # unar
-  # unzip
+  build-essential
+  ca-certificates
+  curl
+  git
+  graphviz
+  ipcalc
+  language-pack-ja
+  make
+  socat
+  unar
+  unzip
+  wget
+  xz-utils
+
+# libbz2-dev
+# libffi-dev
+# liblzma-dev
+# libncursesw5-dev
+# libreadline-dev
+# libsqlite3-dev
+# libssl-dev
+# libxml2-dev
+# libxmlsec1-dev
+# llvm
+# tk-dev
+# zlib1g-dev
 )
 
 echo "Install following packages ..."
+
+echo
 
 for i in "${packages[@]}"
 do
@@ -30,22 +52,3 @@ echo
 
 echo apt install "${packages[@]}"
 sudo apt install "${packages[@]}"
-
-# build-essential
-# curl
-# make
-# wget
-# xz-utils
-
-# libbz2-dev
-# libffi-dev
-# liblzma-dev
-# libncursesw5-dev
-# libreadline-dev
-# libsqlite3-dev
-# libssl-dev
-# libxml2-dev
-# libxmlsec1-dev
-# llvm
-# tk-dev
-# zlib1g-dev
