@@ -309,12 +309,12 @@ setting.wap.txt
 ```
 # launcher: chrome.exe
 # argumentsPattern: --app="{0}" --profile-directory="Default"
-# launcher[incog]: chrome.exe
-# argumentsPattern[incog]: --incognito "{0}"
-http://localhost:3000 (local) [incog]
-http://localhost:4000 (local) [incog]
-http://localhost:8000 (local) [incog]
-http://localhost:8080 (local) [incog]
+# launcher[incognito]: chrome.exe
+# argumentsPattern[incognito]: --incognito "{0}"
+http://localhost:3000 (local) [incognito]
+http://localhost:4000 (local) [incognito]
+http://localhost:8000 (local) [incognito]
+http://localhost:8080 (local) [incognito]
 ```
 
 ### Theme
@@ -343,3 +343,13 @@ Tweeten
       font-family: 'IBM Plex Sans JP'
     }
     ```
+
+
+IntelliJ IDEA Community
+------------------------
+
+### Plugins
+
+| 名前 | 備考 |
+| - | - |
+| [Videobug](https://plugins.jetbrains.com/plugin/18529-videobug) | - |
