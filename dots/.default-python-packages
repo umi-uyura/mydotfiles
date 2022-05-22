@@ -1,0 +1,5 @@
+# flake8
+# jupyterlab
+pipdeptree
+pip-licenses
+sqlfluff
