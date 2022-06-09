@@ -2,4 +2,3 @@ eslint
 eslint-plugin-vue
 http-server
 npm-check-updates
-yarn
