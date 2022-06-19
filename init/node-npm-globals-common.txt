@@ -2,3 +2,4 @@ eslint
 eslint-plugin-vue
 http-server
 npm-check-updates
+qnm
