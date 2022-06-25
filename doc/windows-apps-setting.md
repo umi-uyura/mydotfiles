@@ -15,45 +15,24 @@ Windows Terminal
 
 ### プロファイル
 
-#### 共通設定 ※settings.jsonを直接編集
+#### 既定値
 
-```json
-{
-  "profiles": 
-  {
-    "defaults": 
-    {
-      "bellStyle": "window",  // ベル通知スタイル: フラッシュウィンドウ
-      "font":                 // フォント設定
-      {
-        "face": "PlemolJP35 Console HS",
-        "size": 11
-      }
-    },
-    "list":   // プロファイルの順序変更
-    [
-      {
-        "name": "Ubuntu",
-      },
-      { // コマンドプロンプト
-        "name": "\u30b3\u30de\u30f3\u30c9 \u30d7\u30ed\u30f3\u30d7\u30c8"
-      },
-      {
-        "name": "Azure Cloud Shell",
-      },
-      {
-        "hidden": true,   // 非表示
-        "name": "Windows PowerShell"
-      }
-    ]
-  }
-}
-```
+* 外観
+  * フォントフェイス: `PlemolJP HS`
+  * フォントサイズ: `11`
+* 詳細設定
+  * プロファイルの終了動作: `プロセスの終了、失敗、クラッシュ時に閉じる`
+  * ベル通知スタイル: `フラッシュウィンドウ`
+
+#### Windows PowerShell
+
+* ドロップダウンからプロファイルを非表示にする: `ON`
 
 #### Ubuntu
 
-* 全般
-  * 開始ディレクトリ: `\\wsl$<distro name>\home\<user>`
+* 開始ディレクトリ: `~`
+* 外観
+  * 配色: `One Half Dark`
 
 
 Google日本語入力
