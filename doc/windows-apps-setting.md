@@ -68,6 +68,19 @@ Google日本語入力
       * 入力キー: `Muhenkan` -> `IMEを無効化`
 
 
+FontBase
+---------
+
+* フォント追加
+  * [windows-settings内の追加フォントの項](windows-settings.md) 参照
+* Text samples
+  * `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、`
+* App behavior
+  * Hide to tray on close: `ON`
+  * Start on system start: `ON`
+  * Start hidden: `ON`
+
+
 PowerToys
 ---------
 
