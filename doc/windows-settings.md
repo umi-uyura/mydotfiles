@@ -129,9 +129,14 @@ Microsoft IME
 
 ### 追加フォント
 
-* [JetBrains Mono](https://www.jetbrains.com/ja-jp/lp/mono/)
-* [IBM Plex Sans JP](https://www.ibm.com/plex/)
 * [PlemolJP)](https://github.com/yuru7/PlemolJP)
+  * PlemolJP35Console_HS
+  * PlemolJP_HS
+* [IBM Plex Sans JP](https://www.ibm.com/plex/)
+  * IBM-Plex-Sans-JP - hinted
+  * IBM-Plex-Sans-JP - unhinted
+* [JetBrains Mono](https://www.jetbrains.com/ja-jp/lp/mono/)
+  * fonts/variable
 
 
 エクスプローラー
