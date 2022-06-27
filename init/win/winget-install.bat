@@ -12,7 +12,7 @@ winget install -s winget -e --id Flow-Launcher.Flow-Launcher
 winget install -s winget -e --id FastCopy.FastCopy --location "%LOCALAPPDATA%\FastCopy"
 winget install -s winget -e --id File-New-Project.EarTrumpet
 
-winget install -s winget -e --id Adobe.AdobeAcrobatReaderDC
+winget install -s winget -e --id Adobe.Acrobat.Reader.64-bit
 winget install -s winget -e --id Automattic.Simplenote
 winget install -s winget -e --id Typora.Typora
 winget install -s winget -e --id MarkText.MarkText
