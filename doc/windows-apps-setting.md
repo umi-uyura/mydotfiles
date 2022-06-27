@@ -149,8 +149,29 @@ Microsoft Edge
 
 ### 外観
 
-* ツールバーのカスタマイズ
-  * タブ操作メニューを表示: `OFF`
+#### ツールバーのカスタマイズ
+
+* タブ操作メニューを表示: `OFF`
+* お気に入りバーの表示: `なし`
+* お気に入りボタンの表示: `OFF`
+
+#### ショートカットメニュー
+
+* テキスト選択時のミニメニュー
+  * テキストを選択したときにミニメニューを表示する: `OFF`
+
+### [スタート]、[ホーム]、および[新規]タブ
+
+#### [ホーム]ボタン
+
+* ツールバーに[ホーム]ボタンを表示: `ON`
+
+### Microsoft Edge Addon
+
+| 名前 | 固定 | 常時有効 | 備考 |
+| - | - | - | - |
+| [Create Link](https://chrome.google.com/webstore/detail/create-link/gcmghdmnkfdbncmnmlkkglmnnhagajbm) | o | o | Chrome拡張 |
+| [Microsoft Outlook](https://microsoftedge.microsoft.com/addons/detail/microsoft-outlook/kkpalkknhlklpbflpcpkepmmbnmfailf) | o | o | - |
 
 
 Visual Studio Code
