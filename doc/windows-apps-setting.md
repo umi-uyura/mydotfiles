@@ -242,6 +242,10 @@ Visual Studio Code
 | [VSNotes](https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes) | ○ | |
 | [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) | ○ | |
 
+#### GitLens
+
+* "gitlens.codeLens.enabled": `false` ※コードブロック単位のblameは使用しない
+
 
 QuickLook
 ---------
