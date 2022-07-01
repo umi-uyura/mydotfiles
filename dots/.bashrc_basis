@@ -8,7 +8,7 @@ MYSTARTUP_DEBUG=false
 # Shell configurations
 #
 
-for file in $HOME/dotfiles/shell/{bash_prompt,exports,functions,options,completion}; do
+for file in $HOME/dotfiles/shell/{bash_prompt,exports,functions,alias,options,completion}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
