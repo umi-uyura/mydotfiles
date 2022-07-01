@@ -10,6 +10,7 @@ packages=(
   ipcalc
   language-pack-ja
   make
+  pwgen
   socat
   unar
   unzip
