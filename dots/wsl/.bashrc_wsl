@@ -16,3 +16,15 @@ if hash socat 2> /dev/null; then
 else
   echo "socat is not setup"
 fi
+
+# Start VcXsrv
+if [[ "$WSL_DISTRO_NAME" != "" ]]; then
+  if [ -d "/mnt/c/Program Files/VcXsrv" ]; then
+    pushd "/mnt/c/Program Files/VcXsrv" > /dev/null
+    export DISPLAY=127.0.0.1:0.0
+    WSLENV=DISPLAY ./xhost.exe + $(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+    export DISPLAY=$(awk '/^nameserver/ {print $2; exit}' /etc/resolv.conf):0.0
+    export LIBGL_ALWAYS_INDIRECT=1
+    popd > /dev/null
+  fi
+fi

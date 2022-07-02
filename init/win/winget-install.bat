@@ -6,6 +6,7 @@ winget install -s winget -e --id Microsoft.EdgeWebView2Runtime
 winget install -s winget -e --id gerardog.gsudo
 winget install -s winget -e --id Levitsky.FontBase
 winget install -s winget -e --id Lexikos.AutoHotkey
+winget install -s winget -e --id marha.VcXsrv
 winget install -s winget -e --id 7zip.7zip
 winget install -s winget -e --id GnuWin32.Zip
 winget install -s winget -e --id Flow-Launcher.Flow-Launcher
