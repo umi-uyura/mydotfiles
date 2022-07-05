@@ -17,6 +17,9 @@ packages=(
   wget
   xz-utils
 
+  emacs-mozc-bin
+  mozc-utils-gui
+
 # libbz2-dev
 # libffi-dev
 # liblzma-dev

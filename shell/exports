@@ -8,11 +8,12 @@
 # export PATH=/usr/local/bin:$PATH
 
 # dotfiles
-export PATH=$HOME/dotfiles/bin:$PATH
+export DOTFILES_ROOT=$HOME/dotfiles
+export PATH=$DOTFILES_ROOT/bin:$DOTFILES_ROOT/local/bin:$PATH
 
 #
 # Emacs
 #
 
-# export EMACS_HOME=$HOME/.emacs.d
-# export PATH=$EMACS_HOME/bin:$PATH
+export EMACS_HOME=$HOME/.emacs.d
+export PATH=$EMACS_HOME/bin:$EMACS_HOME/site-bin:$PATH
