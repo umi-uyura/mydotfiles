@@ -372,3 +372,22 @@ IntelliJ IDEA Community
 | 名前 | 備考 |
 | - | - |
 | [Videobug](https://plugins.jetbrains.com/plugin/18529-videobug) | - |
+
+
+SylphyHorn
+-----------
+
+### 一般
+
+* トレイアイコン
+  * デスクトップの番号をタスクトレイに表示する: `ON`
+
+### 通知
+
+* 通知ウィンドウの配置: `中央上部`
+
+### キー設定１
+
+* アクティブウィンドウを隣接した仮想デスクトップへ移動
+  * 左へ移動して切り替え: `Left Ctrl + Left Alt + ←`
+  * 右へ移動して切り替え: `Left Ctrl + Left Alt + →`
