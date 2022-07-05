@@ -236,6 +236,7 @@ Visual Studio Code
 | [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) | ○ | |
 | [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) | ○ | Pythonと一緒にインストールされる |
 | [Kotlin Language](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | - | |
+| [Lisp](https://marketplace.visualstudio.com/items?itemName=mattn.Lisp) | ○ | - |
 | [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji) | ○ | |
 | [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) | ○ | |
 | [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) | ○ | |
