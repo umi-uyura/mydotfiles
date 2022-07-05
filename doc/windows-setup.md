@@ -17,6 +17,10 @@ Add the copied ssh key to [SSH and GPG keys page](https://github.com/settings/ke
 
 ### Install basic applications
 
+```bat
+> winget import -i winget-import.json --accept-package-agreements
+```
+
 Download `init\win\pre\winget-pre.bat` .
 
 ```bat

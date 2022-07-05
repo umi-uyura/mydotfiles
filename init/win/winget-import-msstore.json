@@ -1,0 +1,22 @@
+{
+  "$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+  "Sources" : 
+  [
+    {
+      "SourceDetails" :
+      {
+        "Name": "msstore",
+        "Identifier": "StoreEdgeFD",
+        "Argument": "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+        "Type": "Microsoft.Rest"
+      },
+      "Packages" : 
+      [
+        { "PackageIdentifier" : "9NSBB9XTJW86", "Title": "A5:SQL Mk-2 (x64)" },
+        { "PackageIdentifier" : "9PGCV4V3BK4W", "Title": "DevToys" },
+        { "PackageIdentifier" : "9NBLGGH58T01", "Title": "SylphyHorn" },
+        { "PackageIdentifier" : "9P7KNL5RWT25", "Title": "Sysinternals Suite" },
+      ]
+    }
+  ]
+}
