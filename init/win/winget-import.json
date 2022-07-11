@@ -1,0 +1,67 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "Sources":
+  [
+    {
+      "SourceDetails":
+      {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      },
+      "Packages":
+      [
+        { "PackageIdentifier": "Google.JapaneseIME" },
+        { "PackageIdentifier": "QL-Win.QuickLook" },
+        { "PackageIdentifier": "Microsoft.EdgeWebView2Runtime" },
+        { "PackageIdentifier": "gerardog.gsudo" },
+        { "PackageIdentifier": "Levitsky.FontBase" },
+        { "PackageIdentifier": "Lexikos.AutoHotkey" },
+        { "PackageIdentifier": "marha.VcXsrv" },
+        { "PackageIdentifier": "7zip.7zip" },
+        { "PackageIdentifier": "Flow-Launcher.Flow-Launcher" },
+        { "PackageIdentifier": "FastCopy.FastCopy" },
+        { "PackageIdentifier": "File-New-Project.EarTrumpet" },
+        { "PackageIdentifier": "Adobe.Acrobat.Reader.64-bit" },
+        { "PackageIdentifier": "Automattic.Simplenote" },
+        { "PackageIdentifier": "MarkText.MarkText" },
+        { "PackageIdentifier": "TheDocumentFoundation.LibreOffice" },
+        { "PackageIdentifier": "JGraph.Draw" },
+        { "PackageIdentifier": "XMind.XMind2020" },
+        { "PackageIdentifier": "WinMerge.WinMerge" },
+        { "PackageIdentifier": "Greenshot.Greenshot" },
+        { "PackageIdentifier": "NickeManarin.ScreenToGif" },
+        { "PackageIdentifier": "JohnMacFarlane.Pandoc" },
+        { "PackageIdentifier": "DeepL.DeepL" },
+        { "PackageIdentifier": "Microsoft.OpenJDK.11" },
+        { "PackageIdentifier": "Microsoft.dotnetRuntime.6-x64" },
+        { "PackageIdentifier": "GitHub.cli" },
+        { "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor" },
+        { "PackageIdentifier": "TeraTermProject.teraterm" },
+        { "PackageIdentifier": "JetBrains.IntelliJIDEA.Community" },
+        { "PackageIdentifier": "Python.Python.3" },
+        { "PackageIdentifier": "dbeaver.dbeaver" },
+        { "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite" },
+        { "PackageIdentifier": "MongoDB.DatabaseTools" },
+        { "PackageIdentifier": "oldj.switchhosts" },
+        { "PackageIdentifier": "Postman.Postman" },
+        { "PackageIdentifier": "Ookla.Speedtest" },
+        { "PackageIdentifier": "Graphviz.Graphviz" },
+        { "PackageIdentifier": "Asana.Asana" },
+        { "PackageIdentifier": "MehediHassan.Tweeten" },
+        { "PackageIdentifier": "SlackTechnologies.Slack" },
+        { "PackageIdentifier": "LINE.LINE" },
+        { "PackageIdentifier": "DuongDieuPhap.ImageGlass" },
+        { "PackageIdentifier": "Icons8.Lunacy" },
+        { "PackageIdentifier": "Nikkho.FileOptimizer" },
+        { "PackageIdentifier": "VideoLAN.VLC" },
+        { "PackageIdentifier": "Daum.PotPlayer" },
+        { "PackageIdentifier": "Amazon.Kindle" },
+        { "PackageIdentifier": "YACReader.YACReader" },
+        { "PackageIdentifier": "Qalculate.Qalculate" },
+        { "PackageIdentifier": "AntibodySoftware.WizTree" },
+      ]
+    }
+  ]
+}
