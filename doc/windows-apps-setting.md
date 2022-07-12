@@ -63,27 +63,22 @@ FontBase
 PowerToys
 ---------
 
-### File Explorer add-ons
+以下は無効化する
 
-* プレビューペイン
-  * SVG(.svg)プレビューを有効化する: `OFF`
-  * Markdown(.md)プレビューを有効化する: `OFF`
-  * PDF(.pdf)プレビューを有効化する: `OFF`
-* アイコンのプレビュー
-  * SVG(.svg)サムネイルを有効化する: `OFF`
-  * PDF(.pdf)サムネイルを有効化する: `OFF`
+* FancyZones
+* Keyboard Manager
+* PowerToys Run
 
-### PowerToys Run
+### Color Picker
 
-* Search & result
-  * 起動時に前のクエリをクリアする: `ON`
-* Plugins
-  * `OFF`
-    * フォルダー
-    * Windows Search
-    * URIハンドラー
-    * Window Walker
-    * Visual Studio Codeワークスペース
+* エディター
+  * HEX: `ON`
+  * RGB: `ON`
+  * これ以外は `OFF`
+
+### マウスユーティリティ
+
+* アクティブ化の方法: `マウスをシェイクする`
 
 
 Google Chrome
