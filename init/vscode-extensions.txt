@@ -21,6 +21,7 @@ ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -37,7 +38,7 @@ patricklee.vsnotes
 philnash.ngrok-for-vscode
 PKief.material-icon-theme
 redhat.vscode-yaml
+seatonjiang.gitmoji-vscode
 tuttieee.emacs-mcx
 VisualStudioExptTeam.vscodeintellicode
-Vtrois.gitmoji-vscode
 wraith13.bracket-lens
