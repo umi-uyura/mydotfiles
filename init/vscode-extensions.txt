@@ -31,7 +31,6 @@ ms-vscode.hexeditor
 Natizyskunk.sftp
 naumovs.color-highlight
 njpwerner.autodocstring
-octref.vetur
 oderwat.indent-rainbow
 Orta.vscode-jest
 patricklee.vsnotes
@@ -41,4 +40,6 @@ redhat.vscode-yaml
 seatonjiang.gitmoji-vscode
 tuttieee.emacs-mcx
 VisualStudioExptTeam.vscodeintellicode
+Vue.volar
+vue.vscode-typescript-vue-plugin
 wraith13.bracket-lens
