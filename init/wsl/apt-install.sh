@@ -54,5 +54,5 @@ fi
 
 echo
 
-echo apt install "${packages[@]}"
-sudo apt install "${packages[@]}"
+echo apt-get install "${packages[@]}"
+sudo apt-get install "${packages[@]}"
