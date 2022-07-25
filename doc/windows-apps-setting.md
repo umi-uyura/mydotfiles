@@ -7,6 +7,7 @@ Windows Terminal
 ### スタートアップ
 
 * 既定のプロファイル: `コマンドプロンプト`
+* 既定のターミナルアプリケーション (11 only): `Windowsターミナル`
 
 ### 操作
 
@@ -66,7 +67,7 @@ PowerToys
 以下は無効化する
 
 * FancyZones
-* Keyboard Manager
+* Keyboard Manager (10 only)
 * PowerToys Run
 
 ### Color Picker
@@ -75,6 +76,12 @@ PowerToys
   * HEX: `ON`
   * RGB: `ON`
   * これ以外は `OFF`
+
+### Keyboard Manager (11 only)
+
+* キーの再マップ ※Google日本語入力の設定をおこなっていること
+  * `Alt (Right)` から `IME Convert`
+  * `Shift (Right)` から `IME Non-Convert`
 
 ### マウスユーティリティ
 
@@ -115,10 +122,8 @@ Google Chrome
 | [AutoHideDownloadsBar](https://chrome.google.com/webstore/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel) | - | o | |
 | [AutoPagerize](https://chrome.google.com/webstore/detail/autopagerize/igiofjhpmpihnifddepnpngfjhkfenbp) | - | o | |
 | [Auto Refresh Plus](https://autorefresh.io/) | - | - | |
-| [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd) | - | - | アクセシビリティチェックツール |
 | [Keepa - Amazon Price Tracker](https://chrome.google.com/webstore/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo) | - | o | |
 | [Modern for Wikipedia](https://www.modernwiki.app/) | - | ○ | |
-| [Lighthouse](https://developers.google.com/web/tools/lighthouse/) | - | - | Web品質チェック（パフォーマンス、PWA、アクセシビリティ、ベストプラクティス、SEO） |
 | [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp) | - | o | |
 | [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) | - | o | |
 | [Tracking Token Stripper](https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob) | - | o | URLに含まれるトラッキングコードを除去 |
@@ -349,6 +354,14 @@ Simplenote
 Tweeten
 -------
 
+### App
+
+* Allow Tweeten to track basic app usage
+
+### Notifications
+
+* Use custom Tweeten notifications: `off`
+
 ### Advanced
 
 * Custom CSS
@@ -369,8 +382,10 @@ IntelliJ IDEA Community
 | [Videobug](https://plugins.jetbrains.com/plugin/18529-videobug) | - |
 
 
-SylphyHorn
------------
+SylphyHorn (10 only) / SylphyHornPlusWin11 (11 only)
+----------------------------------------------------
+
+* [hwtnb/SylphyHornPlusWin11](https://github.com/hwtnb/SylphyHornPlusWin11)
 
 ### 一般
 

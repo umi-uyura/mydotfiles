@@ -12,7 +12,6 @@
       },
       "Packages":
       [
-        { "PackageIdentifier": "Microsoft.WindowsTerminal" },
         { "PackageIdentifier": "Git.Git" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "Google.Chrome" },
