@@ -15,6 +15,7 @@ packages=(
   unar
   unzip
   wget
+  x11-apps
   xz-utils
 
   emacs-mozc-bin
