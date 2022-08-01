@@ -287,9 +287,11 @@ Flow Launcher
 
 ### Plugins (Pre-install)
 
-#### Browser Bookmarks
-
-* Enable: `OFF`
+* Enable `OFF` plugins
+  * Browser Bookmarks
+  * Explorer
+  * URL
+  * Web Searches
 
 #### Program
 
@@ -299,14 +301,6 @@ Flow Launcher
 
 * Replace Win + R: `OFF`
 * Always run as administrator: `OFF`
-
-#### URL
-
-* Enable: `OFF`
-
-#### Web Searches
-
-* Enable: `OFF`
 
 ### Plugins (Third party)
 
