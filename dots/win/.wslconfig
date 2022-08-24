@@ -4,3 +4,4 @@
 # https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig
 
 [wsl2]
+swap=0
