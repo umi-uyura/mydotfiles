@@ -18,13 +18,15 @@ Add the copied ssh key to [SSH and GPG keys page](https://github.com/settings/ke
 ### Install basic applications
 
 ```bat
-> winget import -i winget-import.json --accept-package-agreements
+> cd init\win\pre
+> winget import -i winget-import-pre.json --accept-package-agreements
 ```
 
-Download `init\win\pre\winget-pre.bat` .
+For Windows 10, add following steps.
 
 ```bat
-> winget-pre.bat
+> cd init\win\pre
+> winget import -i winget-import-msstore-pre-win10.json --accept-package-agreements
 ```
 
 ### Clone dotfiles repository
