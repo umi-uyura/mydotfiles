@@ -402,3 +402,24 @@ SylphyHorn (10 only) / SylphyHornPlusWin11 (11 only)
 * アクティブウィンドウを隣接した仮想デスクトップへ移動
   * 左へ移動して切り替え: `Left Ctrl + Left Alt + ←`
   * 右へ移動して切り替え: `Left Ctrl + Left Alt + →`
+
+
+Core Temp
+---------
+
+### 全般
+
+* 温度の取得間隔: `9000`
+* Windows起動時にCore Tempを実行: `ON`
+
+### 表示
+
+* Core Tempを最小化して開始: `ON`
+* Core Tempをシステムトレイに閉じる: `ON`
+
+### 通知領域
+
+* 通知領域のアイコン: `最高温度`
+* 追加のアイコン
+  * プロセッサの負荷: `ON`
+  * RAM使用量: `ON`
