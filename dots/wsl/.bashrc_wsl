@@ -18,7 +18,7 @@ else
 fi
 
 # Start VcXsrv
-if [[ "$WSL_DISTRO_NAME" != "" ]]; then
+if [ "$WSL_DISTRO_NAME" != "" ]; then
   if [ -d "/mnt/c/Program Files/VcXsrv" ]; then
     pushd "/mnt/c/Program Files/VcXsrv" > /dev/null
     export DISPLAY=127.0.0.1:0.0
