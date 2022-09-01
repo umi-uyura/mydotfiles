@@ -85,7 +85,8 @@ $ sudo apt update && sudo apt upgrade
 Install git, wget ,ca-certificates, and more ...
 
 ```shell
-$ sudo add-apt-repository ppa:git-core/ppa    # for Git (latest)
+$ sudo add-apt-repository ppa:git-core/ppa      # Git (latest)
+$ sudo add-apt-repository ppa:wslutilities/wslu # WSL utilities (latest)
 $ sudo apt upgrade
 
 $ init/wsl/apt-install.sh
