@@ -345,6 +345,21 @@ http://localhost:8080 (local) [incognito]
 * Result Item FOnt: `PlemolJP HS`, `Regular`
 
 
+Path Copy Copy
+--------------
+
+### Commands
+
+| Command | Main menu |
+|---------|-----------|
+| Copy Long Path  | ○ |
+| Copy WSL Path | ○ |
+
+### Options
+
+* Always show submenu: `OFF`
+
+
 Simplenote
 ----------
 

@@ -20,6 +20,7 @@
         { "PackageIdentifier": "marha.VcXsrv" },
         { "PackageIdentifier": "7zip.7zip" },
         { "PackageIdentifier": "Flow-Launcher.Flow-Launcher" },
+        { "PackageIdentifier": "CLechasseur.PathCopyCopy" },
         { "PackageIdentifier": "Automattic.Simplenote" },
         { "PackageIdentifier": "MarkText.MarkText" },
         { "PackageIdentifier": "TheDocumentFoundation.LibreOffice" },
