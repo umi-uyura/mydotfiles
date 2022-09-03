@@ -26,5 +26,9 @@ if [ "$WSL_DISTRO_NAME" != "" ]; then
     export DISPLAY=$(awk '/^nameserver/ {print $2; exit}' /etc/resolv.conf):0.0
     export LIBGL_ALWAYS_INDIRECT=1
     popd > /dev/null
+
+    if [ -f $HOME/.Xmodmap ]; then
+      xmodmap $HOME/.Xmodmap
+    fi
   fi
 fi
