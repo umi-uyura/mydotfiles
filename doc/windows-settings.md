@@ -256,3 +256,17 @@ Microsoft Store
       * チェックボックスを使用して項目を選択する: `OFF`
       * 登録されている拡張子は表示しない: `OFF`
 
+
+コンピュータの管理
+------------------
+
+### システムツール
+
+#### タスクスケジューラ
+
+* タスクスケジューラライブラリ
+  * Microsoft
+    * Windows
+      * Application Experience
+        * Microsoft Compatibility Appraiser: `無効化`
+
