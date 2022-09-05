@@ -411,6 +411,8 @@ SylphyHorn (10 only) / SylphyHornPlusWin11 (11 only)
 ### 通知
 
 * 通知ウィンドウの配置: `中央上部`
+* (PlusWin11) 通知ウィンドウのフォントファミリ: `JetBrains Mono Italic`
+* (PlusWin11) シンプルな通知モード: `ON`
 
 ### キー設定１
 
