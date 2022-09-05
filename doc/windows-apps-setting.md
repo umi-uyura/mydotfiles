@@ -440,3 +440,11 @@ Core Temp
 * 追加のアイコン
   * プロセッサの負荷: `ON`
   * RAM使用量: `ON`
+
+
+WinMerge
+--------
+
+### プラグイン
+
+* [xdocdiff WinMerge Plugin](http://freemind.s57.xrea.com/xdocdiffPlugin/index.html) - Word、Excel、PowerPoint、PDFの比較・差分
