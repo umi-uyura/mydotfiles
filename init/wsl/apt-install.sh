@@ -12,6 +12,7 @@ packages=(
   make
   pwgen
   socat
+  traceroute
   unar
   unzip
   wget
