@@ -16,6 +16,7 @@ packages=(
   unar
   unzip
   wget
+  whois
   x11-apps
   xz-utils
 
