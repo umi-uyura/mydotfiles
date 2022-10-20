@@ -18,20 +18,20 @@ RESET=$(tput sgr0)
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
-# shellcheck disable=SC2034
 YELLOW=$(tput setaf 3)
-# shellcheck disable=SC2034
 BLUE=$(tput setaf 4)
+# shellcheck disable=SC2034
 MAGENTA=$(tput setaf 5)
+# shellcheck disable=SC2034
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 255)
 ORANGE=$(tput setaf 172)
 
-style_user="\[${RESET}${GREEN}\]"
+style_user="\[${RESET}${BLUE}\]"
 style_host="\[${RESET}${ORANGE}\]"
-style_path="\[${RESET}${YELLOW}\]"
+style_path="\[${RESET}${GREEN}\]"
 style_chars="\[${RESET}${WHITE}\]"
-style_branch="${CYAN}"
+style_branch="${YELLOW}"
 
 if [[ "$SSH_TTY" ]]; then
     # connected via ssh
