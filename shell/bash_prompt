@@ -14,19 +14,22 @@ tput sgr 0 0
 # If you want to check color code, run `./testcolor.sh'
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
+# shellcheck disable=SC2034
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
+# shellcheck disable=SC2034
 YELLOW=$(tput setaf 3)
+# shellcheck disable=SC2034
 BLUE=$(tput setaf 4)
 MAGENTA=$(tput setaf 5)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 255)
 ORANGE=$(tput setaf 172)
 
-style_user="\[${RESET}${ORANGE}\]"
-style_host="\[${RESET}${YELLOW}\]"
-style_path="\[${RESET}${GREEN}\]"
+style_user="\[${RESET}${GREEN}\]"
+style_host="\[${RESET}${ORANGE}\]"
+style_path="\[${RESET}${YELLOW}\]"
 style_chars="\[${RESET}${WHITE}\]"
 style_branch="${CYAN}"
 
@@ -39,10 +42,12 @@ elif [[ "$USER" == "root" ]]; then
 fi
 
 is_git_repo() {
+    # shellcheck disable=SC2091
     $(git rev-parse --is-inside-work-tree &> /dev/null)
 }
 
 is_git_dir() {
+    # shellcheck disable=SC2091
     $(git rev-parse --is-inside-git-dir 2> /dev/null)
 }
 
@@ -56,7 +61,7 @@ get_git_branch() {
     # Otherwise, just give up
     branch_name="(unknown)"
 
-    printf $branch_name
+    printf "%s" $branch_name
 }
 
 # Git status information
@@ -70,12 +75,12 @@ prompt_git() {
     git_info=$(get_git_branch)
 
     # Check for uncommitted changes in the index
-    if ! $(git diff --quiet --ignore-submodules --cached); then
+    if ! git diff --quiet --ignore-submodules --cached; then
         uc="+"
     fi
 
     # Check for unstaged changes
-    if ! $(git diff-files --quiet --ignore-submodules --); then
+    if ! git diff-files --quiet --ignore-submodules --; then
         us="!"
     fi
 
@@ -85,7 +90,7 @@ prompt_git() {
     fi
 
     # Check for stashed files
-    if $(git rev-parse --verify refs/stash &>/dev/null); then
+    if git rev-parse --verify refs/stash &>/dev/null; then
         st="$"
     fi
 
@@ -93,13 +98,13 @@ prompt_git() {
 
     # Combine the branch name and state information
     if [[ $git_state ]]; then
-        git_info="$git_info[$git_state]"
+        git_info="${git_info}[$git_state]"
     fi
 
-	git_uname=$(git config user.name)
-	git_umail=$(git config user.email)
+    git_uname=$(git config user.name)
+    git_umail=$(git config user.email)
 
-    printf "${WHITE}\n on ${style_branch}${git_info} - ${git_uname} (${git_umail})"
+    printf "%s\n on %s%s - %s (%s)" "$WHITE" "$style_branch" "$git_info" "$git_uname" "$git_umail"
 }
 
 

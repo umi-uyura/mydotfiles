@@ -48,9 +48,9 @@ done
 
 echo
 
-read -p "Press 'y' key to continue: " input
+read -r -p "Press 'y' key to continue: " input
 
-if [ "$input" != 'Y' -a "$input" != 'y' ]; then
+if [ "$input" != 'Y' ] && [ "$input" != 'y' ]; then
   echo "Cancel the installation."
   exit
 fi

@@ -13,7 +13,7 @@ if hash direnv 2> /dev/null; then
   eval "$(direnv hook bash)"
   show_virtual_env() {
     if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
-      echo "($(basename $VIRTUAL_ENV))"
+      echo "($(basename "$VIRTUAL_ENV"))"
     fi
   }
   export -f show_virtual_env
@@ -29,9 +29,12 @@ if hash asdf 2> /dev/null; then
   # . $HOME/.asdf/asdf.sh
   # . $HOME/.asdf/completions/asdf.bash
   
-  # Install from Homebrew 
-  . $(brew --prefix asdf)/libexec/asdf.sh
-  . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+  ## Install from Homebrew 
+
+  # shellcheck source=/dev/null
+  . "$(brew --prefix asdf)/libexec/asdf.sh"
+  # shellcheck source=/dev/null
+  . "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
 else
   echo "asdf is not setup"
 fi

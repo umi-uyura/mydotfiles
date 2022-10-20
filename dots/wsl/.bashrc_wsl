@@ -2,16 +2,16 @@
 # .bashrc_wsl: .bashrc for WSL
 
 # PATH
-export PATH="$(wslpath $(wslvar LOCALAPPDATA))/Programs/Microsoft VS Code/bin":$PATH
+VSCODE_PATH="$(wslpath "$(wslvar LOCALAPPDATA)")/Programs/Microsoft VS Code/bin":$PATH
+export PATH=$VSCODE_PATH
 
 # Use ssh key added in Windows
 # Require npiperelay.exe installed by Chocolatey
 if hash socat 2> /dev/null; then
-  export SSH_AUTH_SOCK=$HOME/.ssh/agent.sock
-  ss -a | grep -q $SSH_AUTH_SOCK
-  if [ $? -ne 0   ]; then
-    rm -f $SSH_AUTH_SOCK
-    ( setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork EXEC:"/mnt/c/ProgramData/chocolatey/bin/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork & ) >/dev/null 2>&1
+  export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
+  if ! ss -a | grep -q "$SSH_AUTH_SOCK"; then
+    rm -f "$SSH_AUTH_SOCK"
+    ( setsid socat UNIX-LISTEN:"$SSH_AUTH_SOCK",fork EXEC:"/mnt/c/ProgramData/chocolatey/bin/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork & ) >/dev/null 2>&1
   fi
 else
   echo "socat is not setup"
@@ -20,15 +20,16 @@ fi
 # Start VcXsrv
 if [ "$WSL_DISTRO_NAME" != "" ]; then
   if [ -d "/mnt/c/Program Files/VcXsrv" ]; then
-    pushd "/mnt/c/Program Files/VcXsrv" > /dev/null
+    pushd "/mnt/c/Program Files/VcXsrv" > /dev/null || exit
     export DISPLAY=127.0.0.1:0.0
-    WSLENV=DISPLAY ./xhost.exe + $(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
-    export DISPLAY=$(awk '/^nameserver/ {print $2; exit}' /etc/resolv.conf):0.0
+    WSLENV=DISPLAY ./xhost.exe + "$(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
+    MY_DISPLAY=$(awk '/^nameserver/ {print $2; exit}' /etc/resolv.conf):0.0
+    export DISPLAY=$MY_DISPLAY
     export LIBGL_ALWAYS_INDIRECT=1
-    popd > /dev/null
+    popd > /dev/null || exit
 
-    if [ -f $HOME/.Xmodmap ]; then
-      xmodmap $HOME/.Xmodmap
+    if [ -f "$HOME/.Xmodmap" ]; then
+      xmodmap "$HOME/.Xmodmap"
     fi
   fi
 fi

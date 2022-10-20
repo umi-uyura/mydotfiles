@@ -5,13 +5,12 @@
 # Copy dot-files to HOME
 #
 
-cd $(dirname $0)
+cd "$(dirname "$0")" || exit
 for dotfile in .?*
 do
-    if [ $dotfile != '..' ] && [ $dotfile != '.git' ]
+    if [ "$dotfile" != '..' ] && [ "$dotfile" != '.git' ]
     then
-        ln -Fis "$PWD/$dotfile" $HOME
-        if [ $? == 0 ]; then
+        if ! ln -Fis "$PWD/$dotfile" "$HOME"; then
             echo created "$HOME/$dotfile"
         fi
     fi
