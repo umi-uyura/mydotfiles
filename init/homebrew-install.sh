@@ -8,5 +8,6 @@ brew install jq
 brew install asdf
 brew install fnm
 brew install nkf
+brew install shellcheck
 brew install csvq
 brew install csvtk
