@@ -184,6 +184,10 @@ Microsoft Edge
 Visual Studio Code
 ------------------
 
+### Keybinding
+
+Copy keybindings.json ( *doc\windows\vscode\keybindings.json* ) to `%APPDATA%\Code\User`
+
 ### Text Editor
 
 * Bracket Pair Colorization: `ON`
