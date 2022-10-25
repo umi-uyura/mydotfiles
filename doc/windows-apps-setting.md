@@ -189,6 +189,10 @@ Visual Studio Code
 * Bracket Pair Colorization: `ON`
 * Guides: Bracket Pairs: `true`
 
+#### Find
+
+* Seed Search String From Selection: `never` ※選択範囲を検索語にしない
+
 #### Font
 
 * Font Family: `'JetBrains Mono', 'IBM Plex Sans JP', Consolas, 'Courier New', monospace`
