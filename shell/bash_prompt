@@ -104,18 +104,21 @@ prompt_git() {
     git_uname=$(git config user.name)
     git_umail=$(git config user.email)
 
-    printf "%s\n on %s%s - %s (%s)" "$WHITE" "$style_branch" "$git_info" "$git_uname" "$git_umail"
+    printf "%s\n on %s%s - %s (%s)" \
+           "$WHITE" "$style_branch" "$git_info" "$git_uname" "$git_umail"
 }
 
 
 # Set the terminal title to the current working directory
 case "$TERM" in
     xterm-256color)
-		PS1="\[\033]0;\w\007\]"
-		PS1+="\n";; # Newline
-	dumb) PS1="\n";;	# for Emacs
-	*) ;;
+        PS1="\[\033]0;\w\007\]";;
+	# PS1+="\n";;
+    dumb)
+        PS1="\n";;
+    *) ;;
 esac
+
 # Build the prompt
 PS1+="${style_user}\u" # Username
 PS1+="${style_chars}@" # @
