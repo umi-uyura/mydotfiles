@@ -50,10 +50,6 @@
         { "PackageIdentifier": "DuongDieuPhap.ImageGlass" },
         { "PackageIdentifier": "Icons8.Lunacy" },
         { "PackageIdentifier": "Nikkho.FileOptimizer" },
-        { "PackageIdentifier": "VideoLAN.VLC" },
-        { "PackageIdentifier": "Daum.PotPlayer" },
-        { "PackageIdentifier": "Amazon.Kindle" },
-        { "PackageIdentifier": "YACReader.YACReader" },
         { "PackageIdentifier": "Qalculate.Qalculate" },
         { "PackageIdentifier": "AntibodySoftware.WizTree" },
       ]
