@@ -11,3 +11,5 @@ brew install nkf
 brew install shellcheck
 brew install csvq
 brew install csvtk
+
+brew install noborus/tap/trdsql
