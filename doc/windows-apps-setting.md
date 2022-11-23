@@ -297,6 +297,7 @@ Flow Launcher
 * Enable `OFF` plugins
   * Browser Bookmarks
   * Explorer
+  * Process Killer
   * URL
   * Web Searches
 
