@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 ## -*- mode: sh-mode; coding: utf-8 -*-
 
-alias passgen='pwgen -cnysB 18 12'
+alias passgen='pwgen -cnysB1 18 8'
+alias passgen2='pwgen -cnsB1 18 8'
