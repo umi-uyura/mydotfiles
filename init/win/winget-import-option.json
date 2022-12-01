@@ -13,6 +13,8 @@
       "Packages":
       [
         { "PackageIdentifier": "ALCPU.CoreTemp" },
+        { "PackageIdentifier": "GnuWin32.Zip" },
+        { "PackageIdentifier": "GnuWin32.UnZip" },
         { "PackageIdentifier": "VideoLAN.VLC" },
         { "PackageIdentifier": "Daum.PotPlayer" },
         { "PackageIdentifier": "Amazon.Kindle" },
