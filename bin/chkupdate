@@ -47,7 +47,17 @@ echo "### Checking Python package updates ..."
 echo
 
 if hash pip 2> /dev/null; then
-  pip list --outdated
+  PIPRESULT=$(pip list --outdated --format json)
+  if [ "$PIPRESULT" != "[]" ]; then
+    echo "$PIPRESULT" | jq -r " .[] | [.name, .version, .latest] | @tsv" | column -t
+    echo
+    echo "Command for bulk update:"
+    echo "  python -m pip install -U $(echo "$PIPRESULT" | grep -v "\[notice\]" | jq -r ".[].name" | xargs)"
+    echo
+  else
+    echo "All global python packages are up-to-date :)"
+    echo
+  fi
 else
   echo_warn "pip could not be found, skipped check."
 fi
