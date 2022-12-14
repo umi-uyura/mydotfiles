@@ -38,6 +38,9 @@ IF %ERRORLEVEL% EQU 0 (
        ECHO.
        ECHO Command for bulk update:
        ECHO   py -m pip install -U !PIPRESULT!
+    ) ELSE (
+       ECHO All global python packages are up-to-date :^)
+       ECHO.
     )
 ) ELSE (
     CALL:ECHO_WARN "Python launcher(py) command not found, skipped check."
