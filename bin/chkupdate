@@ -47,7 +47,7 @@ echo "### Checking Python package updates ..."
 echo
 
 if hash pip 2> /dev/null; then
-  PIPRESULT=$(pip list --outdated --format json)
+  PIPRESULT=$(python -m pip list --outdated --format json)
   if [ "$PIPRESULT" != "[]" ]; then
     echo "$PIPRESULT" | jq -r " .[] | [.name, .version, .latest] | @tsv" | column -t
     echo
