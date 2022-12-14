@@ -1,5 +1,5 @@
 @ECHO OFF
-SETLOCAL
+SETLOCAL ENABLEDELAYEDEXPANSION
 
 ECHO.
 ECHO ### Checking for winget updates ...
@@ -30,6 +30,15 @@ ECHO.
 WHERE py >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
     CALL py -m pip list --outdated
+    FOR /f "usebackq delims=" %%A IN (`py -m pip list --outdated --format json ^| jq -r ".[].name"`) DO (
+        SET PIPRESULT=!PIPRESULT!%%A 
+    )
+
+    IF NOT "!PIPRESULT!" == "" (
+       ECHO.
+       ECHO Command for bulk update:
+       ECHO   py -m pip install -U !PIPRESULT!
+    )
 ) ELSE (
     CALL:ECHO_WARN "Python launcher(py) command not found, skipped check."
 )
@@ -77,3 +86,6 @@ EXIT /b
 :ECHO_WARN
 ECHO [33m%~1[0m
 EXIT /b
+
+ENDLOCAL
+
