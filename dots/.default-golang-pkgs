@@ -1,6 +1,5 @@
-// go install github.com/cheat/cheat/cmd/cheat@latest
-github.com/cheat/cheat/cmd/cheat
 honnef.co/go/tools/cmd/staticcheck
+github.com/cheat/cheat/cmd/cheat@4.3.3
 github.com/tomnomnom/gron
 github.com/josephburnett/jd
 github.com/noahgorstein/jqp
