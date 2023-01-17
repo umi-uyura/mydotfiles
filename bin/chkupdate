@@ -11,6 +11,7 @@ echo
 sudo apt update
 apt list --upgradable
 
+
 echo
 echo "### Checking for Homebrew updates ..."
 echo
@@ -20,7 +21,9 @@ if hash brew 2> /dev/null; then
   brew outdated
 else
   echo_warn "Homebrew could not be found, skipped check."
+  echo
 fi
+
 
 echo
 echo "### Updating asdf plugins ..."
@@ -30,17 +33,21 @@ if hash asdf 2> /dev/null; then
   asdf plugin update --all
 else
   echo_warn "asdf could not be found, skipped check."
+  echo
 fi
 
+
 echo
-echo "### Checking Node.js package updates ..."
+echo "### Checking Go package updates ..."
 echo
 
-if hash ncu 2> /dev/null; then
-  ncu -g
+if hash gup 2> /dev/null; then
+  gup check
 else
-  echo_warn "npm-check-updates(ncu) could not be found, skipped check."
+  echo_warn "gup could not be found, skipped check."
+  echo
 fi
+
 
 echo
 echo "### Checking Python package updates ..."
@@ -60,4 +67,17 @@ if hash pip 2> /dev/null; then
   fi
 else
   echo_warn "pip could not be found, skipped check."
+  echo
+fi
+
+
+echo
+echo "### Checking Node.js package updates ..."
+echo
+
+if hash ncu 2> /dev/null; then
+  ncu -g
+else
+  echo_warn "npm-check-updates(ncu) could not be found, skipped check."
+  echo
 fi

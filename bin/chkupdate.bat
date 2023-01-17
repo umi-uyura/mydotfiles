@@ -24,6 +24,18 @@ IF %ERRORLEVEL% EQU 0 (
 )
 
 ECHO.
+ECHO ### Checking for Go package updates ...
+ECHO.
+
+WHERE gup >nul 2>nul
+IF %ERRORLEVEL% EQU 0 (
+    gup check
+) ELSE (
+    CALL:ECHO_WARN "gup command not found, skipped check."
+)
+
+
+ECHO.
 ECHO ### Checking for Python package updates ...
 ECHO.
 
@@ -91,4 +103,3 @@ ECHO [33m%~1[0m
 EXIT /b
 
 ENDLOCAL
-
