@@ -1,0 +1,10 @@
+#!/bin/sh
+
+MERY_PATH="$(wslpath "$(wslvar LOCALAPPDATA)")/Programs/Mery/Mery.exe"
+
+if [ ! -e "$MERY_PATH" ]; then
+    echo Mery not found. 1>&2
+    exit 1
+fi
+
+"$MERY_PATH" "$1"
