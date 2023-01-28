@@ -2,8 +2,9 @@
 # .bashrc_wsl: .bashrc for WSL
 
 # PATH
-VSCODE_PATH="$(wslpath "$(wslvar LOCALAPPDATA)")/Programs/Microsoft VS Code/bin":$PATH
-export PATH=$VSCODE_PATH
+LOCALAPPPG_PATH="$(wslpath "$(wslvar LOCALAPPDATA)")/Programs"
+VSCODE_PATH="$LOCALAPPPG_PATH/Microsoft VS Code/bin"
+export PATH=$VSCODE_PATH:$PATH
 
 # Use ssh key added in Windows
 # Require npiperelay.exe installed by Chocolatey
