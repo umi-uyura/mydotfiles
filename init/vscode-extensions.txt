@@ -41,5 +41,5 @@ seatonjiang.gitmoji-vscode
 tuttieee.emacs-mcx
 VisualStudioExptTeam.vscodeintellicode
 Vue.volar
-vue.vscode-typescript-vue-plugin
+Vue.vscode-typescript-vue-plugin
 wraith13.bracket-lens
