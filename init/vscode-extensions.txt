@@ -8,6 +8,7 @@ dandric.vscode-jq
 dbaeumer.vscode-eslint
 dorzey.vscode-sqlfluff
 eamodio.gitlens
+golang.go
 HaaLeo.timing
 jebbs.plantuml
 jsynowiec.vscode-insertdatestring
