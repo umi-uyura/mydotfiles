@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Python path: $(which python)"
+
+HEADER="Packages        Version Latest
+------------------      ------- -------"
+
+if hash pip 2> /dev/null; then
+  PIPRESULT=$(python -m pip list --outdated --format json)
+  if [ "$PIPRESULT" != "[]" ]; then
+    PIPRESULTTSV=$(echo "$PIPRESULT" | jq -r ".[] | [.name, .version, .latest_version] | @tsv")
+    cat <(echo -e "$HEADER") <(echo -e "$PIPRESULTTSV") | column -t
+    echo
+    echo "Command for bulk update:"
+    echo "  python -m pip install -U $(echo "$PIPRESULT" | grep -v "\[notice\]" | jq -r ".[].name" | xargs)"
+    echo
+  else
+    echo "All python packages are up-to-date :)"
+    echo
+  fi
+else
+  echo_warn "pip could not be found, skipped check."
+fi
