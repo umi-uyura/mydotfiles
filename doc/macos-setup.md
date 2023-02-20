@@ -1,0 +1,119 @@
+macOS Setup routine
+====================
+
+Last checked OS: macOS Big Sur
+
+
+Change login shell from zsh to bash
+------------------------------------
+
+```zsh
+% chsh -s /bin/bash
+% exit
+```
+
+
+Provisioning
+------------
+
+```bash
+$ sudo softwareupdate -i -a     # Run software update
+$ xcode-select --install        # Install command line tools
+$ sudo shutdown -r now          # To run when you are requested
+```
+
+
+Setup SSH & GitHub
+------------------
+
+```bash
+$ ssh-keygen -t ed25519 -C "my_email@example.com" -f ~/.ssh/id_xxxxx
+$ pbcopy < ~/.ssh/id_xxxxx.pub
+```
+
+Add the copied ssh key to [SSH and GPG keys page](https://github.com/settings/keys) of your github account.
+
+Edit ssh config
+
+```bash
+$ vi ~/.ssh/config
+```
+
+~/.ssh/config
+
+```
+Host *.github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_xxxxx
+```
+
+Authenticate to github.com
+
+```bash
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_xxxxx
+$ ssh -T git@github.com
+Hi <user>! You've successfully authenticated, bu Github does not provide shell access.
+```
+
+Setup dotfiles
+--------------
+
+Get repository
+
+```bash
+$ git clone git@github.com:umi-uyura/mydotfiles.git dotfiles
+$ git clone git@github.com:umi-uyura/mydotemacs.git .emacs.d
+$ cd dotfiles
+$ ./init/macos/set-computername.sh
+$ exit
+```
+
+Shell settings
+
+```bash
+$ dotfiles/dots/_setup.sh
+$ vi ~/.bashrc
+```
+
+.bashrc
+
+```
+if [ -f $HOME/.bashrc_basis ]; then
+  . $HOME/.bashrc_basis
+fi
+```
+
+Load .bashrc
+
+```bash
+$ source ~/.bashrc
+```
+
+
+OS X setting
+------------
+
+```bash
+$ dotfiles/init/macos/osx-defaults.sh
+```
+
+
+Install applications
+--------------------
+
+Install Homebrew
+
+Latest routine: see https://brew.sh/
+
+```
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Setup Homebrew Bundle
+$ brew bundle --file=~/dotfiles/init/Brewfile
+$ brew bundle --file=~/dotfiles/init/macos/Brewfile
+$ brew bundle --file=~/dotfiles/init/macos/BrewCaskfile
+$ brew bundle --file=~/dotfiles/init/macos/BrewCaskOptionfile   # As necessary
+$ brew bundle --file=~/dotfiles/init/macos/BrewMasfile          # Must be sign in to MAS
+```
