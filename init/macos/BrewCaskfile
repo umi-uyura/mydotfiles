@@ -1,0 +1,22 @@
+cask "iterm2"
+cask "google-japanese-ime"
+cask "google-chrome"
+cask "keepassxc"
+cask "raycast"
+cask "visual-studio-code"
+
+cask "pushplaylabs-sidekick"
+cask "dropbox"
+cask "slack"
+cask "simplenote"
+cask "libreoffice"
+cask "numi"
+
+tap "homebrew/cask-fonts"
+cask "font-plemol-jp-hs"
+cask "font-plemol-jp-nf"
+cask "font-plemol-jp-nfj"
+cask "font-udev-gothic"
+
+tap "railwaycat/emacsmacport"
+cask "emacs-mac"

@@ -1,0 +1,14 @@
+brew "gcc" if OS.linux?
+brew "gh"
+brew "direnv"
+brew "ripgrep"
+brew "jq"
+brew "asdf"
+brew "fnm"
+brew "nkf"
+brew "shellcheck"
+brew "csvq"
+brew "csvtk"
+
+tap "noborus/tap"
+brew "noborus/tap/trdsql"

@@ -16,6 +16,18 @@ do
     fi
 done
 
+if [ "$(uname)" == 'Darwin' ]; then
+    for dots in $HOME/dotfiles/dots/macos/{.bashrc,.bash_profile}; do
+        file=$(basename "$dots")
+        if [ ! -a "$HOME/$file" ]; then
+            if ! ln -Fis "$dots" "$HOME"; then
+                echo created "$HOME/$file"
+            fi
+        fi
+    done;
+    unset file; unset dots;
+fi
+
 #
 # Additonal messages
 #
