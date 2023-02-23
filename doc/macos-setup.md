@@ -26,6 +26,15 @@ $ sudo shutdown -r now          # To run when you are requested
 Setup SSH & GitHub
 ------------------
 
+Set git config
+
+```
+$ git config --global user.name "<name>"
+$ git config --global user.email "<mail>"
+```
+
+Generate ssh key pair
+
 ```bash
 $ ssh-keygen -t ed25519 -C "my_email@example.com" -f ~/.ssh/id_xxxxx
 $ pbcopy < ~/.ssh/id_xxxxx.pub
@@ -116,4 +125,35 @@ $ brew bundle --file=~/dotfiles/init/macos/Brewfile
 $ brew bundle --file=~/dotfiles/init/macos/BrewCaskfile
 $ brew bundle --file=~/dotfiles/init/macos/BrewCaskOptionfile   # As necessary
 $ brew bundle --file=~/dotfiles/init/macos/BrewMasfile          # Must be sign in to MAS
+```
+
+
+Install other tools
+-------------------
+
+### asdf
+
+See: [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)
+
+```shell
+$ init/asdf-plugin-install.sh
+
+# Python
+$ asdf list all python | grep ^3
+$ asdf install python <version>
+$ asdf reshim python
+
+# Go
+$ asdf list all golang
+$ asdf install golang <version>
+$ asdf reshim golang
+```
+
+### Node.js (use fnm installed with Homebrew)
+
+```shell
+$ fnm ls-remote
+$ fnm install <version>
+$ node --version > .node-version
+$ init/node-npm-globals-install.sh
 ```
