@@ -4,14 +4,25 @@ echo_warn() {
   printf "\e[33m%s\e[m" "$1"
 }
 
-echo
-echo "### Checking for apt package updates ..."
-echo
+if [ "$(uname)" = "Linux" ]; then
+  OS="LINUX"
+elif [ "$(uname)" = "Darwin" ]; then
+  OS="MACOS"
+fi
 
-sudo apt update
-apt list --upgradable
+
+# apt packages
+if [ "$OS" = "LINUX" ]; then
+  echo
+  echo "### Checking for apt package updates ..."
+  echo
+
+  sudo apt update
+  apt list --upgradable
+fi
 
 
+# Homebrew
 echo
 echo "### Checking for Homebrew updates ..."
 echo
@@ -25,6 +36,7 @@ else
 fi
 
 
+# asdf plugins
 echo
 echo "### Updating asdf plugins ..."
 echo
@@ -37,6 +49,7 @@ else
 fi
 
 
+# Go packages
 echo
 echo "### Checking Go package updates ..."
 echo
@@ -49,6 +62,7 @@ else
 fi
 
 
+# Python packages
 echo
 echo "### Checking Python package updates ..."
 echo
@@ -56,6 +70,7 @@ echo
 pip-check-update
 
 
+# Node packages
 echo
 echo "### Checking Node.js package updates ..."
 echo
