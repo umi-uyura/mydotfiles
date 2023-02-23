@@ -2,6 +2,7 @@
 # .bashrc_basis: Entry point to my .bashrc
 
 # Enable mystartup_debug_echo function
+# shellcheck disable=SC2034
 MYSTARTUP_DEBUG=false
 
 #
@@ -9,9 +10,11 @@ MYSTARTUP_DEBUG=false
 #
 
 for file in $HOME/dotfiles/shell/{bash_prompt,exports,functions,alias,options,completion}; do
+  # shellcheck source=/dev/null
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
 
 #
 # OS settings
@@ -20,12 +23,14 @@ unset file;
 if [ "$(uname)" == 'Linux' ]; then
   # Linux
   mystartup_debug_echo "... Load settings for Linux"
-  . $HOME/dotfiles/dots/linux/.bashrc_linux
+  # shellcheck source=/dev/null
+  . "$HOME/dotfiles/dots/linux/.bashrc_linux"
 
   if [[ "$(uname -r)" == *microsoft* ]]; then
     # WSL
     mystartup_debug_echo "... Load settings for WSL"
-    . $HOME/dotfiles/dots/wsl/.bashrc_wsl
+    # shellcheck source=/dev/null
+    . "$HOME/dotfiles/dots/wsl/.bashrc_wsl"
   fi
 elif [ "$(uname)" == 'Darwin' ]; then
   # macOS
@@ -34,11 +39,55 @@ else
   mystartup_debug_echo "... Settings not found for unkown OS"
 fi
 
+
+#
+# Prepare tools
+#
+
+# direnv
+if hash direnv 2> /dev/null; then
+  eval "$(direnv hook bash)"
+  show_virtual_env() {
+    if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
+      echo "($(basename "$VIRTUAL_ENV"))"
+    fi
+  }
+  export -f show_virtual_env
+  PS1='$(show_virtual_env)'$PS1
+else
+  echo "direnv is not setup"
+fi
+
+# asdf
+if hash asdf 2> /dev/null; then
+  # Official install
+  # . $HOME/.asdf/asdf.sh
+  # . $HOME/.asdf/completions/asdf.bash
+
+  ## Install from Homebrew
+
+  # shellcheck source=/dev/null
+  . "$(brew --prefix asdf)/libexec/asdf.sh"
+  # shellcheck source=/dev/null
+  . "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
+else
+  echo "asdf is not setup"
+fi
+
+# fnm
+if hash fnm 2> /dev/null; then
+  eval "$(fnm env)"
+else
+  echo "fnm is not setup"
+fi
+
+
 #
 # Local settings
 #
 
 BASHRC_LOCAL=$HOME/.bashrc_local
-if [ -f $BASHRC_LOCAL ]; then
-  . $BASHRC_LOCAL
+if [ -f "$BASHRC_LOCAL" ]; then
+  # shellcheck source=/dev/null
+  . "$BASHRC_LOCAL"
 fi
