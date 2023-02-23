@@ -37,6 +37,9 @@
 	fp = fetch --prune
 	export = archive HEAD --format=zip --worktree-attributes
 
+[init]
+	defaultBranch = main
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
