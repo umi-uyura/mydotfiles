@@ -10,7 +10,7 @@ cask "dropbox"
 cask "slack"
 cask "simplenote"
 cask "libreoffice"
-cask "macdown"
+cask "mark-text"
 cask "numi"
 
 cask "qlmarkdown"
