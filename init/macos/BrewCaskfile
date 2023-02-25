@@ -13,6 +13,13 @@ cask "libreoffice"
 cask "macdown"
 cask "numi"
 
+cask "qlmarkdown"
+cask "qlstephen"
+cask "provisionql"
+cask "quicklook-csv"
+cask "qlimagesize"
+cask "qlvideo"
+
 tap "homebrew/cask-fonts"
 cask "font-plemol-jp-hs"
 cask "font-plemol-jp-nf"
