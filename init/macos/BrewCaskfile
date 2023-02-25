@@ -10,6 +10,7 @@ cask "dropbox"
 cask "slack"
 cask "simplenote"
 cask "libreoffice"
+cask "macdown"
 cask "numi"
 
 tap "homebrew/cask-fonts"
