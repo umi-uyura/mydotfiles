@@ -12,6 +12,7 @@ cask "simplenote"
 cask "libreoffice"
 cask "mark-text"
 cask "numi"
+cask "devtoys"
 
 cask "qlmarkdown"
 cask "qlstephen"
