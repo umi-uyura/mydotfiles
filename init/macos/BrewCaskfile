@@ -6,6 +6,8 @@ cask "visual-studio-code"
 
 cask "raycast"
 cask "alt-tab"
+cask "rectangle"
+
 cask "pushplaylabs-sidekick"
 cask "dropbox"
 cask "slack"
