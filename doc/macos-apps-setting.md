@@ -18,14 +18,3 @@ iTerm2
   * Terminal
     * Scrollback Buffer
       * Scrollback Lines: `10,000`
-
-
-Dropbox
--------
-
-### バックアップ
-
-* 外付けドライブバックアップ
-  * 新しい外付けドライブが接続されると、セットアップ通知を表示します: `OFF`
-* 写真
-  * カメラアップロードをONにする: `OFF`
