@@ -22,6 +22,16 @@ if [ "$OS" = "LINUX" ]; then
 fi
 
 
+# macOS software update
+if [ "$OS" = "MACOS" ]; then
+  echo
+  echo "### Checking for software updates ... (update: softwareupdate -i -a)"
+  echo
+
+  softwareupdate -l
+fi
+
+
 # Homebrew
 echo
 echo "### Checking for Homebrew updates ..."
