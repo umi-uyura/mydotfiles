@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+echo_warn() {
+  printf "\e[33m%s\e[m" "$1"
+}
+
+# dotfiles
+
+echo
+echo "### Checking for dotfiles update ..."
+echo
+
+pushd "$DOTFILES_ROOT" > /dev/null || exit
+if ! git remote show origin | grep --color "out of date"; then
+  echo "dotfiles is up-to-date."
+fi
+popd > /dev/null || exit
+
+# .emacs.d
+
+echo
+echo "### Checking for .emacs.d update ..."
+echo
+
+pushd "$EMACS_HOME" > /dev/null || exit
+if ! git remote show origin | grep --color "out of date"; then
+  echo ".emacs.d is up-to-date."
+fi
+popd > /dev/null || exit
+
+# cheat
+
+echo
+echo "### Checking for cheatsheets update ..."
+echo
+
+if hash cheat 2> /dev/null && hash yq 2> /dev/null; then
+  CHEAT_CONF_PATH="$(cheat --conf)"
+  if [ -e "$CHEAT_CONF_PATH" ]; then
+    # personal
+    echo "Personal cheatsheets ..."
+
+    CHEAT_PERSONAL_PATH=$(yq '.cheatpaths[] | select(.name == "personal") | .path' "$CHEAT_CONF_PATH")
+    pushd "$CHEAT_PERSONAL_PATH" > /dev/null || exit
+    if ! git remote show origin | grep --color "out of date"; then
+      echo "Personal cheatsheets is up-to-date."
+    fi
+    popd > /dev/null || exit
+
+    # community - https://github.com/cheat/cheatsheets
+    echo "Community cheatsheets ..."
+
+    CHEAT_COMMUNITY_PATH=$(yq '.cheatpaths[] | select(.name == "community") | .path' "$CHEAT_CONF_PATH")
+
+    pushd "$CHEAT_COMMUNITY_PATH" > /dev/null || exit
+    if ! git remote show origin | grep --color "out of date"; then
+      echo "Community cheatsheets is up-to-date."
+    fi
+    popd > /dev/null || exit
+
+    echo
+  else
+    echo_warn "cheat config file not be found, skipped check."
+    echo
+  fi
+else
+  echo_warn "cheat or yq could not be found, skipped check."
+  echo
+fi

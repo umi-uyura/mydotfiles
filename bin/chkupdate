@@ -10,6 +10,10 @@ elif [ "$(uname)" = "Darwin" ]; then
   OS="MACOS"
 fi
 
+# dotfiles
+
+chkdotfiles
+
 
 # apt packages
 if [ "$OS" = "LINUX" ]; then
