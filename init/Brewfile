@@ -1,4 +1,9 @@
 brew "coreutils" if OS.mac?
+brew "mas" if OS.mac?
+brew "git" if OS.mac?
+brew "gnu-sed" if OS.mac?
+brew "wget" if OS.mac?
+brew "tree" if OS.mac?
 brew "gcc" if OS.linux?
 brew "gh"
 brew "direnv"

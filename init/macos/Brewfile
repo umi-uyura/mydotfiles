@@ -1,6 +1,0 @@
-brew "mas"
-brew "git"
-brew "gnu-sed"
-brew "wget"
-brew "tree"
-
