@@ -19,3 +19,6 @@ brew "csvtk"
 
 tap "noborus/tap"
 brew "noborus/tap/trdsql"
+
+tap "heroku/brew" if OS.mac?
+brew "heroku" if OS.mac?
