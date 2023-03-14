@@ -1,6 +1,15 @@
 Setup routine
 =============
 
+**[WIN]** Initial setup
+-----------------------
+
+### To create account with Microsoft account
+
+* See [Application settings](windows-apps-setting.md) and setup following applications
+  * OneDrive
+
+
 **[WIN]** Setup SSH & GitHub
 -----------------------------
 
