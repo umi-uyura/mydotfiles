@@ -36,6 +36,21 @@ if [ "$OS" = "MACOS" ]; then
 fi
 
 
+# Mac App Store software update
+if [ "$OS" = "MACOS" ]; then
+  echo
+  echo "### Checking for Mac App Store software updates ..."
+  echo
+
+  if hash mas 2> /dev/null; then
+    mas outdated
+  else
+    echo_warn "mas-cli could not be found, skipped check."
+    echo
+  fi
+fi
+
+
 # Homebrew
 echo
 echo "### Checking for Homebrew updates ..."
