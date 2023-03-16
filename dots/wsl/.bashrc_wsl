@@ -23,7 +23,7 @@ if [ "$WSL_DISTRO_NAME" != "" ]; then
   if [ -d "/mnt/c/Program Files/VcXsrv" ]; then
     pushd "/mnt/c/Program Files/VcXsrv" > /dev/null || exit
     export DISPLAY=127.0.0.1:0.0
-    WSLENV=DISPLAY ./xhost.exe + "$(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
+    WSLENV=DISPLAY ./xhost.exe + "$(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')" > /dev/null
     MY_DISPLAY=$(awk '/^nameserver/ {print $2; exit}' /etc/resolv.conf):0.0
     export DISPLAY=$MY_DISPLAY
     export LIBGL_ALWAYS_INDIRECT=1
