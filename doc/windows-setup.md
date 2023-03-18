@@ -4,6 +4,9 @@ Setup routine
 **[WIN]** Initial setup
 -----------------------
 
+* Windows Update
+* Microsoft Store update
+
 ### To create account with Microsoft account
 
 * See [Application settings](windows-apps-setting.md) and setup following applications
@@ -13,12 +16,40 @@ Setup routine
 **[WIN]** Setup SSH & GitHub
 -----------------------------
 
+### Start OpenSSH service
+
+* Run `services.msc`
+* Open `OpenSSH Authentication Agent` property
+* Change startup type to `Auto` and apply
+
+### Generate ssh key and add GitHub account
+
 ```bat
-> ssh-keygen -t ed25519 -C "my_email@example.com" -f ~/.ssh/id_xxxxx
-> clip < ~/.ssh/id_xxxxx.pub
+> mkdir .ssh
+> ssh-keygen -t ed25519 -C "my_email@example.com" -f .ssh/id_xxxxx
+> clip < .ssh¥id_xxxxx.pub
 ```
 
 Add the copied ssh key to [SSH and GPG keys page](https://github.com/settings/keys) of your github account.
+
+### Start OpenSSH service and access GitHub
+
+Create $USERPROFILE/.ssh/config
+
+```
+Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_xxxxx
+```
+
+Start OpenSSH service
+
+```bat
+> ssh-agent -s
+> ssh-add .ssh¥id_xxxxx
+> ssh -T git@github.com
+Hi <user>! You've successfully authenticated, bu Github does not provide shell access.
+```
 
 
 **[WIN]** Install Git & clone dotfiles repository
@@ -26,25 +57,44 @@ Add the copied ssh key to [SSH and GPG keys page](https://github.com/settings/ke
 
 ### Install basic applications
 
+Download [init/win/pre/winget-import-pre.json](../init/win/pre/winget-import-pre.json) (Easy to save to right-click on raw file link)
+
+
 ```bat
-> cd init\win\pre
 > winget import -i winget-import-pre.json --accept-package-agreements
 ```
 
-For Windows 10, add following steps.
+For Windows 10, Download [winget-import-msstore-pre-win10.json](../init/win/pre/winget-import-msstore-pre-win10.json)
 
 ```bat
-> cd init\win\pre
 > winget import -i winget-import-msstore-pre-win10.json --accept-package-agreements
 ```
 
+### Install Chocolatey
+
+Open PowerShell with administrator privileges.
+
+[Install Chocolatey](https://chocolatey.org/install#individual)
+
+
 ### Clone dotfiles repository
 
+Set git config
+
+```
+> git config --global user.name "<name>"
+> git config --global user.email "<mail>"
+```
+
+Clone repository
+
 ```bat
-> git clone <dotfiles repository>
+> git clone <dotfiles repository> dotfiles
 ```
 
 ### Minimum Windows settings
+
+Open command prompt with administrator privileges.
 
 ```bat
 REM Register settings to registry
@@ -69,6 +119,7 @@ Open command prompt with administrator privileges.
 ```
 
 PC must be rebooted.
+
 
 **[WIN]** Enable WSL
 ---------------------
