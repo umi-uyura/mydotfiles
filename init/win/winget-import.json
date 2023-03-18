@@ -15,8 +15,6 @@
         { "PackageIdentifier": "Google.JapaneseIME" },
         { "PackageIdentifier": "Microsoft.EdgeWebView2Runtime" },
         { "PackageIdentifier": "PushPlayLabs.Sidekick" },
-        { "PackageIdentifier": "gerardog.gsudo" },
-        { "PackageIdentifier": "gerardog.gsudo" },
         { "PackageIdentifier": "Levitsky.FontBase" },
         { "PackageIdentifier": "Lexikos.AutoHotkey" },
         { "PackageIdentifier": "marha.VcXsrv" },

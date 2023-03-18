@@ -12,6 +12,7 @@
       },
       "Packages":
       [
+        { "PackageIdentifier": "gerardog.gsudo" },
         { "PackageIdentifier": "Git.Git" },
         { "PackageIdentifier": "Microsoft.VisualStudioCode" },
         { "PackageIdentifier": "Google.Chrome" },
