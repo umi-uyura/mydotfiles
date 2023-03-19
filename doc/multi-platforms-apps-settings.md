@@ -12,6 +12,15 @@ Dropbox
   * カメラアップロードをONにする: `OFF`
 
 
+KeePassXC
+---------
+
+### 全般
+
+* 基本設定
+  * システム起動時にKeePassXCを自動的に起動する: `OFF`
+
+
 Google Chrome
 -------------
 
