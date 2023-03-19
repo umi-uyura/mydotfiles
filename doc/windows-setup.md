@@ -126,20 +126,33 @@ PC must be rebooted.
 
 See: [Install WSL | Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install)
 
-
-**[WSL]** Link dotfiles and setup
----------------------------------
-
-Synbolic link to host dotfiles folder.
-
-```shell
-$ ln -s $USERPROFILE/dotfiles dotfiles
+```
+> wsl --install
 ```
 
 Update packages.
 
 ```shell
 $ sudo apt update && sudo apt upgrade
+```
+
+
+**[WSL]** Link dotfiles and setup
+---------------------------------
+
+Add following variables to environment variables (See [windows-settings.md](windows-settings.md)) 
+
+* `WSLENV`
+* `DOTFILES_ROOT`
+
+Synbolic link to host dotfiles folder.
+
+```shell
+$ ln -s $USERPROFILE/dotfiles dotfiles
+
+# Revert line break that were changed when cloned on Windows side
+$ cd dotfiles
+$ git reset --hard
 ```
 
 Install git, wget ,ca-certificates, and more ...
