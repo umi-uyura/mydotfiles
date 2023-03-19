@@ -18,6 +18,7 @@ packages=(
   unzip
   wget
   whois
+  wslu
   x11-apps
   xz-utils
 
