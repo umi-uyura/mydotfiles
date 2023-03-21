@@ -29,6 +29,7 @@ packages=(
   whois
   wslu
   x11-apps
+  # x11-xserver-utils     # xmodmap
   xz-utils
 
   emacs28
