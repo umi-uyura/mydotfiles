@@ -154,28 +154,48 @@ $ ln -s $USERPROFILE/dotfiles dotfiles
 # Revert line break that were changed when cloned on Windows side
 $ cd dotfiles
 $ git reset --hard
+
+$ sudo cp dots/wsl/etc/wsl.conf /etc/
+```
+
+```bat
+> wsl --shutdown
 ```
 
 Install git, wget ,ca-certificates, and more ...
 
 ```shell
-$ sudo add-apt-repository ppa:git-core/ppa      # Git (latest)
-$ sudo add-apt-repository ppa:wslutilities/wslu # WSL utilities (latest)
-$ sudo apt upgrade
-
 $ init/wsl/apt-install.sh
 ```
 
 Shell settings
 
-```bash
+```shell
 $ dotfiles/dots/_setup.sh
 ```
 
 Load .bashrc
 
-```bash
+```shell
 $ source ~/.bashrc
+```
+
+Create $HOME/.ssh/config
+
+```
+Host github.com
+  HostName github.com
+  IdentityFile ${USERPROFILE}/.ssh/id_xxxxx
+  IdentitiesOnly yes
+```
+
+ssh setting
+
+```shell
+$ ssh -T git@github.com
+
+# If UNPROTECTED PRIVATE KEY FILE! occurs
+$ chmod 600 $USERPROFILE/.ssh/id_xxxxx
 ```
 
 
@@ -191,13 +211,28 @@ REM Open command prompt with administrator privileges
 > cinst init\win\chocolatey.config -y
 ```
 
+
+**[WSL]** Setup Homebrew (Linuxbrew)
+------------------------------------
+
+See: [Homebrew on Linux — Homebrew Documentation](https://docs.brew.sh/Homebrew-on-Linux)
+
+```shell
+$ brew doctor
+$ brew bundle --file=init/Brewfile
+```
+
+
+**[WIN]** Setup various languages and runtimes
+-----------------------------------------------
+
 ### Python tools (use Python Launcher installed with winget)
 
 ```bat
 > py -m pip install -r dots\.default-python-packages
 ```
 
-### Node.js (use fnm installed with Chocolatey)
+### Node.js (use fnm installed with winget)
 
 ```bat
 > fnm ls-remote
@@ -205,23 +240,22 @@ REM Open command prompt with administrator privileges
 > init\node-npm-globals-install.bat
 ```
 
-**[WSL]** Install other tools
-------------------------------
 
-### Homebrew (Linuxbrew)
+**[WSL]** Setup various languages and runtimes
+----------------------------------------------
 
-See: [Homebrew on Linux — Homebrew Documentation](https://docs.brew.sh/Homebrew-on-Linux)
-
-```shell
-$ init/homebrew-install.sh
-```
-
-### asdf
+### asdf (Go, Python)
 
 See: [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)
 
 ```shell
 $ init/asdf-plugin-install.sh
+
+$ asdf install golang <version>     # .default-golang-pkgs
+$ asdf global golang <version>
+
+$ asdf install python <version>     # .default-python-packages
+$ asdf global python <version>
 ```
 
 ### Node.js (use fnm installed with Homebrew)
