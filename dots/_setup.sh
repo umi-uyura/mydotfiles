@@ -16,6 +16,19 @@ do
     fi
 done
 
+if [ "$(uname)" == 'Linux' ]; then
+    if [ -e "$HOME/.bashrc" ] && [ ! -L "$HOME/.bashrc" ]; then
+        echo NOTICE: Insert code to load my .bashrc into "$HOME/.bashrc"
+        cat - <<EOF >> "$HOME/.bashrc"
+
+# Load my .bashrc
+if [ -f "\$HOME/.bashrc_basis" ]; then
+  . "\$HOME/.bashrc_basis"
+fi
+EOF
+    fi
+fi
+
 if [ "$(uname)" == 'Darwin' ]; then
     for dots in $HOME/dotfiles/dots/macos/{.bashrc,.bash_profile}; do
         file=$(basename "$dots")

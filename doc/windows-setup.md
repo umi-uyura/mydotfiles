@@ -165,6 +165,18 @@ $ sudo apt upgrade
 $ init/wsl/apt-install.sh
 ```
 
+Shell settings
+
+```bash
+$ dotfiles/dots/_setup.sh
+```
+
+Load .bashrc
+
+```bash
+$ source ~/.bashrc
+```
+
 
 **[WIN]** Install other tools
 -------------------------------
