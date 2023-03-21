@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 # apt-install.sh
 
+set -eu
+
+sudo add-apt-repository ppa:git-core/ppa        # Git (latest)
+sudo add-apt-repository ppa:wslutilities/wslu   # WSL utilities (latest)
+sudo add-apt-repository ppa:kelleyk/emacs       # Emacs
+
+sudo apt update
+
 packages=(
   build-essential
   ca-certificates
+  cmigemo
   curl
   git
   graphviz
@@ -22,6 +31,8 @@ packages=(
   x11-apps
   xz-utils
 
+  emacs28
+  emacs28-el
   emacs-mozc-bin
   mozc-utils-gui
 
@@ -40,7 +51,6 @@ packages=(
 )
 
 echo "Install following packages ..."
-
 echo
 
 for i in "${packages[@]}"
