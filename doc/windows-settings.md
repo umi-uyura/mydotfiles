@@ -238,6 +238,9 @@ Microsoft Store
 
 ### 追加フォント
 
+* [UDEV Gothic](https://github.com/yuru7/udev-gothic)
+  * UDEVGothic
+  * UDEVGothic_NF
 * [PlemolJP)](https://github.com/yuru7/PlemolJP)
   * PlemolJP35Console_HS
   * PlemolJP_HS
