@@ -164,3 +164,13 @@ Visual Studio Code
 #### GitLens
 
 * "gitlens.codeLens.enabled": `false` ※コードブロック単位のblameは使用しない
+
+
+Sidekick
+--------
+
+### 自動入力
+
+* パスワードマネージャー
+  * パスワードを保存できるようにする: `OFF`
+  * 自動ログイン: `OFF`
