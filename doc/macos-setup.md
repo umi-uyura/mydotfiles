@@ -51,10 +51,12 @@ $ vi ~/.ssh/config
 ~/.ssh/config
 
 ```
-Host *.github.com
+Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_xxxxx
+  IdentitiesOnly yes
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_xxxxx
 ```
 
 Authenticate to github.com

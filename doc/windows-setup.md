@@ -40,6 +40,7 @@ Create $USERPROFILE/.ssh/config
 Host github.com
   HostName github.com
   IdentityFile ~/.ssh/id_xxxxx
+  IdentitiesOnly yes
 ```
 
 Start OpenSSH service
