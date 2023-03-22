@@ -176,6 +176,7 @@ Flow Launcher
 |--------|-----------------|
 | [Color](https://github.com/Flow-Launcher/Flow.Launcher.Plugin.Color) | `pm install color` |
 | [Desktop Cleanup](https://github.com/umi-uyura/Flow.Launcher.Plugin.DesktopCleanup) | `pm install desktop cleanup` |
+| [DevToys Launcher](https://github.com/umi-uyura/Flow.Launcher.Plugin.DevToysLauncher) | `pm install devtoys launcher` |
 | [Number Converter](https://github.com/liberize/Flow.Launcher.Plugin.NumberConverter) | `pm install number` |
 | [WebApp Launcher](https://github.com/gissehel/BarLauncher-WebApp) | `pm install WebApp launcher` |
 
