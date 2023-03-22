@@ -37,6 +37,7 @@
         { "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor" },
         { "PackageIdentifier": "TeraTermProject.teraterm" },
         { "PackageIdentifier": "JetBrains.IntelliJIDEA.Community" },
+        { "PackageIdentifier": "GoLang.Go.1.20" },
         { "PackageIdentifier": "Python.Python.3.11" },
         { "PackageIdentifier": "dbeaver.dbeaver" },
         { "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite" },
