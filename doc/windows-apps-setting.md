@@ -199,7 +199,7 @@ http://localhost:8000 (local) [incognito]
 http://localhost:8080 (local) [incognito]
 ```
 
-### Theme
+### Appearance
 
 * Window Width Size: `700`
 * Theme: `Darker`
