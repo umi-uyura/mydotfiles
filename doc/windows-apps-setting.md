@@ -260,8 +260,8 @@ IntelliJ IDEA Community
 | [Videobug](https://plugins.jetbrains.com/plugin/18529-videobug) | - |
 
 
-SylphyHorn (10 only) / SylphyHornPlusWin11 (11 only)
-----------------------------------------------------
+SylphyHornPlus
+--------------
 
 * [hwtnb/SylphyHornPlusWin11](https://github.com/hwtnb/SylphyHornPlusWin11)
 
@@ -272,13 +272,15 @@ SylphyHorn (10 only) / SylphyHornPlusWin11 (11 only)
     * 通知メッセージを表示する時間: `1000` ミリ秒
 * トレイアイコン
   * デスクトップの番号をタスクトレイに表示する: `ON`
-  * (PlusWin11) 現在のデスクトップ番号のみ表示する（シンプルモード）: `ON`
+  * 現在のデスクトップ番号のみ表示する（シンプルモード）: `ON`
+* 起動
+  * ログオン時に自動的に起動する: `ON`
 
 ### 通知
 
 * 通知ウィンドウの配置: `中央上部`
-* (PlusWin11) 通知ウィンドウのフォントファミリ: `JetBrains Mono Italic`
-* (PlusWin11) シンプルな通知モード: `ON`
+* 通知ウィンドウのフォントファミリ: `JetBrains Mono Italic`
+* シンプルな通知モード: `ON`
 
 ### キー設定１
 

@@ -205,6 +205,7 @@ $ chmod 600 $USERPROFILE/.ssh/id_xxxxx
 ```bat
 > winget import -i init\win\winget-import.json --accept-package-agreements
 > init\win\winget-install.bat
+> init\win\install-applications.bat
 
 REM Open command prompt with administrator privileges
 > winget import -i init\win\winget-import-elevated.json --accept-package-agreements
