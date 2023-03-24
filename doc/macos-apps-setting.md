@@ -18,3 +18,15 @@ iTerm2
   * Terminal
     * Scrollback Buffer
       * Scrollback Lines: `10,000`
+
+
+Rectangle
+---------
+
+### Shortcut
+
+* 1/3にして左寄せ: `OFF`
+* 1/3にして中央に表示: `OFF`
+* 1/3にして右寄せ: `OFF`
+* 2/3にして左寄せ: `OFF`
+* 2/3にして右寄せ: `OFF`
