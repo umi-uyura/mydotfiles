@@ -41,6 +41,7 @@ Host github.com
   HostName github.com
   IdentityFile ~/.ssh/id_xxxxx
   IdentitiesOnly yes
+  AddKeysToAgent yes
 ```
 
 Start OpenSSH service
@@ -187,6 +188,7 @@ Host github.com
   HostName github.com
   IdentityFile ${USERPROFILE}/.ssh/id_xxxxx
   IdentitiesOnly yes
+  AddKeysToAgent yes
 ```
 
 ssh setting
