@@ -24,6 +24,7 @@
         { "PackageIdentifier": "Automattic.Simplenote" },
         { "PackageIdentifier": "Kuro.Mery.Beta" },
         { "PackageIdentifier": "MarkText.MarkText" },
+        { "PackageIdentifier": "c3er.mdview" },
         { "PackageIdentifier": "TheDocumentFoundation.LibreOffice" },
         { "PackageIdentifier": "JGraph.Draw" },
         { "PackageIdentifier": "XMind.XMind" },
