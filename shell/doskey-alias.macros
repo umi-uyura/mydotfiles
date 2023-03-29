@@ -1,15 +1,15 @@
 ~=cd %USERPROFILE%
 ~w=cd %USERPROFILE%\workspace
-
-wslsh=wsl bash -ic "$*"
 ls=dir $1
 ll=dir $1
+mv=move $*
 rm=del $1
 which=where $1
-
-emacs=wsl bash -ic emacs "$*"
+wslsh=wsl bash -ic "$*"
+emacs=wsl bash -ic "emacs $*"
+posh=powershell -Command "$*"
 fastrm=fastcopy /cmd=delete /auto_close $1
-incog="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito $1
-incogp="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito http://$1
-incogs="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito https://$1
-incogl="%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" --incognito http://localhost:$1
+incog="%ProgramFiles%\Google\Chrome\Application\chrome.exe" --incognito $1
+incogp="%ProgramFiles%\Google\Chrome\Application\chrome.exe" --incognito http://$1
+incogs="%ProgramFiles%\Google\Chrome\Application\chrome.exe" --incognito https://$1
+incogl="%ProgramFiles%\Google\Chrome\Application\chrome.exe" --incognito http://localhost:$1
