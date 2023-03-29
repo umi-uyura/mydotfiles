@@ -1,6 +1,15 @@
 @ECHO OFF
 SETLOCAL
 
+ECHO.
+ECHO -------------------------------------------------------------
+ECHO **WARNING**
+ECHO When updating fonts, close all applications before executing.
+ECHO -------------------------------------------------------------
+ECHO.
+
+PAUSE
+
 WHERE gh >nul 2>nul
 IF %ERRORLEVEL% NEQ 0 (
     ECHO This script requires GitHub CLI (gh^)^.
