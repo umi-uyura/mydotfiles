@@ -151,6 +151,7 @@ Flow Launcher
 
 * Hide Flow Launcher on startup: `ON`
 * Last Query Style: `Empty last Query`
+* Maximum results show: `9`
 
 ### Plugins (Pre-install)
 
