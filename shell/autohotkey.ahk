@@ -31,3 +31,14 @@ if (A_Language = "0409") {
 
 ;; [Ctrl + Left Arrow] Move prev desktop
 ^Left::send {LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Windows Terminal / Command Prompt
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; [Ctrl + Shift + L] Send "cls" to clear buffer
+#If WinActive("ahk_exe WindowsTerminal.exe") || WinActive("ahk_class ConsoleWindowClass")
+^+L::
+Send cls{Enter}
+return
+#If
