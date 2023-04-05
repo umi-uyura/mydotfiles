@@ -12,6 +12,7 @@ IF %ERRORLEVEL% EQU 0 (
     CALL:ECHO_WARN "winget command not found, skipped check."
 )
 
+
 ECHO.
 ECHO ### Checking for Chocolatey updates ...
 ECHO.
@@ -22,6 +23,7 @@ IF %ERRORLEVEL% EQU 0 (
 ) ELSE (
     CALL:ECHO_WARN "choco command not found, skipped check."
 )
+
 
 ECHO.
 ECHO ### Checking for Go package updates ...
@@ -68,6 +70,19 @@ IF %ERRORLEVEL% EQU 0 (
 ) ELSE (
     CALL:ECHO_WARN "npm-check-updates(ncu) command not found, skipped check."
 )
+
+
+ECHO.
+ECHO ### Checking for GitHub CLI extensions updates ...
+ECHO.
+
+WHERE gh >nul 2>nul
+IF %ERRORLEVEL% EQU 0 (
+    gh extension upgrade --all --dry-run
+) ELSE (
+    CALL:ECHO_WARN "GitHub CLI(gh) command not found, skipped check."
+)
+
 
 ECHO.
 ECHO ----------------------------------------------------------

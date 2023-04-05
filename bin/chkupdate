@@ -110,3 +110,29 @@ else
   echo_warn "npm-check-updates(ncu) could not be found, skipped check."
   echo
 fi
+
+
+# GitHub CLI
+echo
+echo "### Checking GitHub CLI extensions updates ..."
+echo
+
+if hash gh 2> /dev/null; then
+  gh extension upgrade --all --dry-run
+else
+  echo_warn "GitHub CLI(gh) could not be found, skipped check."
+  echo
+fi
+
+
+# Heroku CLI
+echo
+echo "### Checking Heroku CLI plugins updates ..."
+echo
+
+if hash heroku 2> /dev/null; then
+  heroku plugins:update
+else
+  echo_warn "Heroku CLI could not be found, skipped check."
+  echo
+fi
