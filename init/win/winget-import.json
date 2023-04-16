@@ -13,7 +13,6 @@
       "Packages":
       [
         { "PackageIdentifier": "Google.JapaneseIME" },
-        { "PackageIdentifier": "Microsoft.EdgeWebView2Runtime" },
         { "PackageIdentifier": "PushPlayLabs.Sidekick" },
         { "PackageIdentifier": "Levitsky.FontBase" },
         { "PackageIdentifier": "Lexikos.AutoHotkey" },
