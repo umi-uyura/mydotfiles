@@ -268,3 +268,17 @@ $ fnm ls-remote
 $ fnm install <version>
 $ init/node-npm-globals-install.sh
 ```
+
+
+**[WIN]** Replace old OpenSSH
+-----------------------------
+
+OpenSSH 8.6 (Windows 11 pre-installed) and Ubuntu 22.04 (OpenSSH 8.9) are version mismatch.
+
+Uninstall OpenSSH Client and OpenSSH
+
+```
+> winget install --id Microsoft.OpenSSH.Beta
+```
+
+Disable and stop OpenSSH SSH Server
