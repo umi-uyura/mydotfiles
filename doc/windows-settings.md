@@ -17,11 +17,10 @@ Windows settings
 | PATH | 備考 |
 |------|-----|
 | `%DOTFILES_ROOT%\bin` | dotfiles |
+| `%USERPROFILE%\go\bin` | Go |
 | `C:\Program Files\7-Zip` | 7-Zip |
-| `C:\Program Files (x86)\GnuWin32\bin` | GnuWin32: Zip |
-| `%LOCALAPPDATA%\FastCopy` | FastCopy |
 | `C:\Program Files\Graphviz\bin` | Graphviz |
-| `C:\Program Files\MongoDB\Tools\100\bin` | MongoDB Database Tools |
+| `%LOCALAPPDATA%\FastCopy` | FastCopy |
 
 
 システム
