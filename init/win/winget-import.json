@@ -41,7 +41,6 @@
         { "PackageIdentifier": "Python.Python.3.11" },
         { "PackageIdentifier": "dbeaver.dbeaver" },
         { "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite" },
-        { "PackageIdentifier": "MongoDB.DatabaseTools" },
         { "PackageIdentifier": "Postman.Postman" },
         { "PackageIdentifier": "Graphviz.Graphviz" },
         { "PackageIdentifier": "Pinta.Pinta" },
