@@ -31,7 +31,7 @@
         { "PackageIdentifier": "Greenshot.Greenshot" },
         { "PackageIdentifier": "NickeManarin.ScreenToGif" },
         { "PackageIdentifier": "JohnMacFarlane.Pandoc" },
-        { "PackageIdentifier": "Microsoft.OpenJDK.11" },
+        { "PackageIdentifier": "Microsoft.OpenJDK.17" },
         { "PackageIdentifier": "Microsoft.DotNet.Runtime.6" },
         { "PackageIdentifier": "GitHub.cli" },
         { "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor" },
