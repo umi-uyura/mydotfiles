@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+    date +%s
+    exit
+fi
+
+INFO=$(uname)
+if [ "$INFO" = 'Linux' ]; then
+    date --date="@$1" "+%Y-%m-%dT%H:%M:%S" ${@:2}
+elif [ "$INFO" = 'Darwin' ]; then
+    date -r "$1" +%Y-%m-%dT%H:%M:%S%z ${@:2}
+fi
+
