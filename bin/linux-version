@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+DESCRIPTION=$(lsb_release -d | cut -f 2)
+CODENAME=$(lsb_release -c | cut -f 2)
+KERNEL=$(uname -r)
+echo "$DESCRIPTION $CODENAME ($KERNEL)"
