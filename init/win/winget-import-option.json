@@ -16,6 +16,7 @@
         { "PackageIdentifier": "IDRIX.VeraCrypt", "Comment": "Privilege required" },
         { "PackageIdentifier": "GnuWin32.Zip" },
         { "PackageIdentifier": "GnuWin32.UnZip" },
+        { "PackageIdentifier": "Python.Python.3.8", "Comment": "for Flow Launcher plugin development" },
         { "PackageIdentifier": "VideoLAN.VLC" },
         { "PackageIdentifier": "Daum.PotPlayer" },
         { "PackageIdentifier": "Amazon.Kindle" },
