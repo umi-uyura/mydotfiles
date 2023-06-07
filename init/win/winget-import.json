@@ -17,6 +17,7 @@
         { "PackageIdentifier": "Levitsky.FontBase" },
         { "PackageIdentifier": "Lexikos.AutoHotkey" },
         { "PackageIdentifier": "marha.VcXsrv" },
+        { "PackageIdentifier": "Eugeny.Tabby" },
         { "PackageIdentifier": "7zip.7zip" },
         { "PackageIdentifier": "Flow-Launcher.Flow-Launcher" },
         { "PackageIdentifier": "CLechasseur.PathCopyCopy" },
