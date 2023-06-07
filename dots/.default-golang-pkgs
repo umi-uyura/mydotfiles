@@ -1,12 +1,14 @@
+// Utilities
 github.com/cheat/cheat/cmd/cheat@4.3.3
 github.com/chriswalz/bit@latest
 github.com/josephburnett/jd@latest
+github.com/nao1215/gup@latest
+github.com/oligot/go-mod-upgrade@latest
+github.com/noahgorstein/jqp@latest
+github.com/tomnomnom/gron@latest
+
+// Coding support/Linter
+golang.org/x/tools/gopls@latest
 github.com/kisielk/errcheck@latest
 github.com/mdempsky/unconvert@latest
-github.com/nao1215/gup@latest
-github.com/noahgorstein/jqp@latest
-github.com/oligot/go-mod-upgrade@latest
-github.com/ramya-rao-a/go-outline@latest
-github.com/tomnomnom/gron@latest
-golang.org/x/tools/gopls@latest
 honnef.co/go/tools/cmd/staticcheck@latest
