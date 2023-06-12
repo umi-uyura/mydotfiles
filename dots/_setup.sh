@@ -10,7 +10,10 @@ for dotfile in .?*
 do
     if [ "$dotfile" != '..' ] && [ "$dotfile" != '.git' ]
     then
-        if ! ln -Fis "$PWD/$dotfile" "$HOME"; then
+        if [ "$dotfile" == '.config' ] && [ -d "$HOME/$dotfile" ]; then
+            # TODO: Create symlink to config file that in each directory
+            :
+        elif ! ln -Fis "$PWD/$dotfile" "$HOME"; then
             echo created "$HOME/$dotfile"
         fi
     fi
