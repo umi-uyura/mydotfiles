@@ -182,6 +182,34 @@ Sidekick
   * 自動ログイン: `OFF`
 
 
+Tabby
+-----
+
+### Application
+
+* Enable analytics: `OFF`
+
+### Appearance
+
+* Font: `UDEV Gothic 35LG`
+
+### Terminal
+
+#### Sound
+
+* Terminal bell: `Visual`
+
+#### Startup
+
+* Restore terminal tabs on app start: `OFF`
+
+### Window
+
+#### Tabs
+
+* Close the window after closing the last tab: `OFF`
+
+
 Adobe Acrobat Reader DC
 -----------------------
 
