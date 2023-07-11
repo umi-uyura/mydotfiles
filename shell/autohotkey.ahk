@@ -16,10 +16,10 @@
 ;; for English keyboard
 if (A_Language = "0409") {
   ;; [Right Alt] IME convert
-  RAlt::send {vk1Csc079}
+  RAlt::Send("{vk1Csc079}")
 
   ;; [Right Ctrl] IME non-convert
-  RCtrl::send {vk1Dsc07B}
+  RCtrl::Send("{vk1Dsc07B}")
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -27,18 +27,20 @@ if (A_Language = "0409") {
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; [Ctrl + Right Arrow] Move next desktop
-^Right::send {LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}
+^Right::Send("{LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}")
 
 ;; [Ctrl + Left Arrow] Move prev desktop
-^Left::send {LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
+^Left::Send("{LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Windows Terminal / Command Prompt
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; [Ctrl + Shift + L] Send "cls" to clear buffer
-#If WinActive("ahk_exe WindowsTerminal.exe") || WinActive("ahk_class ConsoleWindowClass")
+#HotIf WinActive("ahk_exe WindowsTerminal.exe") || WinActive("ahk_class ConsoleWindowClass")
 ^+L::
-Send cls{Enter}
-return
-#If
+{
+  Send("cls{Enter}")
+  return
+}
+#HotIf
