@@ -188,3 +188,31 @@ Adobe Acrobat Reader DC
 
 * アドビとのメッセージ
   * Adobe Acrobatの起動時にメッセージを表示: `OFF`
+
+
+Obsidian
+--------
+
+## Editor
+
+* General
+  * Default view for new tabs: `Reading View`
+  * Default editing mode: `Source mode`
+
+## Appearance
+
+* Font
+  * Interface font: `UDEV Gothic 35JPDOC`
+  * Text font: `UDEV Gothic 35JPDOC`
+  * Monospace font: `UDEV Gothic LG`
+* Advanced
+  * Show inline title: `OFF`
+
+## Community plusins
+
+* Turn on community plugins: `ON`
+
+### Community plusins list
+
+* Obsidian Git
+* Templater
