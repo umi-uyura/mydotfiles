@@ -85,6 +85,13 @@ IF %ERRORLEVEL% EQU 0 (
 
 
 ECHO.
+ECHO ### Checking other tools ...
+ECHO.
+
+CALL chkupdate-tools
+
+
+ECHO.
 ECHO ----------------------------------------------------------
 ECHO If you want to update WSL, press any key to continue.
 ECHO To use sudo, you need to enter the administrator password.

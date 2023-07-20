@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo_warn() {
+  printf "\e[33m%s\e[m" "$1"
+}
+
+if [ "$(uname)" = "Linux" ]; then
+  OS="LINUX"
+  if [[ "$(uname -r)" == *microsoft* ]]; then
+    OS="LINUX(WSL)"
+  fi
+elif [ "$(uname)" = "Darwin" ]; then
+  OS="MACOS"
+fi
+
+if ! hash gh 2> /dev/null; then
+  echo_warn "GitHub CLI(gh) could not be found, skipped check."
+  exit
+fi
+
+# # sample
+# echo "# hwtnb/SylphyHornPlusWin11"
+# gh release list -L 2 --repo hwtnb/SylphyHornPlusWin11
+# echo

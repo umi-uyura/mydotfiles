@@ -136,3 +136,11 @@ else
   echo_warn "Heroku CLI could not be found, skipped check."
   echo
 fi
+
+
+# Other tools
+echo
+echo "### Checking other tools ..."
+echo
+
+chkupdate-tools
