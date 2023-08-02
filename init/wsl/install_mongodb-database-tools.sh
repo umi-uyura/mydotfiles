@@ -7,7 +7,7 @@
 
 set -eu
 
-MONGODBTOOLS_URL="https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2204-x86_64-100.7.0.deb"
+MONGODBTOOLS_URL="https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2004-x86_64-100.7.4.deb"
 MONGODBTOOLS_FILENAME=$(basename $MONGODBTOOLS_URL)
 
 echo "Download mongodb-database-tools package ..."
