@@ -1,15 +1,23 @@
 @ECHO OFF
 SETLOCAL
 
-WHERE gh >nul 2>nul
+REM
+REM Install SylphyHornPlus
+REM https://github.com/hwtnb/SylphyHornPlusWin11
+REM
+
+CALL _install-apps-util.bat LOAD_COMMON_ENV
+
+CALL _install-apps-util.bat EXIST_GH
 IF %ERRORLEVEL% NEQ 0 (
-    ECHO This script requires GitHub CLI (gh^)^.
     EXIT /b 1
 )
 
-REM
-REM SylphyHornPlus - https://github.com/hwtnb/SylphyHornPlusWin11
-REM
+CALL _install-apps-util.bat EXIST_JQ
+IF %ERRORLEVEL% NEQ 0 (
+    EXIT /b 1
+)
+
 
 FOR /f "usebackq delims=" %%A IN (`gh api repos/hwtnb/SylphyHornPlusWin11/releases ^| jq -c ".[0].assets[] | [.browser_download_url,.name]"`) DO (
     SET SYLPHYHORN_ASSET=%%A
@@ -29,8 +37,8 @@ ECHO NAME: %SYLPHYHORN_ASSET_NAME%
 wsl wget %SYLPHYHORN_ASSET_URL%
 wsl unzip %SYLPHYHORN_ASSET_NAME%
 
-MOVE /-Y SylphyHorn %LOCALAPPDATA%\Programs\SylphyHornPlus
+MOVE /-Y SylphyHorn "%LOCALAPP_PROGRAMS%\SylphyHornPlus"
 
-START %LOCALAPPDATA%\Programs\SylphyHornPlus
+START "%LOCALAPP_PROGRAMS%\SylphyHornPlus"
 
 DEL %SYLPHYHORN_ASSET_NAME%
