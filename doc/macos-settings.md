@@ -13,7 +13,10 @@ Last checked OS: macOS Big Sur
 
 ### Mission Control
 
-* アプリケーションの切り替えで、アプリケーションのウインドウが開いている操作スペース移動: `OFF`
+* 最新の使用状況に基づいて操作スペースを自動的に並び替える: `OFF`
+* ホットコーナー
+  * 左上: スクリーンセーバーを開始する
+  * 右上: ディスプレイをスリープさせる or 画面をロック
 
 ### セキュリティとプライバシー
 
@@ -27,8 +30,10 @@ Last checked OS: macOS Big Sur
         * Option -> `Command`
 	    * Command -> `Option`
 * ショートカット
+    * 入力ソース
+        * 前の入力ソースを選択: `OFF`
     * Spotlight
-        * Finderの検索ウィンドウを表示: `OFF`
+        * Sportlight検索を表示: `OFF`
 * 入力ソース
 	* 「Google日本語入力(Google)」の「英数」「ひらがな」を追加
     * 書類ごとに入力ソースを自動的に切り替える: `ON`
