@@ -6,6 +6,7 @@ brew "wget" if OS.mac?
 brew "tree" if OS.mac?
 brew "gcc" if OS.linux?
 brew "cmigemo" if OS.mac?
+brew "tmux" if OS.mac?
 brew "gh"
 brew "direnv"
 brew "ripgrep"
