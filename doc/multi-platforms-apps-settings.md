@@ -205,14 +205,43 @@ Obsidian
   * Interface font: `UDEV Gothic 35JPDOC`
   * Text font: `UDEV Gothic 35JPDOC`
   * Monospace font: `UDEV Gothic LG`
+  * Font size: `14`
 * Advanced
   * Show inline title: `OFF`
 
 ## Community plusins
 
 * Turn on community plugins: `ON`
+* Install plugin list
+  * Obsidian Git
+  * Templater
 
-### Community plusins list
+## Daily notes (if use)
 
-* Obsidian Git
-* Templater
+* Date format: `YYYY/MM/YYYY-MM-DD-[journal.md]`
+* New file location: `journals`
+* Template file location: `templates/journal.md`
+* Open daily note on startup: `OFF`
+
+## Templates
+
+* Template folder location: `templates`
+
+## Plugin: Obsidian Git
+
+Preparation
+
+* Create GitHub repository for the vault
+* Run `git init` and `git remote add origin <remote url>` in the vault directory
+
+Settings
+
+* Automatic
+  * Vault backup interval (minutes): `5`
+  * Auto pull interval (minutes): `5`
+
+#### Plugin: Templater
+
+* Template folder location: `templates`
+* Automatic jump to cursor: `ON`
+* Trigger Templater on new file creation: `ON`
