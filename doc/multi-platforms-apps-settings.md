@@ -204,6 +204,9 @@ Obsidian
 * General
   * Default view for new tabs: `Reading View`
   * Default editing mode: `Source mode`
+* Behavior
+  * Indent using tabs: `OFF`
+  * Tab indent size: `2`
 
 ## Appearance
 
