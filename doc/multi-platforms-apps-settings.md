@@ -83,6 +83,12 @@ Visual Studio Code
 
 * Font Family: `'UDEV Gothic 35', Consolas, 'Courier New', monospace`
 
+### Workbench
+
+#### Editor Management
+
+* Enable preview: `OFF`
+
 ### Window
 
 * Window: New Window Dimensions: `maximized`
