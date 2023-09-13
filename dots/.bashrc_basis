@@ -55,7 +55,7 @@ if hash direnv 2> /dev/null; then
   export -f show_virtual_env
   PS1='$(show_virtual_env)'$PS1
 else
-  echo "direnv is not setup"
+  mystartup_debug_echo "direnv is not setup"
 fi
 
 # asdf
@@ -71,14 +71,14 @@ if hash asdf 2> /dev/null; then
   # shellcheck source=/dev/null
   . "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
 else
-  echo "asdf is not setup"
+  mystartup_debug_echo "asdf is not setup"
 fi
 
 # fnm
 if hash fnm 2> /dev/null; then
   eval "$(fnm env)"
 else
-  echo "fnm is not setup"
+  mystartup_debug_echo "fnm is not setup"
 fi
 
 

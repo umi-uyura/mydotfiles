@@ -5,5 +5,5 @@
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 else
-  echo "Homebrew(Linuxbrew) is not setup"
+  mystartup_debug_echo "Homebrew(Linuxbrew) is not setup"
 fi
