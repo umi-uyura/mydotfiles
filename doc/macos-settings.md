@@ -1,7 +1,7 @@
 macOS settings
 ==============
 
-Last checked OS: macOS Big Sur
+Last checked OS: macOS Ventura 13
 
 
 システム環境設定
