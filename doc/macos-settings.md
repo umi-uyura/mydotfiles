@@ -37,6 +37,8 @@ Last checked OS: macOS Big Sur
 * 入力ソース
 	* 「Google日本語入力(Google)」の「英数」「ひらがな」を追加
     * 書類ごとに入力ソースを自動的に切り替える: `ON`
+* Touch Bar設定
+    * Touch Barに表示する項目: `F1、F2などのキー`
 
 ### トラックパッド
 
