@@ -1,5 +1,6 @@
 eslint
 eslint-plugin-vue
 http-server
+js-beautify
 npm-check-updates
 qnm
