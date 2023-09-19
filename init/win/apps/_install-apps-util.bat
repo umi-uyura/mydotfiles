@@ -1,7 +1,7 @@
 @ECHO OFF
 
-rem ECHO %1
-CALL :%1
+rem ECHO %*
+CALL :%*
 
 EXIT /b
 
@@ -12,6 +12,14 @@ REM
 
 :LOAD_COMMON_ENV
 SET LOCALAPP_PROGRAMS=%LOCALAPPDATA%\Programs
+EXIT /b
+
+
+REM
+REM Output warning message with color
+REM
+:ECHO_WARN
+ECHO [33m%~1[0m
 EXIT /b
 
 

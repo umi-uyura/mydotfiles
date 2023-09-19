@@ -44,4 +44,4 @@ ECHO Calctus was installed on "%LOCALAPP_PROGRAMS%\Calctus".
 
 DEL %CALCTUS_ASSET_NAME%
 
-START %LOCALAPP_PROGRAMS%\Calctus
+START explorer.exe %LOCALAPP_PROGRAMS%\Calctus
