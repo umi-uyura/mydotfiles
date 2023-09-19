@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo_warn() {
+  printf "\e[33m%s\e[m" "$1"
+}
+
 echo "Python path: $(which python)"
 
 HEADER="Packages        Version Latest
