@@ -3,9 +3,9 @@
 
 set -eu
 
-sudo add-apt-repository ppa:git-core/ppa        # Git (latest)
-sudo add-apt-repository ppa:wslutilities/wslu   # WSL utilities (latest)
-sudo add-apt-repository ppa:kelleyk/emacs       # Emacs
+sudo add-apt-repository ppa:git-core/ppa                # Git (latest)
+sudo add-apt-repository ppa:wslutilities/wslu           # WSL utilities (latest)
+sudo add-apt-repository ppa:ubuntuhandbook1/emacs       # Emacs
 
 sudo apt update
 
@@ -32,8 +32,8 @@ packages=(
   # x11-xserver-utils     # xmodmap
   xz-utils
 
-  emacs28
-  emacs28-el
+  emacs
+  emacs-common
   emacs-mozc-bin
   mozc-utils-gui
 
