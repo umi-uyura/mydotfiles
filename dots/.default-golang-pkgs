@@ -9,6 +9,7 @@ github.com/tomnomnom/gron@latest
 
 // Coding support/Linter
 golang.org/x/tools/gopls@latest
+golang.org/x/pkgsite/cmd/pkgsite@latest
 github.com/kisielk/errcheck@latest
 github.com/mdempsky/unconvert@latest
 honnef.co/go/tools/cmd/staticcheck@latest
