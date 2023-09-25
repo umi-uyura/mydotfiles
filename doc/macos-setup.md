@@ -63,7 +63,7 @@ Authenticate to github.com
 
 ```bash
 $ eval "$(ssh-agent -s)"
-$ ssh-add ~/.ssh/id_xxxxx
+$ ssh-add --apple-use-keychain ~/.ssh/id_xxxxx
 $ ssh -T git@github.com
 Hi <user>! You've successfully authenticated, bu Github does not provide shell access.
 ```
