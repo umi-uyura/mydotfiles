@@ -1,5 +1,6 @@
 eslint
 eslint-plugin-vue
+html-validate
 http-server
 js-beautify
 npm-check-updates
