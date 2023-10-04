@@ -29,6 +29,7 @@
 	cm = commit -v --amend
 	branches = branch -a
 	remotes = remote -v
+	wt = worktree
 	lg = log --graph --all --decorate --abbrev-commit --branches --date=short --pretty=format:\"%C(red)%h%C(reset) %C(green)[%ad]%C(reset) %s %C(cyan)@%an%C(reset) %C(yellow)%d%C(reset)\"
 	logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Creset%s %C(green)%b %C(cyan)%cn%Cred%d'
 	mergelog = log --merges --pretty=format:'%C(yellow)%h %Cgreen%ci %Creset%s %C(green)%b %C(cyan)%cn%Cred%d'
