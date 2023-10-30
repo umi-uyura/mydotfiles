@@ -12,6 +12,26 @@ Change login shell from zsh to bash
 % exit
 ```
 
+### Use Homebrew bash
+
+Add Homebrew bash path to `/etc/shells` and execute `chsh -s /usr/local/bin/bash`
+
+```
+$ cat /etc/shells
+# List of acceptable shells for chpass(1).
+# Ftpd will not allow users to connect who are not using
+# one of these shells.
+
+/bin/bash
+/bin/csh
+/bin/dash
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+/usr/local/bin/bash         # <-- add
+```
+
 
 Provisioning
 ------------

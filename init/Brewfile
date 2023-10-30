@@ -1,4 +1,5 @@
 brew "gcc" if OS.linux?
+brew "bash" if OS.mac?
 brew "coreutils" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "git" if OS.mac?
