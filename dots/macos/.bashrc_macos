@@ -1,0 +1,3 @@
+# Load SSH Key from Keychain
+# Add following to .bashrc_local
+#   ssh-add --apple-use-keychain ~/.ssh/id_xxxxx 2>/dev/null
