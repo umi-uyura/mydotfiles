@@ -20,6 +20,14 @@ iTerm2
       * Scrollback Lines: `10,000`
 
 
+Raycast
+-------
+
+### Advanced
+
+* Auto-switch Input Source: `Romaji`
+
+
 Rectangle
 ---------
 
