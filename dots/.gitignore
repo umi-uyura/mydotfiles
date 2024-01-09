@@ -1,5 +1,5 @@
 ### Git ###
-.worktree-*
+.worktree/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,emacs
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,emacs
