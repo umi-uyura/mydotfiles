@@ -81,6 +81,12 @@ else
   mystartup_debug_echo "fnm is not setup"
 fi
 
+# SDKMAN
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+# shellcheck source=/dev/null
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 
 #
 # Local settings

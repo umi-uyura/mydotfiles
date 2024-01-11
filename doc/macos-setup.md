@@ -179,3 +179,18 @@ $ fnm install <version>
 $ node --version > .node-version
 $ init/node-npm-globals-install.sh
 ```
+
+### Java (JDK)
+
+See: [Installation - SDKMAN! the Software Development Kit Manager](https://sdkman.io/install)
+
+
+```shell
+# Install without modifying shell config
+# - config in dots/.bashrc_basis
+$ curl -s "https://get.sdkman.io?rcupdate=false" | bash
+$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+$ sdk list java     # Check Identifier
+$ sdk install java <Identifier>
+```
