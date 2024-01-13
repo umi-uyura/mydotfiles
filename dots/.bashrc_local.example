@@ -1,0 +1,4 @@
+# ~/.bashrc_local example
+
+# DeepL auth key
+export DEEPL_AUTH_KEY=
