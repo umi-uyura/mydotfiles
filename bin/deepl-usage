@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+curl -X GET "https://api-free.deepl.com/v2/usage" \
+     --header "Authorization: DeepL-Auth-Key $DEEPL_AUTH_KEY" 
