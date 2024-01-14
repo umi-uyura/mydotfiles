@@ -1,0 +1,33 @@
+#!/bin/sh
+
+#
+# Create Python virtual environment
+#
+
+VENV_PATH=.venv
+
+if ! hash python 2> /dev/null; then
+    echo "Error: python not found"
+    exit
+fi
+
+if ! hash direnv 2> /dev/null; then
+    echo "Error: direnv not found"
+    exit
+fi
+
+if [ -f "$VENV_PATH" ]; then
+    echo ".venv already exist"
+    exit
+fi
+
+echo "Creates virtual Python environments, use $(python --version)"
+python -m venv --upgrade-deps $VENV_PATH
+
+cat > .envrc <<EOF
+layout python
+source .venv/bin/activate
+unset PS1
+EOF
+
+direnv allow
