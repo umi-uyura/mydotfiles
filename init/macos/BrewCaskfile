@@ -20,6 +20,7 @@ cask "skitch"
 cask "paintbrush"
 cask "numi"
 cask "devtoys"
+cask "switchhosts"
 
 cask "qlmarkdown"
 cask "qlstephen"
