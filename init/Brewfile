@@ -20,6 +20,7 @@ brew "cmigemo" if OS.mac?
 brew "shellcheck"
 brew "csvq"
 brew "csvtk"
+brew "mkcert"
 
 tap "noborus/tap"
 brew "noborus/tap/trdsql"
