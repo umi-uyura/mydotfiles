@@ -18,6 +18,10 @@ iTerm2
   * Terminal
     * Scrollback Buffer
       * Scrollback Lines: `10,000`
+* Keys
+  * Key Bindings
+    * `^Tab`: `Next Tab`
+    * `^⇧Tab` : `Previos Tab`
 
 
 Raycast
