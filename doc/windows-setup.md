@@ -269,6 +269,14 @@ $ fnm install <version>
 $ init/node-npm-globals-install.sh
 ```
 
+### Heroku CLI
+
+See: [The Heroku CLI | Heroku Dev Center](https://devcenter.heroku.com/articles/heroku-cli#install-with-ubuntu-debian-apt-get) - Install with Ubuntu / Debian apt-get
+
+```shell
+$ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+```
+
 
 **[WIN]** Replace old OpenSSH
 -----------------------------
