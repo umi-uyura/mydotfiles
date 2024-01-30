@@ -44,6 +44,18 @@ fi
 # Prepare tools
 #
 
+# fzf
+#
+# To install useful key bindings and fuzzy completion
+# $(brew --prefix)/opt/fzf/install
+if hash direnv 2> /dev/null; then
+    # shellcheck source=/dev/null
+    [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+    export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
+    export FZF_DEFAULT_OPTS="--layout=reverse"
+fi
+
 # direnv
 if hash direnv 2> /dev/null; then
   eval "$(direnv hook bash)"
