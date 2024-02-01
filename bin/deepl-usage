@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 
-curl -X GET "https://api-free.deepl.com/v2/usage" \
-     --header "Authorization: DeepL-Auth-Key $DEEPL_AUTH_KEY" 
+curl -s -X GET "https://api-free.deepl.com/v2/usage" \
+     --header "Authorization: DeepL-Auth-Key $DEEPL_AUTH_KEY" \
+     | jq -r '"ratio: \(.character_count / .character_limit * 100 | tostring + "%")
+count: \(.character_count)
+limit: \(.character_limit)"'
