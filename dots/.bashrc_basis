@@ -48,7 +48,7 @@ fi
 #
 # To install useful key bindings and fuzzy completion
 # $(brew --prefix)/opt/fzf/install
-if hash direnv 2> /dev/null; then
+if hash fzf 2> /dev/null; then
     # shellcheck source=/dev/null
     [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
