@@ -7,6 +7,9 @@ github.com/oligot/go-mod-upgrade@latest
 github.com/noahgorstein/jqp@latest
 github.com/tomnomnom/gron@latest
 
+// Development tool
+github.com/go-task/task/v3/cmd/task@latest
+
 // Coding support/Linter
 golang.org/x/tools/gopls@latest
 golang.org/x/pkgsite/cmd/pkgsite@latest
