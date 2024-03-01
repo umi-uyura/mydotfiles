@@ -4,20 +4,21 @@ brew "coreutils" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "git" if OS.mac?
 brew "wget" if OS.mac?
+brew "cmigemo" if OS.mac?
+brew "tree" if OS.mac?
+brew "tmux" if OS.mac?
+brew "pwgen" if OS.mac?
 brew "direnv"
 brew "ripgrep"
 brew "fd"
 brew "fzf"
-brew "jq"
-brew "yq"
+brew "nkf"
 brew "asdf"
 brew "fnm"
 brew "mas" if OS.mac?
-brew "tmux" if OS.mac?
-brew "tree" if OS.mac?
-brew "nkf"
 brew "gh"
-brew "cmigemo" if OS.mac?
+brew "jq"
+brew "yq"
 brew "shellcheck"
 brew "csvq"
 brew "csvtk"
