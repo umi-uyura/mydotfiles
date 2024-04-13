@@ -5,7 +5,10 @@ set -eu
 
 sudo add-apt-repository ppa:git-core/ppa                # Git (latest)
 sudo add-apt-repository ppa:wslutilities/wslu           # WSL utilities (latest)
-sudo add-apt-repository ppa:ubuntuhandbook1/emacs       # Emacs
+
+# Emacs
+# https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/emacs
+sudo add-apt-repository ppa:ubuntuhandbook1/emacs
 
 sudo apt update
 
