@@ -5,3 +5,4 @@ http-server
 js-beautify
 npm-check-updates
 qnm
+yaml-language-server
