@@ -6,6 +6,7 @@ github.com/nao1215/gup@latest
 github.com/oligot/go-mod-upgrade@latest
 github.com/noahgorstein/jqp@latest
 github.com/tomnomnom/gron@latest
+github.com/umi-uyura/dow/cmd/dow@latest
 
 // Development tool
 github.com/go-task/task/v3/cmd/task@latest
