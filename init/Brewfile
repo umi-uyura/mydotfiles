@@ -34,5 +34,8 @@ brew "noborus/tap/trdsql"
 tap "thecasualcoder/stable"
 brew "csvdiff"
 
+tap "goreleaser/tap"
+brew "goreleaser/tap/goreleaser"
+
 tap "heroku/brew" if OS.mac?
 brew "heroku" if OS.mac?
