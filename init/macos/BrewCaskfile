@@ -24,7 +24,7 @@ cask "devtoys"
 cask "switchhosts"
 
 cask "qlmarkdown"
-cask "qlstephen"
+# cask "qlstephen"
 cask "provisionql"
 cask "quicklook-csv"
 cask "qlimagesize"
