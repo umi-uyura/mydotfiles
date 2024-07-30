@@ -29,6 +29,7 @@ brew "actionlint"
 brew "csvq"
 brew "csvtk"
 brew "mkcert"
+brew "docker-completion" if OS.mac?
 
 tap "noborus/tap"
 brew "noborus/tap/trdsql"
