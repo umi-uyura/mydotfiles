@@ -1,5 +1,6 @@
 brew "gcc" if OS.linux?
 brew "bash" if OS.mac?
+brew "bash-completion@2" if OS.mac?
 brew "coreutils" if OS.mac?
 brew "gnu-sed" if OS.mac?
 brew "iproute2mac" if OS.mac?

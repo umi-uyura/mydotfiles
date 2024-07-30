@@ -35,6 +35,8 @@ if [ "$(uname)" == 'Linux' ]; then
 elif [ "$(uname)" == 'Darwin' ]; then
   # macOS
   mystartup_debug_echo "... Load settings for macOS"
+  # shellcheck source=/dev/null
+  . "$HOME/dotfiles/dots/macos/.bashrc_macos"
 else
   mystartup_debug_echo "... Settings not found for unkown OS"
 fi

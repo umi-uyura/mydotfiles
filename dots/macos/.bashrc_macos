@@ -1,3 +1,9 @@
 # Load SSH Key from Keychain
 # Add following to .bashrc_local
 #   ssh-add --apple-use-keychain ~/.ssh/id_xxxxx 2>/dev/null
+
+# bash-completion@2
+if [ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]; then
+  # shellcheck source=/dev/null
+  . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+fi
