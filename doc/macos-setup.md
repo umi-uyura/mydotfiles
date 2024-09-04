@@ -1,7 +1,7 @@
 macOS Setup routine
 ====================
 
-Last checked OS: macOS Big Sur
+Last checked OS: macOS Sonoma
 
 
 Change login shell from zsh to bash
