@@ -29,7 +29,6 @@ cask "quicklook-csv"
 cask "qlimagesize"
 cask "qlvideo"
 
-tap "homebrew/cask-fonts"
 cask "font-plemol-jp-hs"
 cask "font-plemol-jp-nf"
 cask "font-udev-gothic"
