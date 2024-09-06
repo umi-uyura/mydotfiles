@@ -1,7 +1,7 @@
 macOS Setup routine
 ====================
 
-Last checked OS: macOS Sonoma
+Last checked OS: macOS Sonoma 14
 
 
 Change login shell from zsh to bash
@@ -42,6 +42,11 @@ $ xcode-select --install        # Install command line tools
 $ sudo shutdown -r now          # To run when you are requested
 ```
 
+If Apple silicon, run following actions
+
+```
+$ sudo softwareupdate --install-rosetta     # Install rosseta 2
+```
 
 Setup SSH & GitHub
 ------------------

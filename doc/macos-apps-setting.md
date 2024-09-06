@@ -11,21 +11,27 @@ iTerm2
   * General
     * Working Directory: Reuse previous session's directory
   * Text
-    * Font: `UDEV Gothic 35`, `Regular`, `14pt`, `W:87`, `H:100`
+    * Font: `UDEV Gothic 35`, `Regular`, `14pt`, `W:87`, `H:100` (MacBook Pro 16 2019)
   * Window
     * Setting for New Windows
-      * MacBook Air 13: `Columns: 100`, `Rows: 48`
+      * MacBook Air 13 Mid 2013: `Columns: 100`, `Rows: 48`
   * Terminal
     * Scrollback Buffer
       * Scrollback Lines: `10,000`
 * Keys
   * Key Bindings
-    * `^Tab`: `Next Tab`
-    * `^⇧Tab` : `Previos Tab`
+    * `Cycle Tabs Forward`: remove
+    * `Cycle Tabs Backword`: remove
+    * `Next Tab`: `^Tab`
+    * `Previos Tab`: `^⇧Tab`
 
 
 Raycast
 -------
+
+### Extensions
+
+* Gitmoji
 
 ### Advanced
 
@@ -56,4 +62,4 @@ Rectangle
 ### General
 
 * ログイン時に起動: `ON`
-
+* アップデートを自動的に確認: `ON`

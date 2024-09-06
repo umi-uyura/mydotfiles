@@ -15,7 +15,15 @@ Dropbox
 KeePassXC
 ---------
 
-### 全般
+### メニュー
+
+#### 表示
+
+- コンパクトモード: `ON`
+
+### アプリケーション設定
+
+#### 全般
 
 * 基本設定
   * システム起動時にKeePassXCを自動的に起動する: `OFF`
@@ -85,7 +93,7 @@ Visual Studio Code
 
 ### Workbench
 
-#### Editor Management
+#### Editor
 
 * Enable preview: `OFF`
 
@@ -243,7 +251,7 @@ Obsidian
   * Text font: `UDEV Gothic 35JPDOC`
   * Monospace font: `UDEV Gothic LG`
   * Font size: `14`
-* Advanced
+* Interface
   * Show inline title: `OFF`
 
 ## Community plusins
@@ -252,6 +260,7 @@ Obsidian
 * Install plugin list
   * Obsidian Git
   * Templater
+  * Kanban
 
 ## Daily notes (if use)
 
