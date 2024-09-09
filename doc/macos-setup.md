@@ -14,7 +14,11 @@ Change login shell from zsh to bash
 
 ### Use Homebrew bash
 
-Add Homebrew bash path to `/etc/shells` and execute `chsh -s /usr/local/bin/bash`
+Add Homebrew bash path to `/etc/shells` and execute `chsh -s <shell path>`
+
+- `shell path`
+  - Intel Mac: `/usr/local/bin/bash`
+  - Apple Silicon Mac: `/opt/homebrew/bin/bash`
 
 ```
 $ cat /etc/shells
@@ -29,7 +33,8 @@ $ cat /etc/shells
 /bin/sh
 /bin/tcsh
 /bin/zsh
-/usr/local/bin/bash         # <-- add
+/usr/local/bin/bash         # <-- add (Intel Mac)
+/opt/homebrew/bin/bash      # <-- add (Apple Silicon Mac)
 ```
 
 
