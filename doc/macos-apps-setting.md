@@ -7,6 +7,8 @@ iTerm2
 * General
   * Closing
     * Confirm "Quit iTerm2" command: `OFF`
+  * Selection
+    * Applications in terminal may access clipboard: `ON`
 * Profiles
   * General
     * Working Directory: Reuse previous session's directory
