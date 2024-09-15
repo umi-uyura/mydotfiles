@@ -1,3 +1,6 @@
+@dbml/cli
+@softwaretechnik/dbml-renderer
+dbdocs
 eslint
 eslint-plugin-vue
 html-validate
