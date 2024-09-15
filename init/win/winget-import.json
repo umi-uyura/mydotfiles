@@ -41,7 +41,7 @@
         { "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor" },
         { "PackageIdentifier": "TeraTermProject.teraterm" },
         { "PackageIdentifier": "JetBrains.IntelliJIDEA.Community" },
-        { "PackageIdentifier": "GoLang.Go.1.22" },
+        { "PackageIdentifier": "GoLang.Go" },
         { "PackageIdentifier": "dbeaver.dbeaver" },
         { "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite" },
         { "PackageIdentifier": "Postman.Postman" },
