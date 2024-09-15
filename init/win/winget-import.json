@@ -16,7 +16,7 @@
         { "PackageIdentifier": "PushPlayLabs.Sidekick" },
         { "PackageIdentifier": "Mozilla.Firefox" },
         { "PackageIdentifier": "Levitsky.FontBase" },
-        { "PackageIdentifier": "Lexikos.AutoHotkey" },
+        { "PackageIdentifier": "AutoHotkey.AutoHotkey" },
         { "PackageIdentifier": "marha.VcXsrv" },
         { "PackageIdentifier": "Eugeny.Tabby" },
         { "PackageIdentifier": "7zip.7zip" },
