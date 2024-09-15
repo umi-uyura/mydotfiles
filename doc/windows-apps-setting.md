@@ -1,6 +1,20 @@
 Windows application settings
 ============================
 
+Dropbox
+-------
+
+インストール時
+
+* Dropboxアイコンをタスクバーに表示する: `OFF`
+
+### 同期
+
+* 選択型同期
+  * ※必要なフォルダのみ同期する
+* 新しいファイルのデフォルト同期状態: `オンラインのみ`
+
+
 OneDrive
 --------
 
@@ -34,6 +48,11 @@ Windows Terminal
 
 ### プロファイル
 
+- ドロップダウンからプロファイルを非表示にする
+  - Windows PowerShell
+  - Azure Cloud Shell
+
+
 #### 既定値
 
 * 外観
@@ -43,15 +62,18 @@ Windows Terminal
   * プロファイルの終了動作: `プロセスの終了、失敗、クラッシュ時に閉じる`
   * ベル通知スタイル: `フラッシュウィンドウ`
 
-#### Windows PowerShell
-
-* ドロップダウンからプロファイルを非表示にする: `ON`
-
 #### Ubuntu
 
 * 開始ディレクトリ: `~`
 * 外観
-  * 配色: `One Half Dark`
+  * 配色: `Ubuntu-ColorScheme`
+
+
+Microsoft IME
+-------------
+
+T.B.D.
+
 
 
 Google日本語入力

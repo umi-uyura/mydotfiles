@@ -110,10 +110,12 @@ REM Create symbolic link for dotfiles
 Open command prompt with administrator privileges.
 
 ```bat
-> cinst init\win\pre\chocolatey-pre.config -y
+> choco install init\win\pre\chocolatey-pre.config -y
 ```
 
 #### Change CapsLock key to Ctrl key
+
+Open command prompt with administrator privileges.
 
 ```bat
 > cd C:\ProgramData\chocolatey\lib\sysinternals\tools
@@ -128,8 +130,23 @@ PC must be rebooted.
 
 See: [Install WSL | Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install)
 
+Open command prompt with administrator privileges.
+
 ```
 > wsl --install
+```
+
+PC must be rebooted.
+
+```
+> wsl --install
+```
+
+After rebooting the PC, perform the initial setup of WSL Linux.
+
+```shell
+Enter new UNIX username: xxxx
+New password: xxxx
 ```
 
 Update packages.
@@ -191,6 +208,12 @@ Host github.com
   AddKeysToAgent yes
 ```
 
+Restart WSL in Windows
+
+```
+> wsl --shutdown
+```
+
 ssh setting
 
 ```shell
@@ -207,11 +230,17 @@ $ chmod 600 $USERPROFILE/.ssh/id_xxxxx
 ```bat
 > winget import -i init\win\winget-import.json --accept-package-agreements
 > init\win\winget-install.bat
-> init\win\install-applications.bat
+> (init\win\apps\*.bat)
 
 REM Open command prompt with administrator privileges
 > winget import -i init\win\winget-import-elevated.json --accept-package-agreements
-> cinst init\win\chocolatey.config -y
+> choco install init\win\chocolatey.config -y
+```
+
+Install fonts
+
+```
+> init\win\setup-font.bat
 ```
 
 
@@ -224,6 +253,11 @@ See: [Homebrew on Linux — Homebrew Documentation](https://docs.brew.sh/Homebre
 $ brew doctor
 $ brew bundle --file=init/Brewfile
 ```
+
+**[WSL]** Setup font
+--------------------
+
+T.B.D
 
 
 **[WIN]** Setup various languages and runtimes
