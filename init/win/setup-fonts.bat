@@ -65,14 +65,14 @@ IF NOT EXIST PlemolJP_HS_%PLEMOLJP_VERSION%.zip (
     IF EXIST PlemolJP_NF (
         RMDIR /s /q PlemolJP_NF
     )
-    IF EXIST PlemolJP_NFJ (
-        RMDIR /s /q PlemolJP_NFJ
-    )
+    rem IF EXIST PlemolJP_NFJ (
+    rem     RMDIR /s /q PlemolJP_NFJ
+    rem )
 
     REM Deploy new font folder
     RENAME PlemolJP_HS_%PLEMOLJP_VERSION% PlemolJP_HS
     RENAME PlemolJP_NF_%PLEMOLJP_VERSION% PlemolJP_NF
-    RENAME PlemolJP_NFJ_%PLEMOLJP_VERSION% PlemolJP_NFJ
+    rem RENAME PlemolJP_NFJ_%PLEMOLJP_VERSION% PlemolJP_NFJ
 
     ECHO PlemolJP %PLEMOLJP_VERSION% installed.
 ) ELSE (
@@ -103,16 +103,20 @@ IF NOT EXIST UDEVGothic_%UDEVGOTHIC_VERSION%.zip (
     wsl unzip -o -q "UDEVGothic_*.zip"
 
     REM Remove old font folder
-    IF EXIST UDEVGothic (
-        RMDIR /s /q UDEVGothic
+    IF EXIST UDEVGothic_HS (
+        RMDIR /s /q UDEVGothic_HS
     )
     IF EXIST UDEVGothic_NF (
         RMDIR /s /q UDEVGothic_NF
     )
+    IF EXIST UDEVGothic (
+        RMDIR /s /q UDEVGothic
+    )
 
     REM Deploy new font folder
-    RENAME UDEVGothic_%UDEVGOTHIC_VERSION% UDEVGothic
+    RENAME UDEVGothic_HS_%UDEVGOTHIC_VERSION% UDEVGothic_HS
     RENAME UDEVGothic_NF_%UDEVGOTHIC_VERSION% UDEVGothic_NF
+    RENAME UDEVGothic_NF_%UDEVGOTHIC_VERSION% UDEVGothic
 
     ECHO UDEV Gothic %UDEVGOTHIC_VERSION% installed.
 ) ELSE (
@@ -124,43 +128,43 @@ REM
 REM IBM Plex - https://www.ibm.com/plex/
 REM
 
-FOR /f "usebackq delims=" %%A IN (`gh release view -q "." --json "tagName" --repo IBM/plex ^| jq -r ".tagName"`) DO (
-    SET IBMPLEX_VERSION=%%A
-)
+rem FOR /f "usebackq delims=" %%A IN (`gh release view -q "." --json "tagName" --repo IBM/plex ^| jq -r ".tagName"`) DO (
+rem     SET IBMPLEX_VERSION=%%A
+rem )
 
-SET IBMPLEX_FOLDER_NAME=IBMPlex_%IBMPLEX_VERSION%
-SET IBMPLEX_ZIP_NAME=%IBMPLEX_FOLDER_NAME%.zip
+rem SET IBMPLEX_FOLDER_NAME=IBMPlex_%IBMPLEX_VERSION%
+rem SET IBMPLEX_ZIP_NAME=%IBMPLEX_FOLDER_NAME%.zip
 
-IF NOT EXIST %IBMPLEX_ZIP_NAME% (
-    REM Remove old zip
-    IF EXIST IBMPlex*.zip (
-        DEL IBMPlex*.zip
-    )
+rem IF NOT EXIST %IBMPLEX_ZIP_NAME% (
+rem     REM Remove old zip
+rem     IF EXIST IBMPlex*.zip (
+rem         DEL IBMPlex*.zip
+rem     )
 
-    gh release download --repo IBM/plex --pattern TrueType.zip --skip-existing
-    IF %ERRORLEVEL% NEQ 0 (
-        CALL "Font download error (IBM Plex)"
-        EXIT /b 1
-    )
+rem     gh release download --repo IBM/plex --pattern TrueType.zip --skip-existing
+rem     IF %ERRORLEVEL% NEQ 0 (
+rem         CALL "Font download error (IBM Plex)"
+rem         EXIT /b 1
+rem     )
 
-    MOVE TrueType.zip %IBMPLEX_ZIP_NAME%
+rem     MOVE TrueType.zip %IBMPLEX_ZIP_NAME%
 
-    wsl unzip -o -q %IBMPLEX_ZIP_NAME%^
-        TrueType/IBM-Plex-Mono/* TrueType/IBM-Plex-Sans/* TrueType/IBM-Plex-Serif/* TrueType/IBM-Plex-Sans-JP/*^
-        -d %IBMPLEX_FOLDER_NAME%
+rem     wsl unzip -o -q %IBMPLEX_ZIP_NAME%^
+rem         TrueType/IBM-Plex-Mono/* TrueType/IBM-Plex-Sans/* TrueType/IBM-Plex-Serif/* TrueType/IBM-Plex-Sans-JP/*^
+rem         -d %IBMPLEX_FOLDER_NAME%
 
-    REM Remove old font folder
-    IF EXIST IBMPlex (
-        RMDIR /s /q IBMPlex
-    )
+rem     REM Remove old font folder
+rem     IF EXIST IBMPlex (
+rem         RMDIR /s /q IBMPlex
+rem     )
 
-    REM Deploy new font folder
-    RENAME %IBMPLEX_FOLDER_NAME% IBMPlex
+rem     REM Deploy new font folder
+rem     RENAME %IBMPLEX_FOLDER_NAME% IBMPlex
 
-    ECHO IBM Plex %IBMPLEX_VERSION% installed.
-) ELSE (
-    ECHO IBM Plex is latest version.
-)
+rem     ECHO IBM Plex %IBMPLEX_VERSION% installed.
+rem ) ELSE (
+rem     ECHO IBM Plex is latest version.
+rem )
 
 
 REM
@@ -183,7 +187,7 @@ IF NOT EXIST JetBrainsMono-%JBM_VERSION%.zip (
 
     gh release download --repo JetBrains/JetBrainsMono --pattern JetBrainsMono-*.zip --skip-existing
     IF %ERRORLEVEL% NEQ 0 (
-        CALL "Font download error (JetBrains Mono)"
+        ECHO "Font download error (JetBrains Mono)"
         EXIT /b 1
     )
 
