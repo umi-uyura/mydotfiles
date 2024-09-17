@@ -12,11 +12,11 @@
       },
       "Packages":
       [
-        { "PackageIdentifier": "ripgrep" },
-        { "PackageIdentifier": "fzf" },
-        { "PackageIdentifier": "jq" },
-        { "PackageIdentifier": "fnm" },
-        { "PackageIdentifier": "ffmpeg" },
+        { "PackageIdentifier": "BurntSushi.ripgrep.MSVC" },
+        { "PackageIdentifier": "junegunn.fzf" },
+        { "PackageIdentifier": "jqlang.jq" },
+        { "PackageIdentifier": "Schniz.fnm" },
+        { "PackageIdentifier": "Gyan.FFmpeg" },
       ]
     }
   ]
