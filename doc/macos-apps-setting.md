@@ -65,3 +65,15 @@ Rectangle
 
 * ログイン時に起動: `ON`
 * アップデートを自動的に確認: `ON`
+
+
+mdview
+------
+
+Download latest binary from [GitHub (c3er/mdview)](https://github.com/c3er/mdview) and install.
+
+In Apple silicon mac cannot be started due to security restrictions, so run the following command.
+
+```
+$ xattr -cr /Applications/mdview.app
+```
