@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 ## -*- mode: sh-mode; coding: utf-8 -*-
 
+if [ "$(uname)" = "Linux" ]; then
+  OS="LINUX"
+elif [ "$(uname)" = "Darwin" ]; then
+  OS="MACOS"
+fi
+
+#
+# alias
+#
+
 alias passgen='pwgen -cnysB1 18 8'
 alias passgen2='pwgen -cnsB1 18 8'
+
+if [ "$OS" == "MACOS" ]; then
+  alias mdview='open -a mdview'
+fi
