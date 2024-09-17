@@ -19,19 +19,14 @@ else
   echo "socat is not setup"
 fi
 
-# Start VcXsrv
-if [ "$WSL_DISTRO_NAME" != "" ]; then
-  if [ -d "/mnt/c/Program Files/VcXsrv" ]; then
-    pushd "/mnt/c/Program Files/VcXsrv" > /dev/null || exit
-    export DISPLAY=127.0.0.1:0.0
-    WSLENV=DISPLAY ./xhost.exe + "$(ip -4 a show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')" > /dev/null
-    MY_DISPLAY=$("$WIN_SYSTEM32_PATH/route.exe" print | grep -a 0.0.0.0 | head -1 | awk '{print $4}'):0.0
-    popd > /dev/null || exit
-
-    export DISPLAY=$MY_DISPLAY
-    export LIBGL_ALWAYS_INDIRECT=1
-    if [ -f "$HOME/.Xmodmap" ]; then
-      xmodmap "$HOME/.Xmodmap"
-    fi
+# fcitx5-mozc
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
+export INPUT_METHOD=fcitx5
+export DefaultIMModule=fcitx5
+if [ $SHLVL = 1 ] ; then
+  if hash fcitx5 2> /dev/null; then
+    (fcitx5 --disable=wayland -d --verbose '*'=0 &)
   fi
 fi

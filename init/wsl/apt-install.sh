@@ -39,6 +39,7 @@ packages=(
   emacs-common
   emacs-mozc-bin
   mozc-utils-gui
+  fcitx5-mozc
 
   libbz2-dev
   libffi-dev

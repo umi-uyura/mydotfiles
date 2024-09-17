@@ -324,3 +324,31 @@ Uninstall OpenSSH Client and OpenSSH
 ```
 
 Disable and stop OpenSSH SSH Server
+
+
+**[WSL]** Setup Mozc for Japanese input method
+----------------------------------------------
+
+```shell
+$ im-config -l          # Check that fcitx5 exists
+$ im-config -n fcitx5
+```
+
+Reboot wsl
+
+```cmd
+wsl --shutdown
+```
+
+Run `fcitx5-configtool` and set the following
+
+- 入力メソッド
+  - Mozc以外を削除
+  - システムのキーボードレイアウト
+    - レイアウト: `日本語`
+- グローバルオプション
+  - 入力メソッドの切り替え
+    - `全角半角`
+  - 一時的に第1入力メソッドに切り替える: `空`
+  - 入力メソッドを有効にする: `変換`
+  - 入力メソッドをオフにする: `無変換`
