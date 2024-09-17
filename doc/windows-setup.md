@@ -254,10 +254,15 @@ $ brew doctor
 $ brew bundle --file=init/Brewfile
 ```
 
+
 **[WSL]** Setup font
 --------------------
 
-T.B.D
+Reference fonts on the Windows side from within WSL
+
+```
+$ sudo cp dots/wsl/etc/fonts/local.conf
+```
 
 
 **[WIN]** Setup various languages and runtimes
