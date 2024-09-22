@@ -17,7 +17,6 @@
         { "PackageIdentifier": "Mozilla.Firefox" },
         { "PackageIdentifier": "Levitsky.FontBase" },
         { "PackageIdentifier": "AutoHotkey.AutoHotkey" },
-        { "PackageIdentifier": "Eugeny.Tabby" },
         { "PackageIdentifier": "7zip.7zip" },
         { "PackageIdentifier": "Flow-Launcher.Flow-Launcher" },
         { "PackageIdentifier": "CLechasseur.PathCopyCopy" },
