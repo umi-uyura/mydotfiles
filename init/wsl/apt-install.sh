@@ -20,7 +20,6 @@ packages=(
   git
   graphviz
   ipcalc
-  language-pack-ja
   make
   pwgen
   socat
@@ -30,16 +29,21 @@ packages=(
   unzip
   wget
   whois
-  wslu
   x11-apps
-  # x11-xserver-utils     # xmodmap
+  x11-xkb-utils
+  x11-xserver-utils
   xz-utils
 
   emacs
   emacs-common
-  emacs-mozc-bin
+
+  language-pack-ja
   mozc-utils-gui
   fcitx5-mozc
+  fonts-noto-cjk
+  fonts-ipafont
+
+  wslu
 
   libbz2-dev
   libffi-dev

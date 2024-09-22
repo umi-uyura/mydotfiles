@@ -20,13 +20,14 @@ else
 fi
 
 # fcitx5-mozc
-export GTK_IM_MODULE=fcitx5
-export QT_IM_MODULE=fcitx5
-export XMODIFIERS=@im=fcitx5
-export INPUT_METHOD=fcitx5
-export DefaultIMModule=fcitx5
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export INPUT_METHOD=fcitx
+export DefaultIMModule=fcitx
 if [ $SHLVL = 1 ] ; then
   if hash fcitx5 2> /dev/null; then
+    xset -r 49
     (fcitx5 --disable=wayland -d --verbose '*'=0 &)
   fi
 fi
