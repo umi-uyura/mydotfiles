@@ -87,6 +87,29 @@ else
   mystartup_debug_echo "asdf is not setup"
 fi
 
+#
+# bookmarks
+# ref: https://threkk.medium.com/how-to-use-bookmarks-in-bash-zsh-6b8074e40774
+#
+BOOKMARKS_DIR="$HOME/.config/bookmarks"
+if [ -d "$BOOKMARKS_DIR" ]; then
+  export CDPATH=".:$BOOKMARKS_DIR:/"
+  alias bgo="cd -P"
+  _goto()
+  {
+    local IFS=$'\n'
+    COMPREPLY=($(compgen -W "$(/bin/ls $BOOKMARKS_DIR)" -- ${COMP_WORDS[COMP_CWORD]}))
+  } && complete -F _goto bgo
+  bls()
+  {
+    ls -l "$BOOKMARKS_DIR/" | awk 'NR>1 {print $9 " " $11}' | column -c 1 -t
+  }
+  badd()
+  {
+    ln -s "$(pwd)" "$BOOKMARKS_DIR/$1"
+  }
+fi
+
 # fnm
 if hash fnm 2> /dev/null; then
   eval "$(fnm env)"
