@@ -97,8 +97,9 @@ FontBase
   * `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、`
 * App behavior
   * Hide to tray on close: `ON`
-  * Start on system start: `ON`
-  * Start hidden: `ON`
+  * Start on system start: `OFF`
+    - ※本来 `ON` で使いたいところだが、Windows TerminalがFontBaseで登録したフォントを読み込めないため、改善されるまではフォントファイルを直接インストールすることにする
+ * Start hidden: `ON`
 
 
 PowerToys

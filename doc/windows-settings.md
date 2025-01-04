@@ -237,14 +237,16 @@ Microsoft Store
 フォント
 -------
 
-※フォントの追加はFontBaseを利用する。
+<s>※フォントの追加はFontBaseを利用する。</s>
+
+※Windows TerminalがFontBaseで登録したフォントを読み込めないため、改善されるまではフォントファイルを直接インストールすることにする
 
 ### 追加フォント
 
 * [UDEV Gothic](https://github.com/yuru7/udev-gothic)
   * UDEVGothic
   * UDEVGothic_NF
-* [PlemolJP)](https://github.com/yuru7/PlemolJP)
+* [PlemolJP](https://github.com/yuru7/PlemolJP)
   * PlemolJP35Console_HS
   * PlemolJP_HS
 * [IBM Plex Sans JP](https://www.ibm.com/plex/)
