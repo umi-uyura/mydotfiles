@@ -71,18 +71,12 @@ else
   mystartup_debug_echo "direnv is not setup"
 fi
 
-# asdf
+# asdf (Install from Homebrew)
 if hash asdf 2> /dev/null; then
-  # Official install
-  # . $HOME/.asdf/asdf.sh
-  # . $HOME/.asdf/completions/asdf.bash
-
-  ## Install from Homebrew
+  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
   # shellcheck source=/dev/null
-  . "$(brew --prefix asdf)/libexec/asdf.sh"
-  # shellcheck source=/dev/null
-  . "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
+  . <(asdf completion bash)
 else
   mystartup_debug_echo "asdf is not setup"
 fi
