@@ -20,6 +20,7 @@
         { "PackageIdentifier": "VideoLAN.VLC" },
         { "PackageIdentifier": "Daum.PotPlayer" },
         { "PackageIdentifier": "Amazon.Kindle" },
+        { "PackageIdentifier": "yt-dlp.yt-dlp" },
         { "PackageIdentifier": "YACReader.YACReader" },
       ]
     }
