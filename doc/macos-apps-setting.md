@@ -33,6 +33,7 @@ Raycast
 
 ### Extensions
 
+* Color Picker
 * Gitmoji
 
 ### Advanced
