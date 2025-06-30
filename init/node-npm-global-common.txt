@@ -1,6 +1,7 @@
 @anthropic-ai/claude-code
 @dbml/cli
 @softwaretechnik/dbml-renderer
+ccusage
 dbdocs
 eslint
 eslint-plugin-vue
