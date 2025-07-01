@@ -1,6 +1,7 @@
 // Utilities
 github.com/cheat/cheat/cmd/cheat@latest
 github.com/chriswalz/bit@latest
+github.com/goreleaser/goreleaser/v2@latest
 github.com/josephburnett/jd@latest
 github.com/nao1215/gup@latest
 github.com/oligot/go-mod-upgrade@latest
