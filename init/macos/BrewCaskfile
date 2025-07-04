@@ -9,6 +9,7 @@ cask "alt-tab"
 cask "rectangle"
 cask "xbar"
 cask "monitorcontrol"
+cask "keka"
 
 cask "pushplaylabs-sidekick"
 cask "dropbox"
