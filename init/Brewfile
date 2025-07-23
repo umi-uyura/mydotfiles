@@ -28,6 +28,7 @@ brew "act"
 brew "actionlint"
 brew "csvq"
 brew "csvtk"
+brew "scc"                              # Source code counter
 brew "glow"                             # Terminal markdown viewer
 brew "mkcert"
 
