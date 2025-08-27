@@ -9,6 +9,7 @@ brew "cmigemo" if OS.mac?
 brew "tree" if OS.mac?
 brew "tmux" if OS.mac?
 brew "pwgen" if OS.mac?
+brew "terminal-notifier" if OS.mac?
 brew "direnv"
 brew "ripgrep"
 brew "fd"
