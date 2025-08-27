@@ -98,9 +98,11 @@ if [ -d "$BOOKMARKS_DIR" ]; then
   {
     ls -l "$BOOKMARKS_DIR/" | awk 'NR>1 {print $9 " " $11}' | column -c 1 -t
   }
-  badd()
-  {
-    ln -s "$(pwd)" "$BOOKMARKS_DIR/$1"
+  badd() {
+    local name="${1:-$(basename "$PWD")}"
+    if ln -s "$PWD" "$BOOKMARKS_DIR/$name"; then
+      echo "Added bookmark: $name -> $PWD"
+    fi
   }
 fi
 
