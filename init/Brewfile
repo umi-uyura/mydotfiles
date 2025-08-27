@@ -15,6 +15,7 @@ brew "fd"
 brew "fzf"
 brew "nkf"
 brew "asdf"
+brew "tenv"
 brew "fnm"
 brew "mas" if OS.mac?
 brew "curlie"
