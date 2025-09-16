@@ -163,6 +163,13 @@ $ brew bundle --file=~/dotfiles/init/macos/BrewMasfile          # Must be sign i
 Install other tools
 -------------------
 
+### Sheldon
+
+```shell
+$ sheldon init --shell bash
+$ init/sheldon-plugin-install.sh
+```
+
 ### asdf
 
 See: [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)

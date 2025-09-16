@@ -17,6 +17,7 @@ brew "fzf"
 brew "nkf"
 brew "asdf"
 brew "tenv"
+brew "sheldon"
 brew "fnm"
 brew "mas" if OS.mac?
 brew "curlie"

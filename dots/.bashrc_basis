@@ -71,6 +71,11 @@ else
   mystartup_debug_echo "direnv is not setup"
 fi
 
+# sheldon
+if hash direnv 2> /dev/null; then
+  eval "$(sheldon source)"
+fi
+
 # asdf (Install from Homebrew)
 if hash asdf 2> /dev/null; then
   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
