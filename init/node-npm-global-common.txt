@@ -1,4 +1,3 @@
-@anthropic-ai/claude-code
 @dbml/cli
 @google/gemini-cli
 @softwaretechnik/dbml-renderer
