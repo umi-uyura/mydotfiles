@@ -22,6 +22,7 @@ cask "numi"
 cask "devtoys"
 cask "switchhosts"
 cask "claude-code"
+cask "codex"
 
 cask "qlmarkdown"
 # cask "qlstephen"
