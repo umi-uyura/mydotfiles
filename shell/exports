@@ -6,6 +6,8 @@
 #
 
 # export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+
 
 # dotfiles
 export DOTFILES_ROOT=$HOME/dotfiles
