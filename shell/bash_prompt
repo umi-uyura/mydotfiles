@@ -111,12 +111,13 @@ prompt_git() {
 
 # Set the terminal title to the current working directory
 case "$TERM" in
-    xterm-256color|tmux-256color)
+    xterm-256color|tmux-256color|alacritty)
         PS1="\[\033]0;\w\007\]";;
 	# PS1+="\n";;
     dumb)
         PS1="\n";;
-    *) ;;
+    *)
+        PS1="";;
 esac
 
 # Build the prompt
