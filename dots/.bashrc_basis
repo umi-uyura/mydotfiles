@@ -76,15 +76,22 @@ if hash direnv 2> /dev/null; then
   eval "$(sheldon source)"
 fi
 
-# asdf (Install from Homebrew)
-if hash asdf 2> /dev/null; then
-  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
-  # shellcheck source=/dev/null
-  . <(asdf completion bash)
+# mise
+if hash mise 2> /dev/null; then
+  eval "$(mise activate bash)"
 else
-  mystartup_debug_echo "asdf is not setup"
+  mystartup_debug_echo "mise is not setup"
 fi
+
+# # asdf (Install from Homebrew)
+# if hash asdf 2> /dev/null; then
+#   export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+#
+#   # shellcheck source=/dev/null
+#   . <(asdf completion bash)
+# else
+#   mystartup_debug_echo "asdf is not setup"
+# fi
 
 #
 # bookmarks
