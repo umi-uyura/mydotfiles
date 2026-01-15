@@ -1,4 +1,4 @@
-// Utilities
+# Utilities
 github.com/cheat/cheat/cmd/cheat@latest
 github.com/chriswalz/bit@latest
 github.com/goreleaser/goreleaser/v2@latest
@@ -9,10 +9,10 @@ github.com/noahgorstein/jqp@latest
 github.com/tomnomnom/gron@latest
 github.com/umi-uyura/dow/cmd/dow@latest
 
-// Development tool
+# Development tool
 github.com/go-task/task/v3/cmd/task@latest
 
-// Coding support/Linter
+# Coding support/Linter
 golang.org/x/tools/gopls@latest
 golang.org/x/pkgsite/cmd/pkgsite@latest
 github.com/kisielk/errcheck@latest
