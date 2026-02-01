@@ -286,18 +286,20 @@ $ sudo cp dots/wsl/etc/fonts/local.conf
 **[WSL]** Setup various languages and runtimes
 ----------------------------------------------
 
-### asdf (Go, Python)
+### Python/Go (use mise installed with Homebrew)
 
-See: [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)
+See: [Getting Started | mise-en-place](https://mise.jdx.dev/getting-started.html#installing-mise-cli)
 
 ```shell
-$ init/asdf-plugin-install.sh
+# Python
+$ mise ls-remote python
+$ mise install python@x.xx
+$ mise use -g python@x.xx
 
-$ asdf install golang <version>     # .default-golang-pkgs
-$ asdf global golang <version>
-
-$ asdf install python <version>     # .default-python-packages
-$ asdf global python <version>
+# Go
+$ mise ls-remote go
+$ mise install go@x.xx
+$ mise use -g go@x.xx
 ```
 
 ### Node.js (use fnm installed with Homebrew)

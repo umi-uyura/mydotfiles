@@ -170,22 +170,20 @@ $ sheldon init --shell bash
 $ init/sheldon-plugin-install.sh
 ```
 
-### asdf
+### Python/Go (use mise installed with Homebrew)
 
-See: [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)
+See: [Getting Started | mise-en-place](https://mise.jdx.dev/getting-started.html#installing-mise-cli)
 
 ```shell
-$ init/asdf-plugin-install.sh
-
 # Python
-$ asdf list all python | grep ^3
-$ asdf install python <version>
-$ asdf reshim python
+$ mise ls-remote python
+$ mise install python@x.xx
+$ mise use -g python@x.xx
 
 # Go
-$ asdf list all golang
-$ asdf install golang <version>
-$ asdf reshim golang
+$ mise ls-remote go
+$ mise install go@x.xx
+$ mise use -g go@x.xx
 ```
 
 ### Node.js (use fnm installed with Homebrew)

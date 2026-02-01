@@ -65,19 +65,6 @@ else
 fi
 
 
-# asdf plugins
-echo
-echo "### Updating asdf plugins ..."
-echo
-
-if hash asdf 2> /dev/null; then
-  asdf plugin update --all
-else
-  echo_warn "asdf could not be found, skipped check."
-  echo
-fi
-
-
 # Go packages
 echo
 echo "### Checking Go package updates ..."
