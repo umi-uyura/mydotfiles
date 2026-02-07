@@ -38,6 +38,7 @@
         { "PackageIdentifier": "GitHub.cli" },
         { "PackageIdentifier": "OlegDanilov.RapidEnvironmentEditor" },
         { "PackageIdentifier": "TeraTermProject.teraterm" },
+        { "PackageIdentifier": "Alacritty.Alacritty" },
         { "PackageIdentifier": "JetBrains.IntelliJIDEA.Community" },
         { "PackageIdentifier": "GoLang.Go" },
         { "PackageIdentifier": "dbeaver.dbeaver" },
