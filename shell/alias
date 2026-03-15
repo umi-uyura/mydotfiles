@@ -17,3 +17,9 @@ alias passgen2='pwgen -cnsB1 18 8'
 if [ "$OS" == "MACOS" ]; then
   alias mdview='open -a mdview'
 fi
+
+# pnpm dlx aliases
+alias openspec='pnpm dlx @fission-ai/openspec'
+alias ccusage='pnpm dlx ccusage'
+alias ncu='pnpm dlx npm-check-updates'
+alias tldr='pnpm dlx tldr'

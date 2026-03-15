@@ -278,8 +278,10 @@ $ sudo cp dots/wsl/etc/fonts/local.conf
 
 ```bat
 > fnm ls-remote
-> fnm install <version>
-> init\node-npm-globals-install.bat
+> fnm install 22
+> fnm default 22
+> corepack enable
+> corepack prepare pnpm@latest --activate
 ```
 
 
@@ -306,8 +308,10 @@ $ mise use -g go@x.xx
 
 ```shell
 $ fnm ls-remote
-$ fnm install <version>
-$ init/node-npm-globals-install.sh
+$ fnm install 22
+$ fnm default 22
+$ corepack enable
+$ corepack prepare pnpm@latest --activate
 ```
 
 ### Heroku CLI

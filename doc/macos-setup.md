@@ -190,9 +190,10 @@ $ mise use -g go@x.xx
 
 ```shell
 $ fnm ls-remote
-$ fnm install <version>
-$ node --version > .node-version
-$ init/node-npm-globals-install.sh
+$ fnm install 22
+$ fnm default 22
+$ corepack enable
+$ corepack prepare pnpm@latest --activate
 ```
 
 ### Java (JDK)
