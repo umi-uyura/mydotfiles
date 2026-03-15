@@ -18,8 +18,8 @@ if [ "$OS" == "MACOS" ]; then
   alias mdview='open -a mdview'
 fi
 
-# pnpm dlx aliases
-alias openspec='pnpm dlx @fission-ai/openspec'
-alias ccusage='pnpm dlx ccusage'
-alias ncu='pnpm dlx npm-check-updates'
-alias tldr='pnpm dlx tldr'
+# pnpm dlx aliases (@latest で常に最新バージョンをチェック)
+alias openspec='pnpm dlx @fission-ai/openspec@latest'
+alias ccusage='pnpm dlx ccusage@latest'
+alias ncu='pnpm dlx npm-check-updates@latest'
+alias tldr='pnpm dlx tldr@latest'
