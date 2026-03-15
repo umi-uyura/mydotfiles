@@ -35,6 +35,7 @@ brew "scc"                              # Source code counter
 brew "glow"                             # Terminal markdown viewer
 brew "mkcert"
 brew "uv"                               # Python package and project manager
+brew "openspec"
 
 tap "noborus/tap"
 brew "noborus/tap/trdsql"
