@@ -3,7 +3,7 @@
 ## ADDED Requirements
 
 ### Requirement: 開発ツールのdevDependencies管理
-プロジェクトごとに開発ツールをdevDependenciesで管理できること。
+プロジェクトごとに開発ツールをdevDependenciesで管理できること。**SHALL** を用いる。
 
 #### Scenario: eslintのローカル実行
 - **WHEN** ユーザーが `pnpm exec eslint .` を実行する
@@ -14,7 +14,7 @@
 - **THEN** DBMLからSQLが生成される
 
 ### Requirement: グローバル維持パッケージの確認
-エディタ連携に必須のパッケージがグローバル維持されること。
+エディタ連携に必須のパッケージがグローバル維持されること。**MUST** を用いる。
 
 #### Scenario: yaml-language-server確認
 - **WHEN** ユーザーが `npm list -g yaml-language-server` を実行する

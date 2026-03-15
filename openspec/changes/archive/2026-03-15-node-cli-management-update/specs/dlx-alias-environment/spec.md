@@ -3,7 +3,7 @@
 ## ADDED Requirements
 
 ### Requirement: 高頻度CLIツールへのエイリアス
-シェル起動時に高頻度CLIツールへのエイリアスが利用可能であること。
+シェル起動時に高頻度CLIツールへのエイリアスが利用可能であること。**SHALL** を用いる。
 
 #### Scenario: openspecコマンド
 - **WHEN** ユーザーが `openspec` コマンドを実行する
@@ -22,7 +22,7 @@
 - **THEN** `pnpm dlx tldr` が実行される
 
 ### Requirement: 低頻度CLIツールのdlx実行
-低頻度CLIツールをpnpm dlxで実行可能であること。
+低頻度CLIツールをpnpm dlxで実行可能であること。**MUST** を用いる。
 
 #### Scenario: surgeコマンド
 - **WHEN** ユーザーが `pnpm dlx surge` を実行する
