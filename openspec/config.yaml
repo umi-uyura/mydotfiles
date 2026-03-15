@@ -1,0 +1,17 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+context: |
+  AIとのコミュニケーションはすべて日本語で行う
+  OpenSpecで生成するドキュメント（Proposal, Tasks, Specsなど）も日本語で記述する
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
