@@ -1,14 +1,6 @@
 # pnpm dlx 用 CLI ツールリスト
 # 高頻度ツールは shell/alias にエイリアス登録済み
-
-# エイリアス登録済み (shell/alias)
-# - openspec
-# - ccusage
-# - ncu
-# - tldr
-
-# dlx 直接実行用
-@google/gemini-cli
+# 以下は dlx 直接実行用 (pnpm dlx <command>)
 http-server
 js-beautify
 qnm

@@ -19,7 +19,9 @@ if [ "$OS" == "MACOS" ]; then
 fi
 
 # pnpm dlx aliases (@latest で常に最新バージョンをチェック)
-alias openspec='pnpm dlx @fission-ai/openspec@latest'
 alias ccusage='pnpm dlx ccusage@latest'
+alias gemini='@google/gemini-cli@latest'
+alias openspec='pnpm dlx @fission-ai/openspec@latest'
 alias ncu='pnpm dlx npm-check-updates@latest'
 alias tldr='pnpm dlx tldr@latest'
+alias 'react-doctor'='pnpm dlx react-doctor@latest'
