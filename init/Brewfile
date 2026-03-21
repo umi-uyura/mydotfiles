@@ -37,6 +37,9 @@ brew "mkcert"
 brew "uv"                               # Python package and project manager
 brew "openspec"
 
+tap "coderabbitai/tap"
+brew "git-gtr"
+
 tap "noborus/tap"
 brew "noborus/tap/trdsql"
 
