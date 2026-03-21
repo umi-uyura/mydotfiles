@@ -8,3 +8,25 @@ mystartup_debug_echo() {
         echo "startup ... $1"
     fi
 }
+
+
+# cwt: fuzzy-select git worktree and cd (location-agnostic)
+cwt() {
+  git rev-parse &>/dev/null || { echo "Not a git repo"; return 1; }
+
+  local line dir
+  line="$(git worktree list | \
+    awk '{
+      gsub(/^\[|\]$/, "", $3);
+      print $3 " " $1
+    }' | \
+    column -t | \
+    fzf --prompt='worktree> ' \
+        --reverse \
+        --height=40%)" || return 0
+
+  dir="$(awk '{print $2}' <<< "$line")"
+  [ -z "$dir" ] && return 0
+
+  cd "$dir" || return
+}
