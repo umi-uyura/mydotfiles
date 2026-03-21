@@ -194,6 +194,7 @@ $ fnm install 22
 $ fnm default 22
 $ corepack enable
 $ corepack prepare pnpm@latest --activate
+$ pnpm setup
 ```
 
 ### Java (JDK)

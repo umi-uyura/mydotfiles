@@ -282,6 +282,7 @@ $ sudo cp dots/wsl/etc/fonts/local.conf
 > fnm default 22
 > corepack enable
 > corepack prepare pnpm@latest --activate
+> pnpm setup
 ```
 
 
@@ -312,6 +313,7 @@ $ fnm install 22
 $ fnm default 22
 $ corepack enable
 $ corepack prepare pnpm@latest --activate
+$ pnpm setup
 ```
 
 ### Heroku CLI
