@@ -13,6 +13,10 @@ export PATH=$HOME/.local/bin:$PATH
 export DOTFILES_ROOT=$HOME/dotfiles
 export PATH=$DOTFILES_ROOT/bin:$DOTFILES_ROOT/local/bin:$PATH
 
+# Display current directory in terminal tab/title
+# shellcheck disable=SC2016
+PROMPT_COMMAND+=('echo -ne "\033]0;${PWD##*/}\007"')
+
 #
 # Emacs
 #
