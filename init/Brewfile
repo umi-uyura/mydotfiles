@@ -1,3 +1,11 @@
+# taps
+tap "coderabbitai/tap"
+tap "noborus/tap"
+tap "thecasualcoder/stable"
+tap "anomalyco/tap"
+tap "heroku/brew" if OS.mac?
+
+# packages
 brew "gcc" if OS.linux?
 brew "bash" if OS.mac?
 brew "coreutils" if OS.mac?
@@ -37,17 +45,8 @@ brew "mkcert"
 brew "uv"                               # Python package and project manager
 brew "openspec"
 
-tap "coderabbitai/tap"
-brew "git-gtr"
-
-tap "noborus/tap"
-brew "noborus/tap/trdsql"
-
-tap "thecasualcoder/stable"
-brew "csvdiff"
-
-tap "anomalyco/tap"
-brew "opencode"
-
-tap "heroku/brew" if OS.mac?
-brew "heroku" if OS.mac?
+brew "git-gtr"                          # tap: coderabbitai/tap
+brew "noborus/tap/trdsql"               # tap: noborus/tap
+brew "csvdiff"                          # tap: thecasualcoder/stable
+brew "opencode"                         # tap: anomalyco/tap
+brew "heroku" if OS.mac?                # tap: heroku/brew
