@@ -1,11 +1,19 @@
+# Brewfile - Homebrew packages
+
+#
 # taps
+#
 tap "coderabbitai/tap"
 tap "noborus/tap"
 tap "thecasualcoder/stable"
 tap "anomalyco/tap"
 tap "heroku/brew" if OS.mac?
 
+#
 # packages
+#
+
+# System
 brew "gcc" if OS.linux?
 brew "bash" if OS.mac?
 brew "coreutils" if OS.mac?
@@ -18,36 +26,51 @@ brew "tree" if OS.mac?
 brew "tmux" if OS.mac?
 brew "pwgen" if OS.mac?
 brew "terminal-notifier" if OS.mac?
+brew "mas" if OS.mac?
+
+# Shell & Search
 brew "direnv"
+brew "sheldon"
 brew "ripgrep"
 brew "fd"
 brew "fzf"
 brew "nkf"
+
+# Version managers
 brew "mise"
 brew "tenv"
-brew "sheldon"
 brew "fnm"
-brew "mas" if OS.mac?
-brew "curlie"
+
+# Git
 brew "gh"
+brew "git-gtr"                          # tap: coderabbitai/tap
 brew "worktrunk"
+
+# Data processing
 brew "jq"
 brew "yq"
+brew "csvq"
+brew "csvtk"
+brew "noborus/tap/trdsql"               # tap: noborus/tap
+brew "csvdiff"                          # tap: thecasualcoder/stable
+
+# Lint & CI
 brew "shellcheck"
 brew "yamllint"
 brew "hadolint"
 brew "act"
 brew "actionlint"
-brew "csvq"
-brew "csvtk"
+
+# Dev utilities
+brew "curlie"
 brew "scc"                              # Source code counter
 brew "glow"                             # Terminal markdown viewer
 brew "mkcert"
 brew "uv"                               # Python package and project manager
+
+# AI tools
+brew "opencode"                         # tap: anomalyco/tap
 brew "openspec"
 
-brew "git-gtr"                          # tap: coderabbitai/tap
-brew "noborus/tap/trdsql"               # tap: noborus/tap
-brew "csvdiff"                          # tap: thecasualcoder/stable
-brew "opencode"                         # tap: anomalyco/tap
+# Service CLI
 brew "heroku" if OS.mac?                # tap: heroku/brew
