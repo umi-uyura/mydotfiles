@@ -1,15 +1,30 @@
+# BrewCaskfile - macOS applications
+
+#
+# taps
+#
+tap "railwaycat/emacsmacport"
+tap "yuuichieguchi/calyx"
+
+#
+# casks
+#
+
+# Core
 cask "iterm2"
 cask "google-japanese-ime"
 cask "google-chrome"
+cask "emacs-mac"                        # tap: railwaycat/emacsmacport
 cask "keepassxc"
 cask "visual-studio-code"
 
+# Desktop utilities
 cask "raycast"
 cask "alt-tab"
 cask "rectangle"
 cask "xbar"
-cask "monitorcontrol"
 
+# Productivity
 cask "pushplaylabs-sidekick"
 cask "dropbox"
 cask "slack"
@@ -18,17 +33,12 @@ cask "libreoffice"
 cask "mark-text"
 cask "drawio"
 cask "paintbrush"
+cask "imageoptim"
 cask "numi"
 cask "devtoys"
 cask "switchhosts"
 
-# cask "qlmarkdown"
-# cask "qlstephen"
-# cask "provisionql"
-# cask "quicklook-csv"
-# cask "qlimagesize"
-# cask "qlvideo"
-
+# Fonts
 cask "font-plemol-jp-hs"
 cask "font-plemol-jp-nf"
 cask "font-udev-gothic"
@@ -39,5 +49,9 @@ cask "font-ibm-plex-sans-jp"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 
-tap "railwaycat/emacsmacport"
-cask "emacs-mac"
+# Dev tools
+cask "microsoft-edge"
+cask "firefox"
+cask "ghostty"
+cask "cmux"
+cask "calyx"                            # tap: yuuichieguchi/calyx
