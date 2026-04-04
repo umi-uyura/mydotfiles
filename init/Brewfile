@@ -30,6 +30,7 @@ brew "fnm"
 brew "mas" if OS.mac?
 brew "curlie"
 brew "gh"
+brew "worktrunk"
 brew "jq"
 brew "yq"
 brew "shellcheck"
