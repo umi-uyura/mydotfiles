@@ -76,6 +76,11 @@ if hash direnv 2> /dev/null; then
   eval "$(sheldon source)"
 fi
 
+# Worktrunk
+if command -v wt >/dev/null 2>&1; then
+  eval "$(command wt config shell init bash)"
+fi
+
 # mise
 if hash mise 2> /dev/null; then
   eval "$(mise activate bash)"
