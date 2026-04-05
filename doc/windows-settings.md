@@ -18,6 +18,7 @@ Windows settings
 |------|-----|
 | `%DOTFILES_ROOT%\bin` | dotfiles |
 | `%USERPROFILE%\go\bin` | Go |
+| `%USERPROFILE%\.local\bin` | Claude Code |
 | `C:\Program Files\7-Zip` | 7-Zip |
 | `C:\Program Files\Graphviz\bin` | Graphviz |
 | `%LOCALAPPDATA%\FastCopy` | FastCopy |
