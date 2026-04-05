@@ -285,6 +285,21 @@ $ sudo cp dots/wsl/etc/fonts/local.conf
 > pnpm setup
 ```
 
+#### Node.js CLI ツールの実行方針
+
+Node.js CLI ツールはグローバルインストールせず `pnpm dlx` で実行する。
+
+- **高頻度ツール**: `doskey-alias.macros` にエイリアスを定義済みのため、コマンド名で直接実行できる
+  - `openspec`、`ccusage`、`ncu`、`tldr`、`react-doctor`
+- **低頻度ツール**: `dots/.default-npm-packages` を参照し、`pnpm dlx <tool>` で実行する
+  - 例: `pnpm dlx http-server`、`pnpm dlx surge`
+
+#### 新規ツール追加手順
+
+1. `shell/doskey-alias.macros` にエイリアスを追加（高頻度ツールのみ）
+2. `shell/alias` にも同じエイリアスを追加（bash/WSL と統一）
+3. 低頻度ツールは `dots/.default-npm-packages` に追記するのみ
+
 
 **[WSL]** Setup various languages and runtimes
 ----------------------------------------------
