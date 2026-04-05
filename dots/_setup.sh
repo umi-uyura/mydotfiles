@@ -13,6 +13,9 @@ do
         if [ "$dotfile" == '.config' ] && [ -d "$HOME/$dotfile" ]; then
             # TODO: Create symlink to config file that in each directory
             :
+        elif [ "$dotfile" == '.claude' ]; then
+            mkdir -p "$HOME/.claude"
+            ln -Fis "$PWD/.claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
         elif [ "${dotfile##*.}" == "example" ]; then
             localfile=${dotfile%.*}
             cp "$dotfile" "$HOME/$localfile"

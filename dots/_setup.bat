@@ -11,5 +11,8 @@ IF EXIST %USERPROFILE%\.gitconfig (
 MKLINK %USERPROFILE%\.gitconfig %USERPROFILE%\dotfiles\dots\.gitconfig
 MKLINK %USERPROFILE%\.gitignore %USERPROFILE%\dotfiles\dots\.gitignore
 MKLINK %USERPROFILE%\.gitmessage.txt %USERPROFILE%\dotfiles\dots\.gitmessage.txt
+MKLINK %USERPROFILE%\.wezterm.lua %USERPROFILE%\dotfiles\dots\.wezterm.lua
+IF NOT EXIST %USERPROFILE%\.claude MKDIR %USERPROFILE%\.claude
+MKLINK %USERPROFILE%\.claude\CLAUDE.md %USERPROFILE%\dotfiles\dots\.claude\CLAUDE.md
 
 POPD
