@@ -18,6 +18,11 @@ if [ "$OS" == "MACOS" ]; then
   alias mdview='open -a mdview'
 fi
 
+# Claude Code
+alias cc='claude'
+alias cca='claude agents'
+alias ccb='claude --bg --name '
+
 # pnpm dlx aliases (@latest で常に最新バージョンをチェック)
 alias ccusage='pnpm dlx ccusage@latest'
 alias gemini='@google/gemini-cli@latest'
