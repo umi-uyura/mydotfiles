@@ -3,8 +3,8 @@
 #
 # taps
 #
-tap "railwaycat/emacsmacport"
-tap "yuuichieguchi/calyx"
+tap "railwaycat/emacsmacport", trusted: true
+tap "yuuichieguchi/calyx", trusted: true
 
 #
 # casks

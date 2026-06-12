@@ -3,9 +3,9 @@
 #
 # taps
 #
-tap "coderabbitai/tap"
-tap "noborus/tap"
-tap "thecasualcoder/stable"
+tap "coderabbitai/tap", trusted: true
+tap "noborus/tap", trusted: true
+tap "thecasualcoder/stable", trusted: true
 tap "heroku/brew" if OS.mac?
 
 #
