@@ -6,7 +6,6 @@
 tap "coderabbitai/tap"
 tap "noborus/tap"
 tap "thecasualcoder/stable"
-tap "anomalyco/tap"
 tap "heroku/brew" if OS.mac?
 
 #
@@ -69,7 +68,7 @@ brew "mkcert"
 brew "uv"                               # Python package and project manager
 
 # AI tools
-brew "opencode"                         # tap: anomalyco/tap
+brew "opencode"
 brew "openspec"
 
 # Service CLI
